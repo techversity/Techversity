@@ -60,3 +60,19 @@ body {
 }
 .animate-marquee { animation: marquee 30s linear infinite; }
 .animate-marquee:hover { animation-play-state: paused; }
+
+@keyframes flipIn {
+  from { transform: rotateY(-90deg); opacity: 0; }
+  to   { transform: rotateY(0deg); opacity: 1; }
+}
+/* ─── ALUMNI ROTATE ─── */
+@keyframes exitR {
+  0%   { transform: translateX(0) rotateY(0) scale(1); opacity: 1; z-index: 1; }
+  100% { transform: translateX(60%) rotateY(-50deg) scale(0.8); opacity: 0; z-index: 1; }
+}
+@keyframes enterL {
+  0%   { transform: translateX(-60%) rotateY(50deg) scale(0.8); opacity: 0; z-index: 2; }
+  100% { transform: translateX(0) rotateY(0) scale(1); opacity: 1; z-index: 2; }
+}
+.alumni-exit  { animation: exitR 1.3s cubic-bezier(.4,0,.2,1) forwards; }
+.alumni-enter { animation: enterL 1.3s cubic-bezier(.4,0,.2,1) forwards; }

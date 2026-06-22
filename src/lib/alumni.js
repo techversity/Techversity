@@ -1,0 +1,42 @@
+export const alumni = [
+  {
+    name: "Dr. James Whitmore",
+    role: "CFO → Doctor of Business Administration",
+    program: "DBA · ESDST University",
+    country: "United Kingdom",
+    quote: "ESDST's applied DBA let me research a live problem inside my own firm — rigorous, and immediately useful.",
+    photo: "https://images.unsplash.com/photo-1758691737644-ef8be18256c3?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Dr. Sarah Bennett",
+    role: "VP Strategy → PhD in Management",
+    program: "PhD · Kennedy University",
+    country: "United States",
+    quote: "Kennedy's supervision fit around a demanding role and genuinely raised the standard of my research.",
+    photo: "https://plus.unsplash.com/premium_photo-1682430145886-39c8decd85fa?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Dr. Ahmed Al-Rashid",
+    role: "Managing Director → DBA",
+    program: "DBA · EU Global Institute",
+    country: "UAE",
+    quote: "EU Global's accreditation was documented transparently — a credible, executive-friendly path throughout.",
+    photo: "https://images.unsplash.com/photo-1758599543230-652cc6831d69?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Dr. Laura Schmidt",
+    role: "Director → Honorary Doctorate",
+    program: "Honorary · Christian Central",
+    country: "Germany",
+    quote: "Christian Central was upfront about what the honorary title is — that honesty is why I trusted them.",
+    photo: "https://plus.unsplash.com/premium_photo-1664476788423-7899ac87bd7f?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Dr. Daniel Foster",
+    role: "Consultant → PhD in Management",
+    program: "PhD · Globus University",
+    country: "Australia",
+    quote: "Globus matched me to the right programme first time — no wasted months, no confusion at all.",
+    photo: "https://plus.unsplash.com/premium_photo-1661774865234-47f9dc178db5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
