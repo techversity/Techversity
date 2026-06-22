@@ -1,26 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── THEME: Oxford Navy + Antique Gold + Warm Pearl ─── */
+@theme {
+  /* pearl backgrounds (old ivory slots) */
+  --color-ivory: #F2F0E9;
+  --color-ivory-2: #EAE7DC;
+  --color-ivory-3: #DFDBCD;
+
+  /* navy (old wine slots) */
+  --color-wine: #16263D;
+  --color-wine-mid: #21385C;
+  --color-wine-light: #EAEEF4;
+  --color-wine-pale: #F4F6FA;
+
+  /* antique gold */
+  --color-gold: #9A7320;
+  --color-gold-deep: #7C5C16;
+  --color-gold-light: #F6EEDB;
+
+  /* neutrals */
+  --color-ink: #1B2533;
+  --color-slate: #4F5765;
+  --color-mist: #8A92A0;
+  --color-line: #E0DCCF;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ─── BASE ─── */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.animate-fade-up { opacity: 0; animation: fadeUp 0.7s ease-out forwards; }
+.animate-fade-right { opacity: 0; animation: fadeRight 0.8s ease-out forwards; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* ─── MARQUEE ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 30s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
