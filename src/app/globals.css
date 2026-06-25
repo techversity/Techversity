@@ -76,3 +76,23 @@ body {
 }
 .alumni-exit  { animation: exitR 1.3s cubic-bezier(.4,0,.2,1) forwards; }
 .alumni-enter { animation: enterL 1.3s cubic-bezier(.4,0,.2,1) forwards; }
+
+/* ─── SMOOTH SCROLL (Lenis) ─── */
+/* Lenis scroll handle karta hai — native smooth scroll off */
+html {
+  scroll-behavior: auto;
+}
+/* Lenis apna wrapper add karta hai — overflow visible rehne do */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
