@@ -23,8 +23,8 @@ export default function Home() {
       <CertificationsCarousel />
       <HowItWorks />
       {/* <Testimonials /> */}
-      {/* <BlogPreview /> */}
-      {/* <FinalCTA /> */}
+      <BlogPreview />
+      <FinalCTA />
       
       {/* <StatsBar /> */}
     </>

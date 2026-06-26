@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* BOTTOM */}
         <div className="border-t border-white/8 pt-6 flex items-center justify-between text-[12px] text-white/30">
-          <span>© {new Date().getFullYear()} Techverso Pvt Ltd · Lucknow, India</span>
+          <span>© {new Date().getFullYear()} Techverso Pvt Ltd · 1138 East Rosecrans Ave, Los Angeles, CA 90059, USA</span>
           <span className="font-mono tracking-wider">EST. 2019</span>
         </div>
 

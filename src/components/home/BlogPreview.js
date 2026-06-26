@@ -53,7 +53,7 @@ function useInView(ref, threshold = 0.1) {
   return v;
 }
 
-/* ── Featured card (v1 design, v2 changes applied) ── */
+/* ── Featured card ── */
 function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
   const [hovered, setHovered] = useState(false);
 
@@ -69,14 +69,14 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
         transition: "opacity 0.7s ease, transform 0.7s ease",
       }}
     >
-      {/* image with clip-path wipe-in — re-triggers on imgKey change */}
+      {/* image — wipes in from left on every switch via keyframe */}
       <div className="relative overflow-hidden" style={{ height: "320px" }}>
         <div
           key={imgKey}
           style={{
             position: "absolute", inset: 0,
-            clipPath: visible ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)",
-            transition: "clip-path 0.9s cubic-bezier(0.77,0,0.175,1) 0.1s",
+            animation: visible ? "blogImgWipe 0.85s cubic-bezier(0.77,0,0.175,1) forwards" : "none",
+            clipPath: visible ? undefined : "inset(0 100% 0 0)",
           }}
         >
           <Image
@@ -95,7 +95,7 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
         {/* overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/5 to-transparent z-10" />
 
-        {/* category chip — FIXED: solid bg for visibility */}
+        {/* category chip */}
         <div className="absolute top-4 left-4 z-20">
           <span
             className="font-mono text-[9px] uppercase tracking-[2px] px-2.5 py-1.5 rounded-sm font-semibold text-white"
@@ -105,14 +105,14 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
           </span>
         </div>
 
-        {/* read time — top right */}
+        {/* read time */}
         <div className="absolute top-4 right-4 z-20">
           <span className="font-mono text-[9px] uppercase tracking-wider text-white/80 bg-black/30 backdrop-blur-sm px-2.5 py-1.5 rounded-sm">
             {post.readTime}
           </span>
         </div>
 
-        {/* dot nav — bottom right of image */}
+        {/* dot nav */}
         <div className="absolute bottom-4 right-4 z-20 flex gap-1.5">
           {posts.map((_, i) => (
             <button
@@ -162,7 +162,7 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
         </div>
       </div>
 
-      {/* colored bottom accent — slides in on hover */}
+      {/* colored bottom accent */}
       <div
         className="absolute bottom-0 left-0 right-0 h-[3px] transition-all duration-500"
         style={{
@@ -175,7 +175,7 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
   );
 }
 
-/* ── Compact card (v1 design + clickable + active state) ── */
+/* ── Compact card ── */
 function CompactPost({ post, visible, delay, isActive, onClick }) {
   const [hovered, setHovered] = useState(false);
 
@@ -197,7 +197,7 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        {/* left accent — scaleY from bottom (v1 style) */}
+        {/* left accent */}
         <span
           className="absolute left-0 top-0 bottom-0 w-[3px] rounded-l-2xl transition-transform duration-350 origin-bottom"
           style={{
@@ -206,7 +206,7 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
           }}
         />
 
-        {/* image with clip-path wipe (v1 style) */}
+        {/* image */}
         <div className="relative shrink-0 rounded-xl overflow-hidden" style={{ width: "100px", height: "100px" }}>
           <div
             style={{
@@ -249,7 +249,6 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
             <span className="font-mono text-[9px] text-mist">{post.date}</span>
             <span className="w-1 h-1 rounded-full bg-line" />
             <span className="font-mono text-[9px] text-mist">{post.readTime}</span>
-            {/* "Reading →" indicator from v2 */}
             {isActive && (
               <span
                 className="ml-auto font-mono text-[8px] uppercase tracking-wider font-semibold"
@@ -325,7 +324,6 @@ export default function BlogPreview() {
         {/* grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-6 items-start">
 
-          {/* featured — shows active post */}
           <FeaturedPost
             post={posts[active]}
             visible={visible}
@@ -334,7 +332,6 @@ export default function BlogPreview() {
             onDotClick={resetGo}
           />
 
-          {/* all 3 compact cards — clickable */}
           <div className="flex flex-col gap-4">
             {posts.map((post, i) => (
               <CompactPost
@@ -347,7 +344,6 @@ export default function BlogPreview() {
               />
             ))}
 
-            {/* view all card */}
             <Link
               href="/resources/blog"
               className="group flex items-center justify-between rounded-2xl border-2 border-dashed border-line hover:border-gold/40 hover:bg-gold/[0.02] transition-all duration-300 p-5"
@@ -373,6 +369,13 @@ export default function BlogPreview() {
         </div>
 
       </div>
+
+      <style>{`
+        @keyframes blogImgWipe {
+          from { clip-path: inset(0 100% 0 0); }
+          to   { clip-path: inset(0 0% 0 0); }
+        }
+      `}</style>
     </section>
   );
 }

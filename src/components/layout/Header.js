@@ -58,8 +58,8 @@ export default function Header() {
       <div className="hidden lg:block bg-wine text-white/70 text-[12px] py-2">
         <div className="max-w-[1260px] mx-auto px-8 flex items-center justify-between">
           <div className="flex items-center gap-5">
-            <a href="tel:+919999000000" className="flex items-center gap-1.5 hover:text-white transition-colors">
-              <PhoneIcon /> +91-9999-000-000
+            <a href="tel:+13239168629" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <PhoneIcon /> +1 (323) 916-8629
             </a>
             <span className="w-px h-3 bg-white/20" />
             <a href="mailto:admissions@techversity.ai" className="flex items-center gap-1.5 hover:text-gold transition-colors">
@@ -71,7 +71,7 @@ export default function Header() {
               <GlobeIcon /> India
             </span>
             <span className="w-px h-3 bg-white/20" />
-            <a href="https://wa.me/919999000000" className="flex items-center gap-1.5 hover:text-gold transition-colors">
+            <a href="https://wa.me/13239168629" className="flex items-center gap-1.5 hover:text-gold transition-colors">
               <WhatsAppIcon /> WhatsApp Us
             </a>
           </div>
