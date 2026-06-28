@@ -3,55 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useEffect, useState, useCallback } from "react";
+import useInView from "@/hooks/useInView";
+import { posts } from "@/lib/blog";
 
-const posts = [
-  {
-    category: "Doctorate & PhD",
-    categoryColor: "#9A7320",
-    title: "DBA vs PhD: Which Doctorate Is Right for Working Professionals?",
-    excerpt: "Both carry the title 'Dr.' — but they serve very different careers. We break down the research demands, time commitments, and recognition of each so you can choose with clarity.",
-    author: "Techversity Editorial",
-    date: "Jun 2025",
-    readTime: "12 min read",
-    img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=900&q=80",
-    href: "/resources/blog/dba-vs-phd",
-  },
-  {
-    category: "Accreditation",
-    categoryColor: "#2563EB",
-    title: "Is an Honorary Doctorate Legitimate? A Complete Guide",
-    excerpt: "What it is, what it isn't, and exactly how to verify one before you apply.",
-    author: "Techversity Editorial",
-    date: "May 2025",
-    readTime: "8 min read",
-    img: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=600&q=80",
-    href: "/resources/blog/honorary-doctorate-guide",
-  },
-  {
-    category: "AI & Careers",
-    categoryColor: "#7C3AED",
-    title: "What Is Agentic AI? A Career Guide for 2026",
-    excerpt: "From autonomous agents to multi-model pipelines — why this skill is already commanding premium salaries.",
-    author: "Techversity Editorial",
-    date: "Apr 2025",
-    readTime: "6 min read",
-    img: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
-    href: "/resources/blog/agentic-ai-career-guide",
-  },
-];
-
-function useInView(ref, threshold = 0.1) {
-  const [v, setV] = useState(false);
-  useEffect(() => {
-    const o = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setV(true); },
-      { threshold }
-    );
-    if (ref.current) o.observe(ref.current);
-    return () => o.disconnect();
-  }, [ref]);
-  return v;
-}
 
 /* ── Featured card ── */
 function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
@@ -265,8 +219,7 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
 }
 
 export default function BlogPreview() {
-  const sectionRef = useRef(null);
-  const visible    = useInView(sectionRef, 0.08);
+  const [sectionRef, visible] = useInView({ threshold: 0.08 });
   const [active,   setActive]  = useState(0);
   const [imgKey,   setImgKey]  = useState(0);
   const timerRef   = useRef(null);

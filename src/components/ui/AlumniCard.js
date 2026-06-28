@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { alumni } from "@/lib/alumni";
 
 export default function AlumniCard() {
@@ -12,12 +13,10 @@ export default function AlumniCard() {
       const next = (curRef.current + 1) % alumni.length;
       curRef.current = next;
       const newId = uid.current++;
-      // current exits, new enters
       setCards((prev) => [
         ...prev.map((c) => ({ ...c, cls: "alumni-exit" })),
         { id: newId, index: next, cls: "alumni-enter" },
       ]);
-      // cleanup old after animation
       setTimeout(() => {
         setCards((prev) => prev.filter((c) => c.id === newId));
       }, 1300);
@@ -26,7 +25,7 @@ export default function AlumniCard() {
   }, []);
 
   return (
-    <div className="relative h-[440px]" style={{ perspective: "1200px" }}>
+    <div className="relative h-[485px]" style={{ perspective: "1200px" }}>
       {cards.map((c) => {
         const a = alumni[c.index];
         return (
@@ -38,8 +37,8 @@ export default function AlumniCard() {
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-wine to-gold z-20"></div>
 
             {/* photo */}
-            <div className="relative h-48 bg-wine">
-              <img src={a.photo} alt={a.name} className="absolute inset-0 w-full h-full object-cover object-top" />
+            <div className="relative h-55 bg-wine">
+              <Image src={a.photo} alt={a.name} fill className="object-cover object-top" sizes="400px" />
               <div className="absolute inset-0 bg-gradient-to-t from-wine/55 via-transparent to-transparent z-10"></div>
               <span className="absolute bottom-4 left-4 bg-white/95 text-wine text-[11px] font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow z-20">
                 <span className="text-gold">✦</span> Accredited Alumni
@@ -48,7 +47,7 @@ export default function AlumniCard() {
 
             {/* body */}
             <div className="p-5 lg:p-6">
-              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] break-words">
+              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] break-words line-clamp-4">
                 "{a.quote}"
               </p>
 
@@ -64,7 +63,7 @@ export default function AlumniCard() {
 
               <div className="mt-3">
                 <span className="inline-block bg-wine-light text-wine text-[11px] font-semibold px-2.5 py-1 rounded">
-                  {a.program}
+                  {a.programLabel || a.program}
                 </span>
               </div>
             </div>

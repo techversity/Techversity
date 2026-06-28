@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
+import useInView from "@/hooks/useInView";
 
 const steps = [
   {
@@ -58,15 +59,8 @@ function useStepReveal(count) {
 }
 
 export default function HowItWorks() {
-  const headerRef = useRef(null);
-  const [hVisible, setHVisible] = useState(false);
+  const [headerRef, hVisible] = useInView({ threshold: 0.2 });
   const { refs, shown } = useStepReveal(steps.length);
-
-  useEffect(() => {
-    const o = new IntersectionObserver(([e]) => { if (e.isIntersecting) setHVisible(true); }, { threshold: 0.2 });
-    if (headerRef.current) o.observe(headerRef.current);
-    return () => o.disconnect();
-  }, []);
 
   // how far the gold spine should fill = highest shown index
   const maxShown = shown.size ? Math.max(...shown) : -1;

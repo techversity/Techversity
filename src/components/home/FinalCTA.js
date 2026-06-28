@@ -2,19 +2,8 @@
 
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
+import useInView from "@/hooks/useInView";
 
-function useInView(ref) {
-  const [v, setV] = useState(false);
-  useEffect(() => {
-    const o = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setV(true); },
-      { threshold: 0.08 }
-    );
-    if (ref.current) o.observe(ref.current);
-    return () => o.disconnect();
-  }, [ref]);
-  return v;
-}
 
 const API_URL = "https://system-email-generator.onrender.com";
 
@@ -205,8 +194,7 @@ function Option({ label, selected, onClick }) {
 }
 
 export default function FinalCTA() {
-  const ref     = useRef(null);
-  const visible = useInView(ref);
+  const [ref, visible] = useInView({ threshold: 0.08 });
 
   const [step,    setStep]    = useState(0);
   const [dir,     setDir]     = useState(1);
@@ -365,7 +353,7 @@ export default function FinalCTA() {
             <div className="flex items-center gap-3">
               <span className="w-8 h-px bg-gold/50" />
               <span className="font-mono text-[9px] uppercase tracking-[2px] text-white/50">
-                Dr. Rajesh Sharma · DBA, ESDST
+                Dr. James Whitmore · DBA, ESDST
               </span>
             </div>
           </div>
@@ -414,11 +402,11 @@ export default function FinalCTA() {
                 <div style={slide} className="flex flex-col gap-6">
                   <LineField
                     label="Your Name" value={d.name} onChange={v => upd("name", v)}
-                    placeholder="e.g. Rajesh Sharma" shake={shake.includes("name")}
+                    placeholder="e.g. James Whitmore" shake={shake.includes("name")}
                     error={errors.name} showError={firstErr === "name"}
                     onClearError={() => clearErr("name")}
                   />
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <LineField
                       label="Email Address" value={d.email} onChange={v => upd("email", v)}
                       placeholder="you@company.com" type="email" shake={shake.includes("email")}
@@ -432,7 +420,7 @@ export default function FinalCTA() {
                       onClearError={() => clearErr("phone")}
                     />
                   </div>
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <LineField
                       label="Based In" value={d.country} onChange={v => upd("country", v)}
                       placeholder="India, UAE, UK…" shake={shake.includes("country")}

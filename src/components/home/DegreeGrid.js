@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useEffect, useState, useCallback } from "react";
+import useInView from "@/hooks/useInView";
+import { pathways } from "@/lib/degree-pathways";
 
 const BookIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -33,80 +35,16 @@ const CertIcon = () => (
   </svg>
 );
 
-const cards = [
-  {
-    num: "01", level: "Distinction",
-    img: "https://images.unsplash.com/photo-1747836130078-d62d15c79c30?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Doctoral Programs",
-    desc: "A PhD, DBA, or Honorary Doctorate for professionals whose work has already earned the credential. The highest academic title — internationally accredited.",
-    detail: "For senior leaders, researchers, and accomplished executives with 10+ years of professional achievement.",
-    tags: ["PhD", "DBA", "Honorary Doctorate"],
-    href: "/doctorate",
-    Icon: ScrollIcon,
-    prime: true,
-  },
-  {
-    num: "02", level: "Skill Up",
-    img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=75",
-    title: "Certifications",
-    desc: "Industry-aligned certification programs in Data Science, Agentic AI, Cybersecurity and more. Career-ready skills in weeks, globally recognised.",
-    detail: "For professionals seeking rapid upskilling with industry-recognised credentials — no career break needed.",
-    tags: ["6–12 Weeks", "Online", "Industry-Recognised"],
-    href: "/certifications",
-    Icon: CertIcon,
-    prime: false,
-  },
-  {
-    num: "03", level: "Advancement",
-    img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=75",
-    title: "Master's & MBA",
-    desc: "Accelerate your next chapter with an internationally accredited Master's degree or Executive MBA — zero career interruption, 100% online.",
-    detail: "Designed for mid-career professionals targeting leadership roles, salary growth, or a pivot into a new sector.",
-    tags: ["12–18 Months", "Online", "Postgraduate"],
-    href: "/programs/masters",
-    Icon: BriefcaseIcon,
-    prime: false,
-  },
-  {
-    num: "04", level: "Leadership",
-    img: "https://plus.unsplash.com/premium_photo-1714265044817-d3f4d618447f?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Executive Education",
-    desc: "Short, high-impact programs designed for senior leaders who cannot pause. Built for the 60-hour week, not the 18-hour campus.",
-    detail: "Rapid upskilling across strategy, leadership, AI, and global business — recognised by employers worldwide.",
-    tags: ["8–12 Weeks", "Online", "Executive"],
-    href: "/programs/executive-education",
-    Icon: ZapIcon,
-    prime: false,
-  },
-  {
-    num: "05", level: "Foundation",
-    img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=75",
-    title: "Bachelor's Programs",
-    desc: "Begin your academic record with globally recognised undergraduate degrees — fully online, internationally accredited, and accessible from anywhere in the world.",
-    detail: "Ideal for early-career professionals or those formalising existing expertise into an accredited credential.",
-    tags: ["3–4 Years", "Online", "Undergraduate"],
-    href: "/programs/bachelors",
-    Icon: BookIcon,
-    prime: false,
-  },
-];
-
 export default function DegreeGrid() {
+  // map iconKey (from lib) → local JSX icon component
+  const iconMap = { book: BookIcon, briefcase: BriefcaseIcon, scroll: ScrollIcon, zap: ZapIcon, cert: CertIcon };
+  const cards = pathways.map(p => ({ ...p, Icon: iconMap[p.iconKey] }));
+
   const [activeIdx, setActiveIdx]       = useState(0);
-  const [sectionVisible, setSectionVisible] = useState(false);
+  const [sectionRef, sectionVisible] = useInView({ threshold: 0.05 });
   const cardRefs  = useRef([]);
-  const sectionRef = useRef(null);
   const rafRef    = useRef(null);
 
-  /* ── section entrance ── */
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setSectionVisible(true); },
-      { threshold: 0.05 }
-    );
-    if (sectionRef.current) obs.observe(sectionRef.current);
-    return () => obs.disconnect();
-  }, []);
 
   /* ── scroll → find card whose center is closest to viewport center ──
      This fires on every scroll tick so NO card is ever skipped,

@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/layout/SmoothScroll";
+import StickyMobileBar from "@/components/layout/StickyMobileBar";
 
 export const metadata = {
   title: "Techversity.ai — Your Global Path to Doctoral & Executive Credentials",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <StickyMobileBar />
         </SmoothScroll>
       </body>
     </html>

@@ -22,7 +22,7 @@ export default function Home() {
       <DegreeGrid /> 
       <CertificationsCarousel />
       <HowItWorks />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <BlogPreview />
       <FinalCTA />
       

@@ -42,13 +42,13 @@ export default function Footer() {
 
   return (
     <footer className="bg-ink pt-16 pb-6">
-      <div className="max-w-[1260px] mx-auto px-8">
+      <div className="max-w-[1260px] mx-auto px-5 lg:px-8">
 
         {/* TOP */}
-        <div className="grid grid-cols-5 gap-8 pb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 pb-12">
 
           {/* logo + tagline */}
-          <div>
+          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4 group">
               <img
                 src="/images/logo.avif"
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="border-t border-white/8 pt-6 flex items-center justify-between text-[12px] text-white/30">
+        <div className="border-t border-white/8 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[12px] text-white/30">
           <span>© {new Date().getFullYear()} Techverso Pvt Ltd · 1138 East Rosecrans Ave, Los Angeles, CA 90059, USA</span>
           <span className="font-mono tracking-wider">EST. 2019</span>
         </div>

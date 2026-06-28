@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import useInView from "@/hooks/useInView";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 
@@ -19,17 +20,7 @@ const universities = [
 
 export default function LogoStrip() {
   const [active, setActive] = useState(0);
-  const [visible, setVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setVisible(true); },
-      { threshold: 0.2 }
-    );
-    if (ref.current) obs.observe(ref.current);
-    return () => obs.disconnect();
-  }, []);
+  const [ref, visible] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     const t = setInterval(() => setActive(p => (p + 1) % universities.length), 2400);
