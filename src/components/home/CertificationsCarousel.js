@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useEffect, useState, useCallback } from "react";
 import useInView from "@/hooks/useInView";
 import { certifications as certs } from "@/lib/certifications";
@@ -82,50 +83,72 @@ export default function CertificationsCarousel() {
         <div style={{ opacity: inView ? 1 : 0, transition: "opacity 0.6s ease 0.2s" }}>
           <div className="rounded-2xl border overflow-hidden" style={{ borderColor: `${c.accent}20` }}>
             <div key={animKey} style={{ animation: "panelIn 0.38s cubic-bezier(0.4,0,0.2,1) forwards" }}>
-              <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr]">
+              <div className="grid grid-cols-1 lg:grid-cols-[460px_1fr]">
 
                 {/* LEFT */}
                 <div className="relative flex flex-col justify-between p-8 lg:p-10 overflow-hidden"
                   style={{ background: c.accentBg, minHeight: "380px" }}>
 
-                  {/* ghost abbr */}
-                  <span className="absolute font-display font-bold select-none pointer-events-none"
-                    style={{ fontSize: "200px", lineHeight: 1, color: c.accentMid, opacity: 0.5, bottom: "-30px", right: "-20px" }}>
-                    {c.abbr}
-                  </span>
+                  {/* bg image */}
+                  <Image
+                    src={c.image}
+                    alt={c.title}
+                    fill
+                    sizes="460px"
+                    className="object-cover object-center"
+                  />
 
-                  {/* top: badge + tag */}
-                  <div className="relative z-10">
-                    <div className="flex items-start justify-between mb-6">
-                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center font-display font-bold text-[26px] shadow-md"
+                  {/* neutral dark gradient — lets the photo's true colours show, keeps text readable */}
+                  <div className="absolute inset-0"
+                    style={{
+                      background: "linear-gradient(155deg, rgba(12,22,38,0.55) 0%, rgba(12,22,38,0.35) 45%, rgba(12,22,38,0.65) 100%)",
+                    }} />
+
+                  {/* slim accent strip on the left edge — subtle brand cue */}
+                  <div className="absolute left-0 top-0 bottom-0 w-1"
+                    style={{ background: c.accent }} />
+
+                  {/* dark anchor at bottom for stat-card contrast */}
+                  <div className="absolute inset-x-0 bottom-0 h-1/2"
+                    style={{ background: "linear-gradient(to top, rgba(0,0,0,0.40), transparent)" }} />
+
+                  {/* dark anchor at top for badge/title contrast */}
+                  <div className="absolute inset-x-0 top-0 h-2/5"
+                    style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.25), transparent)" }} />
+
+                  {/* top: only the tag pill (image already shows the title) */}
+                  <div className="relative z-10 flex justify-end">
+                    {c.tag && (
+                      <span className="font-mono text-[8px] uppercase tracking-wider px-2.5 py-1 rounded-full font-semibold shadow-sm"
                         style={{ background: c.accent, color: "#fff" }}>
-                        {c.abbr}
-                      </div>
-                      {c.tag && (
-                        <span className="font-mono text-[8px] uppercase tracking-wider px-2.5 py-1 rounded-full font-semibold"
-                          style={{ background: c.accent, color: "#fff" }}>
-                          {c.tag}
-                        </span>
-                      )}
-                    </div>
-
-                    <p className="font-mono text-[9px] uppercase tracking-[2px] mb-1" style={{ color: `${c.accent}99` }}>{c.field}</p>
-                    <h3 className="font-display font-semibold text-[30px] leading-tight mb-6" style={{ color: c.accent }}>
-                      {c.title}
-                    </h3>
+                        {c.tag}
+                      </span>
+                    )}
                   </div>
 
-                  {/* stats row */}
-                  <div className="relative z-10 grid grid-cols-3 gap-3">
-                    {c.stats.map((s) => (
-                      <div key={s.label} className="rounded-xl p-3 text-center"
-                        style={{ background: "rgba(255,255,255,0.65)", backdropFilter: "blur(8px)" }}>
-                        <div className="font-display font-bold text-[22px] leading-none mb-0.5" style={{ color: c.accent }}>
-                          {s.val}<span className="text-[14px]">{s.unit}</span>
+                  {/* bottom: small title + stats */}
+                  <div className="relative z-10">
+                    <p className="font-mono text-[9px] uppercase tracking-[2px] mb-1 font-semibold drop-shadow"
+                      style={{ color: c.accent, filter: "brightness(1.4)" }}>
+                      {c.field}
+                    </p>
+                    <h3 className="font-display font-semibold text-[22px] leading-tight mb-5 drop-shadow-md"
+                      style={{ color: c.accent, filter: "brightness(1.5)" }}>
+                      {c.title}
+                    </h3>
+
+                    {/* stats row */}
+                    <div className="grid grid-cols-3 gap-3">
+                      {c.stats.map((s) => (
+                        <div key={s.label} className="rounded-xl p-3 text-center"
+                          style={{ background: "rgba(255,255,255,0.92)", backdropFilter: "blur(8px)" }}>
+                          <div className="font-display font-bold text-[22px] leading-none mb-0.5" style={{ color: c.accent }}>
+                            {s.val}<span className="text-[14px]">{s.unit}</span>
+                          </div>
+                          <div className="font-mono text-[8px] uppercase tracking-wider text-slate">{s.label}</div>
                         </div>
-                        <div className="font-mono text-[8px] uppercase tracking-wider text-slate">{s.label}</div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
 

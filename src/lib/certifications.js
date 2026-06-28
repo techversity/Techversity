@@ -1,4 +1,3 @@
-
 export const certifications = [
   {
     abbr: "DS",
@@ -13,6 +12,7 @@ export const certifications = [
     tag: "Most Popular",
     href: "/certifications/data-science",
     accent: "#2563EB", accentBg: "#EFF6FF", accentMid: "#BFDBFE",
+    image: "https://i.pinimg.com/736x/51/f2/33/51f233f4e9ceab328fda4882eb6457ad.jpg",
   },
   {
     abbr: "AI",
@@ -27,6 +27,7 @@ export const certifications = [
     tag: "Trending",
     href: "/certifications/agentic-ai",
     accent: "#7C3AED", accentBg: "#F5F3FF", accentMid: "#DDD6FE",
+    image: "https://i.pinimg.com/736x/11/0f/e1/110fe1fd6694262d005e4bc7dd9b3537.jpg",
   },
   {
     abbr: "CS",
@@ -41,6 +42,7 @@ export const certifications = [
     tag: null,
     href: "/certifications/cybersecurity",
     accent: "#DC2626", accentBg: "#FEF2F2", accentMid: "#FECACA",
+    image: "https://i.pinimg.com/1200x/0a/74/ba/0a74bae45bd5a441d8259bd75b8b4abe.jpg",
   },
   {
     abbr: "DA",
@@ -55,6 +57,7 @@ export const certifications = [
     tag: null,
     href: "/certifications/data-analytics",
     accent: "#059669", accentBg: "#ECFDF5", accentMid: "#A7F3D0",
+    image: "https://i.pinimg.com/1200x/2b/3b/da/2b3bdac495cd305baf133f2965f1025a.jpg",
   },
   {
     abbr: "CC",
@@ -69,6 +72,7 @@ export const certifications = [
     tag: null,
     href: "/certifications/cloud-computing",
     accent: "#0891B2", accentBg: "#ECFEFF", accentMid: "#A5F3FC",
+    image: "https://i.pinimg.com/1200x/37/3b/31/373b31e16a068ad28f10514ae10c33ce.jpg",
   },
   {
     abbr: "PM",
@@ -83,5 +87,6 @@ export const certifications = [
     tag: null,
     href: "/certifications/project-management",
     accent: "#9A7320", accentBg: "#FEFCE8", accentMid: "#FDE68A",
+    image: "https://i.pinimg.com/736x/84/48/49/8448495442c3645538dd52a55853930a.jpg",
   },
 ];
