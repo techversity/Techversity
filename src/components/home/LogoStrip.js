@@ -8,25 +8,25 @@ import Reveal from "@/components/ui/Reveal";
 
 const universities = [
   { name: "ESDST University", country: "France", code: "fr", programs: ["PhD", "DBA"],
-    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" },
+    image: "https://i.pinimg.com/736x/cf/fe/1f/cffe1fe8cc6044afb78bf8280589855c.jpg" },
   { name: "Kennedy University", country: "United States", code: "us", programs: ["PhD"],
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80" },
+    image: "https://tse2.mm.bing.net/th/id/OIP.QEnXc9LMgL4mncJ0vXIoMgHaE3?rs=1&pid=ImgDetMain&o=7&rm=3" },
   { name: "EU Global Institute", country: "Malta", code: "mt", programs: ["DBA", "MBA"],
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80" },
+    image: "https://d1aeya7jd2fyco.cloudfront.net/banners/EU_Global_banner.webp" },
   { name: "SBS Swiss Business School", country: "Switzerland", code: "ch", programs: ["MBA", "Exec"],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+    image: "https://i.pinimg.com/1200x/db/92/bb/db92bb795d57e2b4cfa7e436805c2aed.jpg" },
   { name: "EPSRU", country: "Russia", code: "ru", programs: ["PhD", "DBA"],
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" },
+    image: "https://static.fibre2fashion.com/newsresource/images/278/globus_290393.jpg" },
   { name: "Globus University", country: "Russia", code: "ru", programs: ["PhD"],
-    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" },
+    image: "https://i.pinimg.com/1200x/0e/af/8e/0eaf8e661fbdeef6aaa939f1ae12a05b.jpg" },
   { name: "Euro-Asian University", country: "Kazakhstan", code: "kz", programs: ["DBA"],
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" },
   { name: "Prowess University", country: "United Kingdom", code: "gb", programs: ["PhD", "MBA"],
     image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80" },
   { name: "Int'l American University", country: "United States", code: "us", programs: ["DBA"],
-    image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80" },
+    image: "https://unischolars.com/_next/image?url=https:%2F%2Funischolars.gumlet.io%2Fuploads%2Funiversities%2F2025-03-29.webp%3Fw%3D1280%26q%3D75&w=3840&q=75" },
   { name: "Florida Coastal", country: "United States", code: "us", programs: ["Exec Ed"],
-    image: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&q=80" },
+    image: "https://d13b2ieg84qqce.cloudfront.net/cd8937ca6bf73b025c02cbc1287855a2d1220b15.jpg" },
 ];
 
 const flagUrl = (code) => `https://flagcdn.com/w80/${code}.png`;
@@ -52,7 +52,7 @@ export default function LogoStrip() {
                 Global Network
               </p>
               <h2 className="font-display font-semibold text-2xl lg:text-[34px] text-wine leading-tight">
-                Trusted by <span className="italic text-gold">10 accredited</span><br className="hidden lg:block" />
+                Trusted by <span className="italic text-gold">10+ accredited</span><br className="hidden lg:block" />
                 universities worldwide.
               </h2>
             </div>

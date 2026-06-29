@@ -2,6 +2,12 @@ export const programs = [
   {
     id: 1, slug: "dba-esdst", initials: "ES",
     badgeBg: "#D9A441", badgeText: "#0B2545",
+    logo: "https://pbs.twimg.com/profile_images/1593833120440238080/jo7eRmrs_400x400.jpg",
+    partnerLogos: [
+      { logo: "https://pbs.twimg.com/profile_images/1593833120440238080/jo7eRmrs_400x400.jpg", name: "ESDST", country: "🇫🇷 France" },
+      { logo: "https://www.qahe.org.uk/wp-content/uploads/2023/11/Kennedy-University-520-x-330.jpg", name: "Kennedy", country: "🇺🇸 USA" },
+      { logo: "https://euroasianuniversity.ee/wp-content/uploads/2025/04/eau_logo-240x240-1-2.png", name: "Euro-Asian", country: "🇰🇿 Kazakhstan" },
+    ],
     title: "Doctor of Business Administration",
     university: "ESDST University", country: "France", flag: "🇫🇷",
     desc: "Applied doctoral research for senior executives — no career break required.",
@@ -13,6 +19,11 @@ export const programs = [
   {
     id: 2, slug: "phd-kennedy", initials: "KU",
     badgeBg: "#0B2545", badgeText: "#ffffff",
+    logo: "https://www.qahe.org.uk/wp-content/uploads/2023/11/Kennedy-University-520-x-330.jpg",
+    partnerLogos: [
+      { logo: "https://www.qahe.org.uk/wp-content/uploads/2023/11/Kennedy-University-520-x-330.jpg", name: "Kennedy", country: "🇺🇸 USA" },
+      { logo: "https://pbs.twimg.com/profile_images/1593833120440238080/jo7eRmrs_400x400.jpg", name: "ESDST", country: "🇫🇷 France" },
+    ],
     title: "PhD in Business Management",
     university: "Kennedy University", country: "USA", flag: "🇺🇸",
     desc: "Research-intensive doctoral pathway with dissertation support and faculty mentorship.",
@@ -24,6 +35,13 @@ export const programs = [
   {
     id: 3, slug: "honorary-doctorate", initials: "HD",
     badgeBg: "#D9A441", badgeText: "#0B2545",
+    logo: "https://www.qahe.org.uk/wp-content/uploads/2023/11/Kennedy-University-520-x-330.jpg",
+    partnerLogos: [
+      { logo: "https://www.qahe.org.uk/wp-content/uploads/2023/11/Kennedy-University-520-x-330.jpg", name: "Kennedy", country: "🇺🇸 USA" },
+      { logo: "https://pbs.twimg.com/profile_images/1593833120440238080/jo7eRmrs_400x400.jpg", name: "ESDST", country: "🇫🇷 France" },
+      { logo: "https://euroasianuniversity.ee/wp-content/uploads/2025/04/eau_logo-240x240-1-2.png", name: "Euro-Asian", country: "🇰🇿 Kazakhstan" },
+      { logo: "https://i.pinimg.com/736x/eb/44/78/eb4478132393460e5ca320ff3b05f983.jpg", name: "SBS Swiss", country: "🇨🇭 Switzerland" },
+    ],
     title: "Honorary Doctorate",
     university: "Multiple Partner Universities", country: "Global", flag: "🌍",
     desc: "Formal recognition of professional achievement — issued by accredited partner universities.",
@@ -35,6 +53,12 @@ export const programs = [
   {
     id: 4, slug: "mba-global", initials: "MB",
     badgeBg: "#21385C", badgeText: "#ffffff",
+    logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    partnerLogos: [
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "🇲🇹 Malta" },
+      { logo: "https://i.pinimg.com/736x/eb/44/78/eb4478132393460e5ca320ff3b05f983.jpg", name: "SBS Swiss", country: "🇨🇭 Switzerland" },
+      { logo: "https://euroasianuniversity.ee/wp-content/uploads/2025/04/eau_logo-240x240-1-2.png", name: "Euro-Asian", country: "🇰🇿 Kazakhstan" },
+    ],
     title: "MBA — Global Executive Track",
     university: "EU Global Institute", country: "Malta", flag: "🇲🇹",
     desc: "Internationally recognized MBA for mid-career professionals targeting leadership roles.",
@@ -46,6 +70,11 @@ export const programs = [
   {
     id: 5, slug: "msc-data-science", initials: "DS",
     badgeBg: "#16263D", badgeText: "#D9A441",
+    logo: "https://i.pinimg.com/736x/eb/44/78/eb4478132393460e5ca320ff3b05f983.jpg",
+    partnerLogos: [
+      { logo: "https://i.pinimg.com/736x/eb/44/78/eb4478132393460e5ca320ff3b05f983.jpg", name: "SBS Swiss", country: "🇨🇭 Switzerland" },
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "🇲🇹 Malta" },
+    ],
     title: "MSc in Data Science",
     university: "SBS Swiss Business School", country: "Switzerland", flag: "🇨🇭",
     desc: "Graduate-level data science degree covering ML, AI, and analytics with industry projects.",
@@ -57,6 +86,12 @@ export const programs = [
   {
     id: 6, slug: "executive-mba", initials: "EM",
     badgeBg: "#D9A441", badgeText: "#0B2545",
+    logo: "https://euroasianuniversity.ee/wp-content/uploads/2025/04/eau_logo-240x240-1-2.png",
+    partnerLogos: [
+      { logo: "https://euroasianuniversity.ee/wp-content/uploads/2025/04/eau_logo-240x240-1-2.png", name: "Euro-Asian", country: "🇰🇿 Kazakhstan" },
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "🇲🇹 Malta" },
+      { logo: "https://pbs.twimg.com/profile_images/1593833120440238080/jo7eRmrs_400x400.jpg", name: "ESDST", country: "🇫🇷 France" },
+    ],
     title: "Executive MBA (Fast-Track)",
     university: "Euro-Asian University", country: "Kazakhstan", flag: "🇰🇿",
     desc: "Designed for C-suite and VP-level professionals seeking global MBA credentials fast.",
@@ -68,8 +103,12 @@ export const programs = [
   {
     id: 7, slug: "agentic-ai", initials: "AI",
     badgeBg: "#0B2545", badgeText: "#D9A441",
+    logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    partnerLogos: [
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "MT MALTA" },
+    ],
     title: "Agentic AI & Automation Mastery",
-    university: "Techversity.ai", country: "Global", flag: "🌐",
+    university: "EU Global", country: "Global", flag: "🌐",
     desc: "Build AI agents, automate workflows, and deploy real projects in a 4-month applied program.",
     forWho: "Professionals ready to move beyond prompts",
     outcome: "AI practitioner · Automation builder · Future-ready",
@@ -79,8 +118,12 @@ export const programs = [
   {
     id: 8, slug: "data-science-cert", initials: "DS",
     badgeBg: "#21385C", badgeText: "#ffffff",
+    logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    partnerLogos: [
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "MT MALTA" },
+    ],
     title: "Data Science Certification",
-    university: "Techversity.ai", country: "Global", flag: "🌐",
+    university: "EU Global", country: "Global", flag: "🌐",
     desc: "Industry-recognized certification covering Python, ML, SQL, and Power BI.",
     forWho: "Analysts & engineers entering data science",
     outcome: "Certified data scientist · Job-ready skills",
@@ -90,8 +133,12 @@ export const programs = [
   {
     id: 9, slug: "cybersecurity", initials: "CS",
     badgeBg: "#D9A441", badgeText: "#0B2545",
+    logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    partnerLogos: [
+      { logo: "https://th.bing.com/th/id/OIP.h0LszIa1aPlUxM0kzvkZewHaCi?w=289&h=120&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", name: "EU Global", country: "MT MALTA" },
+    ],
     title: "Cybersecurity Mastery",
-    university: "Techversity.ai", country: "Global", flag: "🌐",
+    university: "EU Global", country: "Global", flag: "🌐",
     desc: "Hands-on training covering ethical hacking, cloud security, and SOC operations.",
     forWho: "IT professionals targeting security roles",
     outcome: "Security certified · SOC-ready · Career switch",

@@ -194,7 +194,7 @@ export default function CertificationsCarousel() {
 
                   {/* CTA row */}
                   <div className="flex items-center gap-4 pt-6 border-t border-line">
-                    <Link href={c.href}
+                    <Link href={`/certifications/enroll/${c.href.split("/").filter(Boolean).pop()}`}
                       className="inline-flex items-center gap-2.5 font-semibold text-[13px] px-6 py-3 rounded-xl text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 shadow-sm"
                       style={{ background: c.accent }}>
                       Enroll Now

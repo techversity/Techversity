@@ -144,7 +144,7 @@ export default function Header() {
           {/* right side */}
           <div className="flex items-center gap-2.5">
             <div className="hidden lg:block">
-              <Button href="/apply/eligibility-check" variant="primary">
+              <Button href="/contact-us/" variant="primary">
                 Begin Your Application →
               </Button>
             </div>

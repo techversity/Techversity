@@ -1,5 +1,6 @@
 export const alumni = [
   {
+    // Hero circular showcase uses `photo` (unchanged)
     name: "Dr. James Whitmore",
     quote: "The credential changed how boardrooms receive me. I walked in as Dr. Whitmore — the room felt it immediately. Fifteen years of work, finally recognised with the title it deserved.",
     credential: "Doctor of Business Administration",
@@ -42,6 +43,52 @@ export const alumni = [
     university: "American Management University",
     country: "🇳🇬 Nigeria",
     photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=450&q=80",
+  },
+];
+
+// ── Testimonials section uses THIS (real recipients, founder-provided photos) ──
+// `testimonialPhoto` is separate from the Hero showcase `photo` above.
+export const testimonials = [
+  
+  {
+    name: "Jan Vitko",
+    quote: "I had spent decades in public service and security governance. Techversity did not ask me to prove myself again — they reviewed the record itself, and recognised what was already there.",
+    credential: "Honorary PhD · Public Leadership & Security Governance",
+    program: "Honorary",
+    role: "Public Leadership & Security Governance",
+    university: "Kingsley University",
+    country: "🇸🇰 Slovakia",
+    testimonialPhoto: "/images/testimonial-2.jpeg",
+  },
+  {
+    name: "Thomas Daniel Fuller Jr.",
+    quote: "To have a lifetime in ministry recognised with a doctoral title is no small thing. The process was handled with a dignity that matched the work it honoured — careful, formal, and entirely transparent.",
+    credential: "Honorary PhD · Divinity & Pastoral Leadership",
+    program: "Honorary",
+    role: "Pastoral Leader",
+    university: "Kingsley University",
+    country: "🇺🇸 United States",
+    testimonialPhoto: "/images/testimonial-1.jpeg",
+  },
+  {
+    name: "Pierre A. Sawaya",
+    quote: "The PhD gave structure to two decades of work in international business and financial technology. Every step was guided personally — I never once felt like a number in a system.",
+    credential: "PhD · International Business & Financial Technology",
+    program: "PhD",
+    role: "International Business & FinTech",
+    university: "Kennedy University",
+    country: "🇺🇸 United States",
+    testimonialPhoto: "/images/testimonial-3.jpeg",
+  },
+  {
+    name: "See Yan Wong",
+    quote: "Three recognitions, each earned across a life in education — an Honorary Professorship, an Honorary Doctorate, and a PhD. Techversity shepherded all three with the same unhurried care.",
+    credential: "Honorary Professor · Honorary Doctorate · PhD in Education",
+    program: "PhD",
+    role: "Educator",
+    university: "Kingsley University",
+    country: "🇭🇰 Hong Kong",
+    testimonialPhoto: "/images/testimonial-4.jpeg",
   },
 ];
 

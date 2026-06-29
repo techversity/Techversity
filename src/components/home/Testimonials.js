@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import useInView from "@/hooks/useInView";
 import Image from "next/image";
-import { alumni as testimonials, programColors } from "@/lib/alumni";
+import { testimonials, programColors } from "@/lib/alumni";
 
 export default function Testimonials() {
   const [sectionRef, inView] = useInView({ threshold: 0.08 });
@@ -93,7 +93,7 @@ export default function Testimonials() {
                       zIndex: active === i ? 2 : 1,
                     }}
                   >
-                    <Image src={person.photo} alt={person.name} fill className="object-cover object-top" sizes="340px" />
+                    <Image src={person.testimonialPhoto} alt={person.name} fill className="object-cover object-top" sizes="340px" />
                   </div>
                 ))}
                 {/* gradient overlay */}
@@ -148,7 +148,7 @@ export default function Testimonials() {
                   <div className="flex items-center gap-4">
                     {/* mini avatar */}
                     <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-gold/30 relative">
-                      <Image src={t.photo} alt={t.name} fill className="object-cover object-top" sizes="44px" />
+                      <Image src={t.testimonialPhoto} alt={t.name} fill className="object-cover object-top" sizes="44px" />
                     </div>
                     <div>
                       <div className="font-display font-semibold text-[16px] text-wine">{t.name}</div>
