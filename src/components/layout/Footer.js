@@ -46,7 +46,7 @@ export default function Footer() {
     {
       heading: "Programs",
       links: [
-        { label: "Doctorate (PhD/DBA)", href: "/programs" },
+        { label: "Doctorate (PhD/DBA)", href: "/doctorate" },
         { label: "Master's / MBA",      href: "/programs/masters" },
         { label: "Bachelor's",          href: "/programs/bachelors" },
       ],

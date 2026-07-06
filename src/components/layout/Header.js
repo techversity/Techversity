@@ -107,7 +107,7 @@ export default function Header() {
   ];
 
   const programItems = [
-    { label: "Doctorate Programs", desc: "PhD, DBA & Honorary — for senior professionals.", href: "/programs", icon: DoctorateIcon },
+    { label: "Doctorate Programs", desc: "PhD, DBA & Honorary — for senior professionals.", href: "/doctorate", icon: DoctorateIcon },
     { label: "Master's & MBA",     desc: "Globally recognised master's, 100% online.",       href: "/programs/masters", icon: MastersIcon },
     { label: "Bachelor's Programs", desc: "Undergraduate degrees, 100% online.",              href: "/programs/bachelors", icon: ExecEdIcon },
     { label: "Certifications",     desc: "Career-ready skills in weeks, with support.",       href: "/certifications", icon: CertIcon },
