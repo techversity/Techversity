@@ -220,7 +220,7 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
 
 // Homepage only ever shows a short preview — not the full library.
 // Change this number if you want 3 instead of 4 (or vice versa).
-const PREVIEW_COUNT = 4;
+const PREVIEW_COUNT = 3;
 
 export default function BlogPreview() {
   const [sectionRef, visible] = useInView({ threshold: 0.08 });
