@@ -73,7 +73,7 @@ const ssmDetail = {
     "SSM's DBA, MBA, EMBA, and BBA sit behind genuinely strong, verifiable accreditation — DEAC's recognition is U.S. Department of Education-recognised, not merely self-described. Honorary Doctorate and Professorial Appointment recognition are separate from this catalogue and run through Techversity's specific advisory partnership with SSM — your advisor confirms exactly what applies to your pathway before you apply.",
 
   // TODO — SSM doesn't yet have its own dedicated DBA program page
-  programSlugs: ["dba-esdst", "honorary-doctorate", "honorary-professorship", "bachelors"],
+  programSlugs: ["dba", "honorary-doctorate", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,
 

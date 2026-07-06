@@ -8,7 +8,7 @@ import { posts } from "@/lib/blog";
 
 
 /* ── Featured card ── */
-function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
+function FeaturedPost({ post, visible, imgKey, active, onDotClick, dotCount }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick }) {
 
         {/* dot nav */}
         <div className="absolute bottom-4 right-4 z-20 flex gap-1.5">
-          {posts.map((_, i) => (
+          {Array.from({ length: dotCount }).map((_, i) => (
             <button
               key={i}
               onClick={(e) => { e.preventDefault(); onDotClick(i); }}
@@ -218,30 +218,36 @@ function CompactPost({ post, visible, delay, isActive, onClick }) {
   );
 }
 
+// Homepage only ever shows a short preview — not the full library.
+// Change this number if you want 3 instead of 4 (or vice versa).
+const PREVIEW_COUNT = 4;
+
 export default function BlogPreview() {
   const [sectionRef, visible] = useInView({ threshold: 0.08 });
   const [active,   setActive]  = useState(0);
   const [imgKey,   setImgKey]  = useState(0);
   const timerRef   = useRef(null);
 
+  const previewPosts = posts.slice(0, PREVIEW_COUNT);
+
   const resetGo = useCallback((i) => {
     clearInterval(timerRef.current);
     setActive(i);
     setImgKey(k => k + 1);
     timerRef.current = setInterval(() => {
-      setActive(a => (a + 1) % posts.length);
+      setActive(a => (a + 1) % previewPosts.length);
       setImgKey(k => k + 1);
     }, 4500);
-  }, []);
+  }, [previewPosts.length]);
 
   useEffect(() => {
     if (!visible) return;
     timerRef.current = setInterval(() => {
-      setActive(a => (a + 1) % posts.length);
+      setActive(a => (a + 1) % previewPosts.length);
       setImgKey(k => k + 1);
     }, 4500);
     return () => clearInterval(timerRef.current);
-  }, [visible]);
+  }, [visible, previewPosts.length]);
 
   return (
     <section ref={sectionRef} className="bg-ivory-2 py-20 border-b border-line overflow-hidden">
@@ -278,15 +284,16 @@ export default function BlogPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-6 items-start">
 
           <FeaturedPost
-            post={posts[active]}
+            post={previewPosts[active]}
             visible={visible}
             imgKey={imgKey}
             active={active}
             onDotClick={resetGo}
+            dotCount={previewPosts.length}
           />
 
           <div className="flex flex-col gap-4">
-            {posts.map((post, i) => (
+            {previewPosts.map((post, i) => (
               <CompactPost
                 key={post.href}
                 post={post}

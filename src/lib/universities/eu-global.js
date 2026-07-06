@@ -71,7 +71,7 @@ const euGlobalDetail = {
 
   // programs genuinely offered by EU Global, matched against existing generic program pages
   // NOTE: EU Global's own DBA does not yet have a dedicated program page — to be built
-  programSlugs: ["dba-esdst", "honorary-doctorate", "masters", "honorary-professorship", "bachelors", "data-science-cert"],
+  programSlugs: ["dba", "honorary-doctorate", "masters", "honorary-professorship", "bachelors", "data-science-cert"],
 
   offersCertifications: true,
 

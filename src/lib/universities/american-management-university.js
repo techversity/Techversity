@@ -64,7 +64,7 @@ const americanManagementDetail = {
     "AMU states this directly, and so do we: AMU is not currently accredited by a U.S. Department of Education-recognised accrediting agency. Degree recognition, credit transfer, and licensure eligibility may vary by institution, employer, or state. Your advisor walks through exactly what this means for your specific goals before any application begins.",
 
   // TODO
-  programSlugs: ["dba-esdst", "phd-kennedy", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
+  programSlugs: ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,
 

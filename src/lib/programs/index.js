@@ -6,8 +6,8 @@ import honoraryProfessorship from "./honorary-professorship";
 // registry of rich program detail pages (added incrementally)
 const programDetails = {
   "honorary-doctorate": honoraryDoctorate,
-  "dba-esdst": dba,
-  "phd-kennedy": phd,
+  "dba": dba,
+  "phd": phd,
   "honorary-professorship": honoraryProfessorship,
 };
 

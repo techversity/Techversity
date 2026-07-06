@@ -2,7 +2,7 @@
 // Structure mirrors Honorary Doctorate; content written for Techversity.ai's DBA pathway.
 
 const dba = {
-  slug: "dba-esdst",
+  slug: "dba",
   programTag: "dba",
   category: "doctorate",
   eyebrow: "Doctor of Business Administration",

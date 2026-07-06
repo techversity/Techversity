@@ -13,7 +13,7 @@ const pathways = [
     duration: "18 Months",
     university: "ESDST, France",
     forWho: "Senior executives, 10+ yrs",
-    href: "/programs/dba-esdst",
+    href: "/programs/dba",
   },
   {
     initials: "PhD",
@@ -22,7 +22,7 @@ const pathways = [
     duration: "24 Months",
     university: "Kennedy, USA",
     forWho: "Academics & researchers",
-    href: "/programs/phd-kennedy",
+    href: "/programs/phd",
   },
   {
     initials: "HD",

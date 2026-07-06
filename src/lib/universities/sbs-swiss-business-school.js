@@ -73,8 +73,7 @@ const sbsDetail = {
   accreditationNote:
     "SBS's accreditation is among the more thoroughly documented we've reviewed — institutional accreditation in Switzerland, plus specialty accreditation for the DBA itself from ACBSP. Your advisor still walks through what each recognition means for your specific country and goals before you apply.",
 
-  // TODO — SBS doesn't yet have its own dedicated DBA program page (existing dba-esdst is ESDST-specific)
-  programSlugs: ["dba-esdst", "bachelors"],
+  programSlugs: ["dba", "bachelors"],
 
   offersCertifications: false,
 

@@ -68,7 +68,7 @@ const euroAsianDetail = {
   accreditationNote:
     "We're direct about this because it matters to your decision: Euro-Asian's accreditation claim on its own site is broad and does not cite a named, government-recognised accrediting body. We recommend independently verifying any claim that matters to your specific goals before you rely on it, and your advisor will help you do exactly that.",
 
-  programSlugs: ["dba-esdst", "phd-kennedy", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
+  programSlugs: ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,
 

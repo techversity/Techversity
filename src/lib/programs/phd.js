@@ -2,7 +2,7 @@
 // Structure mirrors Honorary Doctorate / DBA; content written for Techversity.ai's PhD pathway.
 
 const phd = {
-  slug: "phd-kennedy",
+  slug: "phd",
   programTag: "phd",
   category: "doctorate",
   eyebrow: "Doctor of Philosophy",

@@ -69,7 +69,7 @@ const prowessDetail = {
   accreditationNote:
     "We're direct about this because it matters to your decision: Prowess does not hold accreditation from a government-recognised national or regional accrediting authority. What it documents are a Delaware business registration and a number of private, voluntary accreditations. We recommend independently verifying any claim that matters to your specific goals — for licensure, credit transfer, or employer recognition — before you rely on it, and your advisor will help you do exactly that.",
 
-  programSlugs: ["dba-esdst", "phd-kennedy", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
+  programSlugs: ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,
 
