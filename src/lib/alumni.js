@@ -1,48 +1,52 @@
 export const alumni = [
   {
-    // Hero circular showcase uses `photo` (unchanged)
-    name: "Dr. James Whitmore",
-    quote: "The credential changed how boardrooms receive me. I walked in as Dr. Whitmore — the room felt it immediately. Fifteen years of work, finally recognised with the title it deserved.",
-    credential: "Doctor of Business Administration",
-    program: "DBA",
-    programLabel: "DBA · ESDST Switzerland",
-    role: "CEO, InfraVision India",
-    university: "ESDST, Switzerland",
-    country: "🇮🇳 India",
-    photo: "https://images.unsplash.com/photo-1758691737644-ef8be18256c3?q=80&w=450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    name: "Dr. Levi Bennett",
-    quote: "I was sceptical — every 'online doctorate' felt like a shortcut. Techversity showed me the actual accreditation documents before I paid a single rupee. That transparency closed it for me.",
-    credential: "Honorary Doctorate",
+    name: "Dr. Jan Vitko",
+    quote:
+      "I had spent decades in public service and security governance. Techversity did not ask me to prove myself again — they reviewed the record itself, and recognised what was already there.",
+    credential: "Honorary PhD · Public Leadership & Security Governance",
     program: "Honorary",
     programLabel: "Honorary · Kennedy University",
-    role: "Managing Director, FinEdge Group",
+    role: "Public Leadership & Security Governance",
     university: "Kennedy University",
-    country: "🇦🇪 UAE",
-    photo: "https://plus.unsplash.com/premium_photo-1682430145886-39c8decd85fa?q=80&w=450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    country: "🇸🇰 Slovakia",
+    photo: "/images/HomePage/Testimonials/testimonial-2.avif",
   },
   {
-    name: "Dr. Ahmed Al-Rashid",
-    quote: "My advisor didn't disappear after enrolment. She was there through every document, every delay, every question. I have never experienced that level of support from any institution.",
-    credential: "PhD, Business Administration",
+    name: "Thomas Daniel Fuller Jr.",
+    quote:
+      "To have a lifetime in ministry recognised with a doctoral title is no small thing. The process was handled with a dignity that matched the work it honoured — careful, formal, and entirely transparent.",
+    credential: "Honorary PhD · Divinity & Pastoral Leadership",
+    program: "Honorary",
+    programLabel: "Honorary · Kennedy University",
+    role: "Pastoral Leader",
+    university: "Kennedy University",
+    country: "🇺🇸 United States",
+    photo: "/images/HomePage/Testimonials/testimonial-1.avif",
+  },
+  {
+    name: "Pierre A. Sawaya",
+    quote:
+      "The PhD gave structure to two decades of work in international business and financial technology. Every step was guided personally — I never once felt like a number in a system.",
+    credential: "PhD · International Business & Financial Technology",
     program: "PhD",
-    programLabel: "PhD · EU Global Malta",
-    role: "VP Strategy, Gulf Capital Partners",
-    university: "EU Global, Malta",
-    country: "🇸🇦 Saudi Arabia",
-    photo: "https://images.unsplash.com/photo-1758599543230-652cc6831d69?q=80&w=450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    programLabel: "PhD · Kennedy University",
+    role: "International Business & FinTech",
+    university: "Kennedy University",
+    country: "🇺🇸 United States",
+    photo: "/images/HomePage/Testimonials/testimonial-3.avif",
   },
   {
-    name: "Dr. Daniel Foster",
-    quote: "Within three months of the DBA, two international speaking invitations arrived that I had been chasing for years. The title opens doors that were simply closed before.",
-    credential: "Doctor of Business Administration",
-    program: "DBA",
-    programLabel: "DBA · American Management University",
-    role: "Founder, NovaTech Africa",
-    university: "American Management University",
-    country: "🇳🇬 Nigeria",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=450&q=80",
+    name: "Caludie Daba",
+    quote:
+      "Leadership had always been the thread running through my career, but it took this PhD to give that experience an academic foundation. The guidance I received throughout was thorough and genuinely personal.",
+    credential:
+      "PhD · Influence of Leadership Strategies on Firm Competitiveness and Overall Performance",
+    program: "PhD",
+    programLabel: "PhD · Kennedy University",
+    role: "Leadership & Firm Performance",
+    university: "Kennedy University",
+    country: "🇬🇧 United Kingdom",
+    photo: "/images/HomePage/Testimonials/testimonial-5.avif",
   },
 ];
 
@@ -51,7 +55,7 @@ export const alumni = [
 export const testimonials = [
   
   {
-    name: "Jan Vitko",
+    name: "Dr. Jan Vitko",
     quote: "I had spent decades in public service and security governance. Techversity did not ask me to prove myself again — they reviewed the record itself, and recognised what was already there.",
     credential: "Honorary PhD · Public Leadership & Security Governance",
     program: "Honorary",
@@ -78,7 +82,7 @@ export const testimonials = [
     role: "International Business & FinTech",
     university: "Kennedy University",
     country: "🇺🇸 United States",
-    testimonialPhoto: "/images/Testimonials/testimonial-3.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-3.avif",
   },
   {
     name: "See Yan Wong",
@@ -138,3 +142,4 @@ export const programColors = {
   Honorary: { bg: "#F6EEDB", text: "#9A7320" },
   PhD:      { bg: "#F5F3FF", text: "#7C3AED" },
 };
+
