@@ -190,8 +190,8 @@ const data = {
   university: {
     intro: "Techversity doesn't run these programs alone — every certification is awarded and backed by our accredited international university partners.",
     partners: [
-      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "https://i.pinimg.com/736x/cf/fe/1f/cffe1fe8cc6044afb78bf8280589855c.jpg" },
-      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "https://d1aeya7jd2fyco.cloudfront.net/banners/EU_Global_banner.webp" },
+      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "https://d1aeya7jd2fyco.cloudfront.net/banners/EU_Global_banner.webp" },
+      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "https://i.pinimg.com/736x/cf/fe/1f/cffe1fe8cc6044afb78bf8280589855c.jpg" },
     ],
     note: "Your certificate is issued by the awarding university partner. Techversity facilitates admission, guidance and support end-to-end.",
   },

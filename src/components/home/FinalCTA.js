@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
 import useInView from "@/hooks/useInView";
 import LeadForm from "@/components/forms/LeadForm";
 
@@ -22,13 +21,14 @@ export default function FinalCTA() {
             }}
           >
             <Image
-              src="https://i.pinimg.com/736x/f2/43/46/f24346a4f08a935cda0f589c8b464a25.jpg"
+              src="/images/homePage/ContactImg.avif"
               alt="Graduation ceremony"
               fill
-              className="object-cover object-center"
+              className="object-cover"
               sizes="50vw"
               style={{
-                transform: visible ? "scale(1)" : "scale(1.1)",
+                objectPosition: "left center", // 👈 crop se left content bachega
+                transform: visible ? "scale(1)" : "scale(1.03)", // 👈 zyada zoom hata diya
                 transition: "transform 1.6s cubic-bezier(0.22,1,0.36,1) 0.15s",
               }}
             />
@@ -51,23 +51,6 @@ export default function FinalCTA() {
             className="absolute inset-0"
             style={{ background: "linear-gradient(180deg,rgba(11,37,69,0.35) 0%,rgba(11,37,69,0.05) 40%,rgba(8,26,47,0.82) 100%)" }}
           />
-
-          {/* quote */}
-          <div
-            className="absolute inset-0 flex flex-col justify-end p-9 lg:p-12"
-            style={{ opacity: visible ? 1 : 0, transition: "opacity 0.7s ease 0.9s" }}
-          >
-            <span className="font-display italic font-bold text-[52px] leading-none text-gold/25 mb-1">"</span>
-            <p className="font-display italic font-semibold text-[22px] lg:text-[28px] text-white leading-[1.4] mb-5">
-              Within months, the title opened doors that years of work alone never could.
-            </p>
-            <div className="flex items-center gap-3">
-              <span className="w-8 h-px bg-gold/50" />
-              <span className="font-mono text-[9px] uppercase tracking-[2px] text-white/50">
-                Dr. James Whitmore · DBA, ESDST
-              </span>
-            </div>
-          </div>
         </div>
 
         {/* ═══ RIGHT: contact form ═══ */}

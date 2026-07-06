@@ -56,9 +56,9 @@ export const testimonials = [
     credential: "Honorary PhD · Public Leadership & Security Governance",
     program: "Honorary",
     role: "Public Leadership & Security Governance",
-    university: "Kingsley University",
+    university: "Kennedy University",
     country: "🇸🇰 Slovakia",
-    testimonialPhoto: "/images/testimonial-2.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-2.avif",
   },
   {
     name: "Thomas Daniel Fuller Jr.",
@@ -66,9 +66,9 @@ export const testimonials = [
     credential: "Honorary PhD · Divinity & Pastoral Leadership",
     program: "Honorary",
     role: "Pastoral Leader",
-    university: "Kingsley University",
+    university: "Kennedy University",
     country: "🇺🇸 United States",
-    testimonialPhoto: "/images/testimonial-1.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-1.avif",
   },
   {
     name: "Pierre A. Sawaya",
@@ -78,7 +78,7 @@ export const testimonials = [
     role: "International Business & FinTech",
     university: "Kennedy University",
     country: "🇺🇸 United States",
-    testimonialPhoto: "/images/testimonial-3.jpeg",
+    testimonialPhoto: "/images/Testimonials/testimonial-3.jpeg",
   },
   {
     name: "See Yan Wong",
@@ -86,9 +86,9 @@ export const testimonials = [
     credential: "Honorary Professor · Honorary Doctorate · PhD in Education",
     program: "PhD",
     role: "Educator",
-    university: "Kingsley University",
+    university: "Kennedy University",
     country: "🇭🇰 Hong Kong",
-    testimonialPhoto: "/images/testimonial-4.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-4.avif",
   },
   {
     name: "Caludie Daba",
@@ -98,7 +98,7 @@ export const testimonials = [
     role: "Leadership & Firm Performance",
     university: "Kennedy University",
     country: "🇬🇧 United Kingdom",
-    testimonialPhoto: "/images/testimonial-5.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-5.avif",
   },
   {
     name: "Chih-Cheng Wu",
@@ -108,7 +108,7 @@ export const testimonials = [
     role: "Business Administration",
     university: "Kennedy University",
     country: "🇹🇼 Taiwan",
-    testimonialPhoto: "/images/testimonial-6.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-6.avif",
   },
   {
     name: "Deepak Nayyar",
@@ -118,7 +118,7 @@ export const testimonials = [
     role: "Neuroscience & Microbiome Research",
     university: "Kennedy University",
     country: "🇬🇧 United Kingdom",
-    testimonialPhoto: "/images/testimonial-7.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-7.avif",
   },
   {
     name: "Maria Boutserou",
@@ -128,7 +128,7 @@ export const testimonials = [
     role: "Oral Health & Occupational Health",
     university: "Kennedy University",
     country: "🇬🇷 Greece",
-    testimonialPhoto: "/images/testimonial-8.jpeg",
+    testimonialPhoto: "/images/HomePage/Testimonials/testimonial-8.avif",
   },
 ];
 

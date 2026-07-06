@@ -6,7 +6,7 @@ export const pathways = [
     desc: "A PhD, DBA, or Honorary Doctorate for professionals whose work has already earned the credential. The highest academic title — internationally accredited.",
     detail: "For senior leaders, researchers, and accomplished executives with 10+ years of professional achievement.",
     tags: ["PhD", "DBA", "Honorary Doctorate"],
-    href: "/doctorate",
+    href: "/programs",
     iconKey: "scroll",
     prime: true,
   },

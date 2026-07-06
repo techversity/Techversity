@@ -33,22 +33,84 @@ const WhatsAppIcon = () => (
   </svg>
 );
 
+/* ── Programs mega-menu icons ── */
+const DoctorateIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2 2 7l10 5 10-5-10-5Z"/>
+    <path d="M6 10v6c0 1.5 2.5 3 6 3s6-1.5 6-3v-6"/>
+  </svg>
+);
+
+const MastersIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+    <path d="M6 12.5V17c0 1 3 2 6 2s6-1 6-2v-4.5"/>
+  </svg>
+);
+
+const ExecEdIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="4" width="18" height="12" rx="1.5"/>
+    <path d="M8 21h8M12 16v5"/>
+  </svg>
+);
+
+const CertIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="5"/>
+    <path d="M8.5 12.5 7 21l5-2.5 5 2.5-1.5-8.5"/>
+  </svg>
+);
+
+/* ── About mega-menu icons ── */
+const AboutIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2 2 7l10 5 10-5-10-5Z"/>
+    <path d="M2 17l10 5 10-5"/>
+    <path d="M2 12l10 5 10-5"/>
+  </svg>
+);
+
+const PartnersIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="4" y="10" width="4" height="10"/>
+    <rect x="10" y="6" width="4" height="14"/>
+    <rect x="16" y="13" width="4" height="7"/>
+  </svg>
+);
+
+const FaqIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 4"/>
+    <path d="M12 17h.01"/>
+  </svg>
+);
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [progOpen, setProgOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [progHover, setProgHover] = useState(null);
+  const [aboutHover, setAboutHover] = useState(null);
+  const [progCtaHover, setProgCtaHover] = useState(false);
+  const [aboutCtaHover, setAboutCtaHover] = useState(false);
 
   const simpleLinks = [
-    { label: "Universities", href: "/universities" },
-    { label: "About", href: "/about-us" },
     { label: "Resources", href: "/resources/blog" },
   ];
 
+  const aboutItems = [
+    { label: "Why Techversity", desc: "Who we are, and who we serve.", href: "/about-us", icon: AboutIcon },
+    { label: "Global Partners", desc: "Our accredited university network.", href: "/about-us/global-partners", icon: PartnersIcon },
+    { label: "FAQs", desc: "Common questions, answered plainly.", href: "/about-us/faqs", icon: FaqIcon },
+  ];
+
   const programItems = [
-    { label: "Doctorate Programs", desc: "PhD, DBA & Honorary — for senior professionals.", href: "/doctorate" },
-    { label: "Master's & MBA",     desc: "Globally recognised master's, 100% online.",       href: "/programs/masters" },
-    { label: "Bachelor's Programs",desc: "Foundational degrees to begin your path.",          href: "/programs/bachelors" },
-    { label: "Executive Education",desc: "Short, high-impact programs for leaders.",           href: "/programs/executive-education" },
-    { label: "Certifications",     desc: "Career-ready skills in weeks, with support.",       href: "/certifications" },
+    { label: "Doctorate Programs", desc: "PhD, DBA & Honorary — for senior professionals.", href: "/programs", icon: DoctorateIcon },
+    { label: "Master's & MBA",     desc: "Globally recognised master's, 100% online.",       href: "/programs/masters", icon: MastersIcon },
+    { label: "Executive Education",desc: "Short, high-impact programs for leaders.",           href: "/programs/executive-education", icon: ExecEdIcon },
+    { label: "Certifications",     desc: "Career-ready skills in weeks, with support.",       href: "/certifications", icon: CertIcon },
   ];
 
   const close = () => setOpen(false);
@@ -85,7 +147,7 @@ export default function Header() {
 
           {/* logo */}
           <Link href="/" className="flex items-center gap-2.5" onClick={close}>
-            <Image src="/images/logo.avif" alt="Techversity" width={44} height={44} className="w-10 h-10 lg:w-[44px] lg:h-[44px] object-contain" />
+            <Image src="/images/Logo/logo.avif" alt="Techversity" width={44} height={44} className="w-10 h-10 lg:w-[44px] lg:h-[44px] object-contain" />
             <span className="font-display font-bold text-xl lg:text-[22px] text-wine tracking-tight">
               Techversity<span className="text-gold">.ai</span>
             </span>
@@ -93,7 +155,8 @@ export default function Header() {
 
           {/* desktop nav */}
           <nav className="hidden lg:flex items-center gap-0.5">
-            {/* Programs mega menu */}
+
+            {/* Programs — premium split mega menu */}
             <div className="group relative">
               <Link
                 href="/programs"
@@ -105,27 +168,204 @@ export default function Header() {
                 </svg>
               </Link>
 
-              {/* dropdown */}
               <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="bg-white border border-line rounded-xl shadow-[0_16px_50px_rgba(22,38,61,0.16)] p-5 w-[620px] grid grid-cols-2 gap-x-6 gap-y-1">
-                  <div className="col-span-2 bg-ink rounded-lg p-5 mb-2">
-                    <div className="font-mono text-[10px] uppercase tracking-[2px] text-gold mb-2">
+                <div className="bg-white border border-line rounded-xl shadow-[0_20px_60px_rgba(22,38,61,0.18)] overflow-hidden w-[380px]">
+
+                  {/* header strip */}
+                  <div className="flex items-center justify-between px-6 pt-5 pb-4">
+                    <span className="font-display font-semibold italic text-[17px] text-wine">
                       Programs
-                    </div>
-                    <p className="text-sm text-white/80 leading-relaxed">
-                      Doctoral advancement, executive education, and career-ready certifications — guided end-to-end.
-                    </p>
+                    </span>
+                    <span className="w-10 h-px bg-gold/50" />
                   </div>
-                  {programItems.map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="block px-3 py-2.5 rounded-lg hover:bg-wine-pale transition"
+
+                  {/* single flowing column — no dividers, generous whitespace */}
+                  <div className="px-3 pb-3">
+                    {programItems.map((item, i) => {
+                      const Icon = item.icon;
+                      const isHover = progHover === i;
+                      return (
+                        <Link
+                          key={item.label}
+                          href={item.href}
+                          onMouseEnter={() => setProgHover(i)}
+                          onMouseLeave={() => setProgHover(null)}
+                          className="relative flex items-start gap-3.5 px-3 py-3 rounded-lg overflow-hidden transition-all duration-200"
+                          style={{ boxShadow: isHover ? "0 4px 16px rgba(154,115,32,0.12)" : "none" }}
+                        >
+                          <span
+                            className="absolute inset-0 transition-opacity duration-200"
+                            style={{
+                              opacity: isHover ? 1 : 0,
+                              background: "linear-gradient(90deg, rgba(217,164,65,0.12) 0%, rgba(217,164,65,0.04) 60%, transparent 100%)",
+                            }}
+                          />
+                          <span
+                            className="absolute left-0 top-2 bottom-2 w-[3px] rounded-full bg-gold transition-transform duration-200"
+                            style={{ transform: isHover ? "scaleY(1)" : "scaleY(0)" }}
+                          />
+                          <span
+                            className="relative flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center mt-0.5 transition-all duration-200"
+                            style={{
+                              borderColor: isHover ? "#D9A441" : "rgba(217,164,65,0.3)",
+                              background: isHover ? "#D9A441" : "rgba(154,115,32,0.06)",
+                              color: isHover ? "#fff" : "#D9A441",
+                              transform: isHover ? "scale(1.1)" : "scale(1)",
+                            }}
+                          >
+                            <Icon />
+                          </span>
+                          <div className="relative flex-1 min-w-0">
+                            <div
+                              className="font-semibold text-[13.5px] leading-tight mb-0.5 transition-colors duration-200"
+                              style={{ color: isHover ? "#7A1B2E" : "#16233D" }}
+                            >
+                              {item.label}
+                            </div>
+                            <div className="text-[11.5px] text-mist leading-snug">{item.desc}</div>
+                          </div>
+                          <svg
+                            className="relative w-3.5 h-3.5 text-gold transition-all duration-200 mt-1 flex-shrink-0"
+                            style={{ opacity: isHover ? 1 : 0, transform: isHover ? "translateX(0)" : "translateX(-4px)" }}
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                          >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </Link>
+                      );
+                    })}
+                  </div>
+
+                  {/* bottom CTA strip — full width, gold-bordered, replaces the old side panel */}
+                  <Link
+                    href="/programs"
+                    onMouseEnter={() => setProgCtaHover(true)}
+                    onMouseLeave={() => setProgCtaHover(false)}
+                    className="flex items-center justify-between px-6 py-3.5 border-t border-gold/25 transition-colors duration-200"
+                    style={{ background: progCtaHover ? "rgba(154,115,32,0.10)" : "rgba(154,115,32,0.04)" }}
+                  >
+                    <span className="font-mono text-[9.5px] uppercase tracking-[2px] text-wine font-semibold">
+                      View all programs
+                    </span>
+                    <svg
+                      className="w-3.5 h-3.5 text-gold transition-transform duration-200"
+                      style={{ transform: progCtaHover ? "translateX(2px)" : "translateX(0)" }}
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                     >
-                      <div className="font-semibold text-sm text-ink mb-0.5">{item.label}</div>
-                      <div className="text-xs text-mist leading-snug">{item.desc}</div>
-                    </Link>
-                  ))}
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Universities — comes before About */}
+            <Link
+              href="/universities"
+              className="text-sm font-medium text-slate px-3.5 py-2 rounded-md hover:bg-wine-pale hover:text-wine transition"
+            >
+              Universities
+            </Link>
+
+            {/* About — premium split mega menu */}
+            <div className="group relative">
+              <Link
+                href="/about-us"
+                className="flex items-center gap-1 text-sm font-medium text-slate px-3.5 py-2 rounded-md group-hover:bg-wine-pale group-hover:text-wine transition"
+              >
+                About
+                <svg className="w-3 h-3 text-gold group-hover:rotate-180 transition-transform duration-200" viewBox="0 0 12 12" fill="currentColor">
+                  <path d="M6 8L1 3h10z"/>
+                </svg>
+              </Link>
+
+              <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="bg-white border border-line rounded-xl shadow-[0_20px_60px_rgba(22,38,61,0.18)] overflow-hidden w-[380px]">
+
+                  {/* header strip */}
+                  <div className="flex items-center justify-between px-6 pt-5 pb-4">
+                    <span className="font-display font-semibold italic text-[17px] text-wine">
+                      About
+                    </span>
+                    <span className="w-10 h-px bg-gold/50" />
+                  </div>
+
+                  {/* single flowing column — no dividers, generous whitespace */}
+                  <div className="px-3 pb-3">
+                    {aboutItems.map((item, i) => {
+                      const Icon = item.icon;
+                      const isHover = aboutHover === i;
+                      return (
+                        <Link
+                          key={item.label}
+                          href={item.href}
+                          onMouseEnter={() => setAboutHover(i)}
+                          onMouseLeave={() => setAboutHover(null)}
+                          className="relative flex items-start gap-3.5 px-3 py-3 rounded-lg overflow-hidden transition-all duration-200"
+                          style={{ boxShadow: isHover ? "0 4px 16px rgba(154,115,32,0.12)" : "none" }}
+                        >
+                          <span
+                            className="absolute inset-0 transition-opacity duration-200"
+                            style={{
+                              opacity: isHover ? 1 : 0,
+                              background: "linear-gradient(90deg, rgba(217,164,65,0.12) 0%, rgba(217,164,65,0.04) 60%, transparent 100%)",
+                            }}
+                          />
+                          <span
+                            className="absolute left-0 top-2 bottom-2 w-[3px] rounded-full bg-gold transition-transform duration-200"
+                            style={{ transform: isHover ? "scaleY(1)" : "scaleY(0)" }}
+                          />
+                          <span
+                            className="relative flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center mt-0.5 transition-all duration-200"
+                            style={{
+                              borderColor: isHover ? "#D9A441" : "rgba(217,164,65,0.3)",
+                              background: isHover ? "#D9A441" : "rgba(154,115,32,0.06)",
+                              color: isHover ? "#fff" : "#D9A441",
+                              transform: isHover ? "scale(1.1)" : "scale(1)",
+                            }}
+                          >
+                            <Icon />
+                          </span>
+                          <div className="relative flex-1 min-w-0">
+                            <div
+                              className="font-semibold text-[13.5px] leading-tight mb-0.5 transition-colors duration-200"
+                              style={{ color: isHover ? "#7A1B2E" : "#16233D" }}
+                            >
+                              {item.label}
+                            </div>
+                            <div className="text-[11.5px] text-mist leading-snug">{item.desc}</div>
+                          </div>
+                          <svg
+                            className="relative w-3.5 h-3.5 text-gold transition-all duration-200 mt-1 flex-shrink-0"
+                            style={{ opacity: isHover ? 1 : 0, transform: isHover ? "translateX(0)" : "translateX(-4px)" }}
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                          >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </Link>
+                      );
+                    })}
+                  </div>
+
+                  {/* bottom CTA strip — full width, gold-bordered */}
+                  <Link
+                    href="/about-us"
+                    onMouseEnter={() => setAboutCtaHover(true)}
+                    onMouseLeave={() => setAboutCtaHover(false)}
+                    className="flex items-center justify-between px-6 py-3.5 border-t border-gold/25 transition-colors duration-200"
+                    style={{ background: aboutCtaHover ? "rgba(154,115,32,0.10)" : "rgba(154,115,32,0.04)" }}
+                  >
+                    <span className="font-mono text-[9.5px] uppercase tracking-[2px] text-wine font-semibold">
+                      More about us
+                    </span>
+                    <svg
+                      className="w-3.5 h-3.5 text-gold transition-transform duration-200"
+                      style={{ transform: aboutCtaHover ? "translateX(2px)" : "translateX(0)" }}
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -208,6 +448,37 @@ export default function Header() {
             {progOpen && (
               <div className="pb-3 pl-3 flex flex-col gap-2">
                 {programItems.map((item) => (
+                  <Link key={item.label} href={item.href} onClick={close} className="text-sm text-slate py-1">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Universities — before About in mobile too */}
+          <Link
+            href="/universities"
+            onClick={close}
+            className="block py-3.5 border-b border-line font-semibold text-base text-ink"
+          >
+            Universities
+          </Link>
+
+          {/* about accordion */}
+          <div className="border-b border-line">
+            <button
+              onClick={() => setAboutOpen(!aboutOpen)}
+              className="w-full flex items-center justify-between py-3.5 font-semibold text-base text-ink"
+            >
+              About
+              <svg className={`w-3.5 h-3.5 text-gold transition-transform ${aboutOpen ? "rotate-180" : ""}`} viewBox="0 0 12 12" fill="currentColor">
+                <path d="M6 8L1 3h10z"/>
+              </svg>
+            </button>
+            {aboutOpen && (
+              <div className="pb-3 pl-3 flex flex-col gap-2">
+                {aboutItems.map((item) => (
                   <Link key={item.label} href={item.href} onClick={close} className="text-sm text-slate py-1">
                     {item.label}
                   </Link>

@@ -40,13 +40,13 @@ export default function Footer() {
         { label: "Universities",    href: "/universities" },
         { label: "Certifications",  href: "/certifications" },
         { label: "Career Services", href: "/career-services" },
-        { label: "Verify a Degree", href: "/verification/degree-verification" },
+        { label: "Verify a Credential", href: "/verification" },
       ],
     },
     {
       heading: "Programs",
       links: [
-        { label: "Doctorate (PhD/DBA)", href: "/doctorate" },
+        { label: "Doctorate (PhD/DBA)", href: "/programs" },
         { label: "Master's / MBA",      href: "/programs/masters" },
         { label: "Bachelor's",          href: "/programs/bachelors" },
         { label: "Executive Education", href: "/programs/executive-education" },
@@ -67,7 +67,7 @@ export default function Footer() {
         { label: "Privacy Policy",   href: "/privacy-policy" },
         { label: "Terms of Service", href: "/terms-of-service" },
         { label: "Refund Policy",    href: "/refund-policy" },
-        { label: "FAQs",             href: "/faqs" },
+        { label: "FAQs",             href: "/about-us/faqs" },
       ],
     },
   ];
@@ -169,7 +169,7 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-5 group">
               <img
-                src="/images/logo.avif"
+                src="/images/Logo/logo.avif"
                 alt="Techversity"
                 className="w-9 h-9 object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition"
               />

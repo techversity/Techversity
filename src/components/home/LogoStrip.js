@@ -5,45 +5,37 @@ import Image from "next/image";
 import useInView from "@/hooks/useInView";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
+import { universities as allUniversities } from "@/lib/universities";
+import { doctorateTypes } from "@/lib/doctorate";
+import { flagUrl } from "@/lib/flag";
 
-const universities = [
-  { name: "ESDST University", country: "France", code: "fr", programs: ["PhD", "DBA"],
-    image: "https://i.pinimg.com/736x/cf/fe/1f/cffe1fe8cc6044afb78bf8280589855c.jpg" },
-  { name: "Kennedy University", country: "United States", code: "us", programs: ["PhD"],
-    image: "https://tse2.mm.bing.net/th/id/OIP.QEnXc9LMgL4mncJ0vXIoMgHaE3?rs=1&pid=ImgDetMain&o=7&rm=3" },
-  { name: "EU Global Institute", country: "Malta", code: "mt", programs: ["DBA", "MBA"],
-    image: "https://d1aeya7jd2fyco.cloudfront.net/banners/EU_Global_banner.webp" },
-  { name: "SBS Swiss Business School", country: "Switzerland", code: "ch", programs: ["MBA", "Exec"],
-    image: "https://i.pinimg.com/1200x/db/92/bb/db92bb795d57e2b4cfa7e436805c2aed.jpg" },
-  { name: "EPSRU", country: "Russia", code: "ru", programs: ["PhD", "DBA"],
-    image: "https://static.fibre2fashion.com/newsresource/images/278/globus_290393.jpg" },
-  { name: "Globus University", country: "Russia", code: "ru", programs: ["PhD"],
-    image: "https://i.pinimg.com/1200x/0e/af/8e/0eaf8e661fbdeef6aaa939f1ae12a05b.jpg" },
-  { name: "Euro-Asian University", country: "Kazakhstan", code: "kz", programs: ["DBA"],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" },
-  { name: "Prowess University", country: "United Kingdom", code: "gb", programs: ["PhD", "MBA"],
-    image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80" },
-  { name: "Int'l American University", country: "United States", code: "us", programs: ["DBA"],
-    image: "https://unischolars.com/_next/image?url=https:%2F%2Funischolars.gumlet.io%2Fuploads%2Funiversities%2F2025-03-29.webp%3Fw%3D1280%26q%3D75&w=3840&q=75" },
-  { name: "Florida Coastal", country: "United States", code: "us", programs: ["Exec Ed"],
-    image: "https://d13b2ieg84qqce.cloudfront.net/cd8937ca6bf73b025c02cbc1287855a2d1220b15.jpg" },
-];
+const programLabel = (slug) =>
+  doctorateTypes.find((d) => d.slug === slug)?.abbr || slug;
 
-const flagUrl = (code) => `https://flagcdn.com/w80/${code}.png`;
+// only the fields this component actually needs, mapped from the shared data
+const universities = allUniversities.map((u) => ({
+  name: u.name,
+  slug: u.slug,
+  country: u.country,
+  image: u.buildingImage,
+  programs: u.programsOffered.map(programLabel),
+}));
 
 export default function LogoStrip() {
   const [active, setActive] = useState(0);
   const [ref, visible] = useInView({ threshold: 0.15 });
 
   useEffect(() => {
-    const t = setInterval(() => setActive(p => (p + 1) % universities.length), 3200);
+    const t = setInterval(
+      () => setActive((p) => (p + 1) % universities.length),
+      3200,
+    );
     return () => clearInterval(t);
   }, []);
 
   return (
     <section className="bg-white py-16 lg:py-24 border-b border-line overflow-hidden">
       <div className="max-w-[1380px] mx-auto px-5 lg:px-8">
-
         {/* header */}
         <Reveal direction="up">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-12">
@@ -52,12 +44,16 @@ export default function LogoStrip() {
                 Global Network
               </p>
               <h2 className="font-display font-semibold text-2xl lg:text-[34px] text-wine leading-tight">
-                Trusted by <span className="italic text-gold">10+ accredited</span><br className="hidden lg:block" />
+                Trusted by{" "}
+                <span className="italic text-gold">10+ accredited</span>
+                <br className="hidden lg:block" />
                 universities worldwide.
               </h2>
             </div>
-            <Link href="/universities"
-              className="text-sm font-semibold text-gold hover:opacity-70 transition-opacity whitespace-nowrap">
+            <Link
+              href="/universities"
+              className="text-sm font-semibold text-gold hover:opacity-70 transition-opacity whitespace-nowrap"
+            >
               View All Partners →
             </Link>
           </div>
@@ -70,7 +66,8 @@ export default function LogoStrip() {
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(28px)",
-            transition: "opacity 0.7s ease, transform 0.7s cubic-bezier(0.34,1.4,0.64,1)",
+            transition:
+              "opacity 0.7s ease, transform 0.7s cubic-bezier(0.34,1.4,0.64,1)",
           }}
         >
           {universities.map((u, i) => {
@@ -78,7 +75,7 @@ export default function LogoStrip() {
             return (
               <Link
                 key={i}
-                href="/universities"
+                href={`/universities/${u.slug}`}
                 onMouseEnter={() => setActive(i)}
                 className="group relative rounded-[20px] overflow-hidden cursor-pointer flex-shrink-0"
                 style={{
@@ -116,15 +113,27 @@ export default function LogoStrip() {
                 {/* ── collapsed: vertical rotated name + flag ── */}
                 <div
                   className="absolute inset-0 flex flex-col items-center justify-between py-5"
-                  style={{ opacity: isActive ? 0 : 1, transition: "opacity 0.25s ease" }}
+                  style={{
+                    opacity: isActive ? 0 : 1,
+                    transition: "opacity 0.25s ease",
+                  }}
                 >
                   <div className="rounded-md overflow-hidden ring-1 ring-white/40 shadow">
-                    <Image src={flagUrl(u.code)} alt={u.country} width={26} height={17}
-                      className="object-cover block" style={{ width: "26px", height: "17px" }} />
+                    <Image
+                      src={flagUrl(u.country)}
+                      alt={u.country}
+                      width={26}
+                      height={17}
+                      className="object-cover block"
+                      style={{ width: "26px", height: "17px" }}
+                    />
                   </div>
                   <span
                     className="font-mono text-[10px] uppercase tracking-[3px] text-white/85 whitespace-nowrap font-medium"
-                    style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+                    style={{
+                      writingMode: "vertical-rl",
+                      transform: "rotate(180deg)",
+                    }}
                   >
                     {u.name}
                   </span>
@@ -141,8 +150,14 @@ export default function LogoStrip() {
                 >
                   {/* top: flag */}
                   <div className="rounded-md overflow-hidden ring-1 ring-white/40 shadow-lg w-fit">
-                    <Image src={flagUrl(u.code)} alt={u.country} width={34} height={23}
-                      className="object-cover block" style={{ width: "34px", height: "23px" }} />
+                    <Image
+                      src={flagUrl(u.country)}
+                      alt={u.country}
+                      width={34}
+                      height={23}
+                      className="object-cover block"
+                      style={{ width: "34px", height: "23px" }}
+                    />
                   </div>
 
                   {/* bottom: name + country + programs */}
@@ -156,14 +171,17 @@ export default function LogoStrip() {
 
                     {/* program tags */}
                     <div className="flex flex-wrap gap-1.5">
-                      {u.programs.map(p => (
-                        <span key={p} className="text-[10px] font-semibold px-2.5 py-1 rounded-full"
+                      {u.programs.map((p) => (
+                        <span
+                          key={p}
+                          className="text-[10px] font-semibold px-2.5 py-1 rounded-full"
                           style={{
                             background: "rgba(154,115,32,0.22)",
                             border: "1px solid rgba(154,115,32,0.45)",
                             color: "#E0BE6E",
                             backdropFilter: "blur(4px)",
-                          }}>
+                          }}
+                        >
                           {p}
                         </span>
                       ))}
@@ -172,13 +190,15 @@ export default function LogoStrip() {
                 </div>
 
                 {/* gold bottom bar */}
-                <div className="absolute bottom-0 left-0 right-0"
+                <div
+                  className="absolute bottom-0 left-0 right-0"
                   style={{
                     height: "3px",
                     background: "linear-gradient(90deg,#C9A04A,#9A7320)",
                     opacity: isActive ? 1 : 0.3,
                     transition: "opacity 0.4s ease",
-                  }} />
+                  }}
+                />
               </Link>
             );
           })}
@@ -187,33 +207,56 @@ export default function LogoStrip() {
         {/* ── MOBILE: 2-col image grid ── */}
         <div className="lg:hidden grid grid-cols-2 gap-3">
           {universities.map((u, i) => (
-            <Link key={i} href="/universities" className="relative rounded-2xl overflow-hidden h-[150px] block">
-              <Image src={u.image} alt={u.name} fill sizes="50vw"
-                className="object-cover object-center" style={{ filter: "brightness(0.65)" }} />
+            <Link
+              key={i}
+              href={`/universities/${u.slug}`}
+              className="relative rounded-2xl overflow-hidden h-[150px] block"
+            >
+              <Image
+                src={u.image}
+                alt={u.name}
+                fill
+                sizes="50vw"
+                className="object-cover object-center"
+                style={{ filter: "brightness(0.65)" }}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-wine/90 to-wine/20" />
               <div className="absolute top-2.5 right-2.5 rounded overflow-hidden ring-1 ring-white/40">
-                <Image src={flagUrl(u.code)} alt={u.country} width={24} height={16}
-                  className="object-cover block" style={{ width: "24px", height: "16px" }} />
+                <Image
+                  src={flagUrl(u.country)}
+                  alt={u.country}
+                  width={24}
+                  height={16}
+                  className="object-cover block"
+                  style={{ width: "24px", height: "16px" }}
+                />
               </div>
               <div className="absolute inset-x-0 bottom-0 p-3.5">
                 <h3 className="font-display font-semibold text-white text-[14px] leading-tight mb-1.5 line-clamp-2">
                   {u.name}
                 </h3>
                 <div className="flex flex-wrap gap-1">
-                  {u.programs.map(p => (
-                    <span key={p} className="text-[8px] font-semibold px-1.5 py-0.5 rounded-full"
-                      style={{ background: "rgba(154,115,32,0.3)", color: "#E0BE6E" }}>
+                  {u.programs.map((p) => (
+                    <span
+                      key={p}
+                      className="text-[8px] font-semibold px-1.5 py-0.5 rounded-full"
+                      style={{
+                        background: "rgba(154,115,32,0.3)",
+                        color: "#E0BE6E",
+                      }}
+                    >
                       {p}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 h-[2px]"
-                style={{ background: "linear-gradient(90deg,#C9A04A,#9A7320)" }} />
+              <div
+                className="absolute bottom-0 left-0 right-0 h-[2px]"
+                style={{ background: "linear-gradient(90deg,#C9A04A,#9A7320)" }}
+              />
             </Link>
           ))}
         </div>
-
       </div>
     </section>
   );
