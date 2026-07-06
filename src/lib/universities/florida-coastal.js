@@ -69,7 +69,7 @@ const floridaCoastalDetail = {
     "Florida Coastal is direct about its own status: provisionally licensed by Florida's CIE. We say this plainly because it affects how the credential may be recognised for licensure, credit transfer, or employer purposes. Your advisor confirms what this means for your specific goals before you apply.",
 
   // TODO — Florida Coastal doesn't yet have its own dedicated DBA/Master's program pages
-  programSlugs: ["mba-global", "msc-data-science"],
+  programSlugs: ["dba-esdst", "masters", "bachelors"],
 
   offersCertifications: false,
 

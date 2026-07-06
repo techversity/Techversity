@@ -84,7 +84,7 @@ const kennedyUniversity = {
     "Recognition and its meaning vary by jurisdiction. Your advisor confirms exactly what Kennedy's recognition means for your country before any application begins.",
 
   // programs offered (slugs into lib/programs.js) — certifications excluded here
-  programSlugs: ["phd-kennedy", "dba-esdst", "honorary-doctorate", "mba-global", "msc-data-science", "executive-mba"],
+  programSlugs: ["dba-esdst", "phd-kennedy", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   // certifications only shown for ESDST + EU Global — Kennedy: false
   offersCertifications: false,

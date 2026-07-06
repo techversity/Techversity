@@ -22,8 +22,8 @@ const details = {
   "florida-coastal-school-of-law": floridaCoastalDetail,
 };
 
-const ALL_PROGRAMS = ["honorary-doctorate", "dba", "phd", "masters", "bachelors"];
-const NO_PHD = ["honorary-doctorate", "dba", "masters", "bachelors"];
+const ALL_PROGRAMS = ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"];
+const NO_PHD = ["dba", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"];
 const DBA_ONLY = ["dba", "bachelors"];
 const DBA_MASTERS = ["dba", "masters", "bachelors"];
 const DBA_HONORARY_PROFESSORSHIP = ["dba", "honorary-doctorate", "honorary-professorship", "bachelors"];
@@ -45,7 +45,7 @@ export const universities = [
     accreditation: [
       { name: "eduQua (Switzerland)", note: "Certified under eduQua, the Swiss quality label for continuing education and training institutions." },
     ],
-    programsOffered: DBA_MASTERS,
+    programsOffered: [...DBA_MASTERS, "certifications"],
     partnershipType:
       "Techversity.ai is an authorised enrolment advisory partner of ESDST, supporting applicant review, application shepherding, and enrolment coordination.",
   },
@@ -85,7 +85,7 @@ export const universities = [
     accreditation: [
       { name: "EU-recognised institutional status", note: "Recognition varies by jurisdiction and is confirmed with your advisor before enrolment, with a link to the issuing body's public register." },
     ],
-    programsOffered: NO_PHD,
+    programsOffered: [...NO_PHD, "certifications"],
     partnershipType:
       "Techversity.ai is an authorised enrolment advisory partner of EU Global Institute, supporting proposal development, application shepherding, and supervisor matching.",
   },

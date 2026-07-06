@@ -53,7 +53,7 @@ const euGlobalDetail = {
     { label: "Delivery", value: "Online, Blended, or On-Campus" },
     { label: "Language", value: "English" },
     { label: "Recognition", value: "MFHEA · EQF · WES-listed" },
-    { label: "Pathways Offered", value: "DBA · Masters · Executive Ed. · Honorary" },
+    { label: "Pathways Offered", value: "DBA · Honorary Doctorate · Master's · Honorary Professorship · Bachelor's · Certifications" },
     { label: "PhD Available", value: "Not offered" },
     { label: "Learner Base", value: "40+ countries" },
   ],
@@ -71,14 +71,14 @@ const euGlobalDetail = {
 
   // programs genuinely offered by EU Global, matched against existing generic program pages
   // NOTE: EU Global's own DBA does not yet have a dedicated program page — to be built
-  programSlugs: ["honorary-doctorate", "mba-global", "msc-data-science", "executive-mba"],
+  programSlugs: ["dba-esdst", "honorary-doctorate", "masters", "honorary-professorship", "bachelors", "data-science-cert"],
 
   offersCertifications: true,
 
   // ── ADMISSION STEPS ──
   admissionSteps: [
     { title: "Eligibility Review", desc: "We assess your profile against EU Global's criteria for the pathway you're considering, and tell you plainly whether it fits." },
-    { title: "Pathway Match", desc: "DBA, Master's, Executive Education, or Honorary Doctorate — matched to your record and goals." },
+    { title: "Pathway Match", desc: "DBA, Master's, Honorary Doctorate, or Honorary Professorship — matched to your record and goals." },
     { title: "Application & Documents", desc: "We prepare your documentation to EU Global's standard before anything is submitted." },
     { title: "Institutional Review", desc: "EU Global's own admissions process evaluates the application independently." },
     { title: "Enrolment", desc: "On approval, enrolment is confirmed and your study mode — online, blended, or on-campus — is set." },

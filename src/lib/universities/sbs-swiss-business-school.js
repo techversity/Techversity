@@ -74,7 +74,7 @@ const sbsDetail = {
     "SBS's accreditation is among the more thoroughly documented we've reviewed — institutional accreditation in Switzerland, plus specialty accreditation for the DBA itself from ACBSP. Your advisor still walks through what each recognition means for your specific country and goals before you apply.",
 
   // TODO — SBS doesn't yet have its own dedicated DBA program page (existing dba-esdst is ESDST-specific)
-  programSlugs: [],
+  programSlugs: ["dba-esdst", "bachelors"],
 
   offersCertifications: false,
 
@@ -92,7 +92,7 @@ const sbsDetail = {
     { q: "Is SBS genuinely accredited?", a: "Yes — institutionally, by the Swiss Accreditation Council under the Higher Education Act, following a full review by the AAQ. The DBA itself also holds specialty accreditation from ACBSP. Both decisions are publicly documented, and your advisor shows you the primary source." },
     { q: "Can I complete the DBA fully online?", a: "Yes, through the Malta campus online track. Zurich-based hybrid and dual-campus formats with ESC Clermont are also available if you prefer periodic in-person components." },
     { q: "What is the PMO specialisation?", a: "A DBA track in Strategy, Project Leadership, and PMOs — for candidates whose focus is programme and portfolio management rather than general business strategy." },
-    { q: "Does Techversity offer SBS's other programmes?", a: "Through Techversity, SBS's pathway is DBA only. SBS also runs Bachelor's, Master's, MBA, and Executive Education directly, outside this partnership." },
+    { q: "Does Techversity offer SBS's other programmes?", a: "Through Techversity, SBS's pathway is DBA only. SBS also runs Bachelor's, Master's, and MBA directly, outside this partnership." },
     { q: "How is my degree verified?", a: "Techversity provides an independent verification page for any employer or third party to confirm authenticity." },
   ],
 
