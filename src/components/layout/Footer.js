@@ -49,7 +49,6 @@ export default function Footer() {
         { label: "Doctorate (PhD/DBA)", href: "/programs" },
         { label: "Master's / MBA",      href: "/programs/masters" },
         { label: "Bachelor's",          href: "/programs/bachelors" },
-        { label: "Executive Education", href: "/programs/executive-education" },
       ],
     },
     {

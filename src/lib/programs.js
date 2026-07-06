@@ -35,6 +35,15 @@ export const programs = [
     level: "Honorary", duration: "6–12 Months", mode: "Online", fee: "From $5,000",
     category: "doctorate",
     image: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&q=80",
+    partnerLogos: [
+      { name: "Kennedy University", country: "🇺🇸 USA" },
+      { name: "American Management University", country: "🇺🇸 USA" },
+      { name: "EU Global", country: "🇲🇹 Malta" },
+      { name: "Christian Central University", country: "🇺🇸 USA" },
+      { name: "Euro-Asian University", country: "🇪🇪 Estonia" },
+      { name: "Prowess University", country: "🇺🇸 USA" },
+      { name: "SSM", country: "🇨🇭 Switzerland" },
+    ],
   },
   {
     id: 4, slug: "honorary-professorship", initials: "HP",
@@ -61,6 +70,16 @@ export const programs = [
     level: "Master's", duration: "12–18 Months", mode: "Online", fee: "From $6,500",
     category: "masters",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    partnerLogos: [
+      { name: "ESDST University", country: "🇨🇭 Switzerland" },
+      { name: "Kennedy University", country: "🇺🇸 USA" },
+      { name: "EU Global", country: "🇲🇹 Malta" },
+      { name: "American Management University", country: "🇺🇸 USA" },
+      { name: "Florida Coastal", country: "🇺🇸 USA" },
+      { name: "Christian Central University", country: "🇺🇸 USA" },
+      { name: "Euro-Asian University", country: "🇪🇪 Estonia" },
+      { name: "Prowess University", country: "🇺🇸 USA" },
+    ],
   },
 
   // ── BACHELOR'S ──
@@ -75,6 +94,18 @@ export const programs = [
     level: "Bachelor's", duration: "24–36 Months", mode: "Online", fee: "From $4,500",
     category: "bachelors",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+    partnerLogos: [
+      { name: "ESDST University", country: "🇨🇭 Switzerland" },
+      { name: "Kennedy University", country: "🇺🇸 USA" },
+      { name: "EU Global", country: "🇲🇹 Malta" },
+      { name: "American Management University", country: "🇺🇸 USA" },
+      { name: "SBS Swiss Business School", country: "🇨🇭 Switzerland" },
+      { name: "Florida Coastal", country: "🇺🇸 USA" },
+      { name: "SSM", country: "🇨🇭 Switzerland" },
+      { name: "Christian Central University", country: "🇺🇸 USA" },
+      { name: "Euro-Asian University", country: "🇪🇪 Estonia" },
+      { name: "Prowess University", country: "🇺🇸 USA" },
+    ],
   },
 
   // ── CERTIFICATIONS (kept for homepage tabs / other use) ──

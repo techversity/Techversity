@@ -22,11 +22,11 @@ const details = {
   "florida-coastal-school-of-law": floridaCoastalDetail,
 };
 
-const ALL_PROGRAMS = ["honorary-doctorate", "dba", "phd", "masters", "executive-education"];
-const NO_PHD = ["honorary-doctorate", "dba", "masters", "executive-education"];
-const DBA_ONLY = ["dba"];
-const DBA_MASTERS = ["dba", "masters"];
-const DBA_HONORARY_PROFESSORSHIP = ["dba", "honorary-doctorate", "professorship"];
+const ALL_PROGRAMS = ["honorary-doctorate", "dba", "phd", "masters", "bachelors"];
+const NO_PHD = ["honorary-doctorate", "dba", "masters", "bachelors"];
+const DBA_ONLY = ["dba", "bachelors"];
+const DBA_MASTERS = ["dba", "masters", "bachelors"];
+const DBA_HONORARY_PROFESSORSHIP = ["dba", "honorary-doctorate", "honorary-professorship", "bachelors"];
 
 export const universities = [
   {
