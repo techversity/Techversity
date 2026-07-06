@@ -13,6 +13,7 @@ export default function AlumniCard() {
     const timer = setInterval(() => {
       const next = (curRef.current + 1) % alumni.length;
       curRef.current = next;
+
       const newId = uid.current++;
 
       setCards((prev) => [
@@ -28,9 +29,28 @@ export default function AlumniCard() {
     return () => clearInterval(timer);
   }, []);
 
+  const getObjectPosition = (name) => {
+    switch (name) {
+      case "Dr. Jan Vitko":
+        return "center 8%";
+
+      case "Thomas Daniel Fuller Jr.":
+        return "center 5%";
+
+      case "Pierre A. Sawaya":
+        return "center 10%";
+
+      case "Caludie Daba":
+        return "center 8%";
+
+      default:
+        return "center top";
+    }
+  };
+
   return (
     <div
-      className="relative h-[485px]"
+      className="relative h-[545px]"
       style={{ perspective: "1200px" }}
     >
       {cards.map((c) => {
@@ -41,27 +61,24 @@ export default function AlumniCard() {
             key={c.id}
             className={`absolute inset-0 bg-white border border-line rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(22,38,61,0.12)] ${c.cls}`}
           >
-            {/* Top Gradient */}
-            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-wine to-gold z-20"></div>
+            {/* Top Line */}
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-wine to-gold z-20" />
 
-            {/* Photo */}
-            <div className="relative h-[220px] bg-wine overflow-hidden">
+            {/* PHOTO */}
+            <div className="relative h-[280px] overflow-hidden bg-[#F6F6F6]">
               <Image
                 src={a.photo}
                 alt={a.name}
                 fill
-                sizes="400px"
-                className="object-cover"
-                style={{
-                  objectPosition:
-                    a.name === "Thomas Daniel Fuller Jr."
-                      ? "center top"
-                      : "center",
-                }}
                 priority
+                sizes="400px"
+                className="object-cover transition-all duration-500"
+                style={{
+                  objectPosition: getObjectPosition(a.name),
+                }}
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-wine/50 via-transparent to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-wine/40 via-transparent to-transparent" />
 
               <span className="absolute bottom-4 left-4 bg-white/95 text-wine text-[11px] font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow z-20">
                 <span className="text-gold">✦</span>
@@ -69,24 +86,24 @@ export default function AlumniCard() {
               </span>
             </div>
 
-            {/* Body */}
+            {/* BODY */}
             <div className="p-5 lg:p-6">
-              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] break-words line-clamp-4">
+              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] line-clamp-4">
                 "{a.quote}"
               </p>
 
               <div className="flex items-center justify-between pt-4 border-t border-line">
                 <div className="min-w-0 pr-3">
-                  <div className="font-display font-semibold text-lg text-wine leading-tight truncate">
+                  <div className="font-display font-semibold text-lg text-wine truncate">
                     {a.name}
                   </div>
 
-                  <div className="text-xs text-mist leading-snug">
+                  <div className="text-xs text-mist">
                     {a.role}
                   </div>
                 </div>
 
-                <span className="text-[10px] font-mono text-mist uppercase tracking-wider whitespace-nowrap shrink-0">
+                <span className="text-[10px] font-mono text-mist uppercase whitespace-nowrap">
                   {a.country}
                 </span>
               </div>
