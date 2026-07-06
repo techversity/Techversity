@@ -8,6 +8,13 @@ import {
   HeartHandshake,
   FlaskConical,
   Briefcase,
+  Lightbulb,
+  ClipboardList,
+  Building2,
+  Crown,
+  Landmark,
+  Scale,
+  Stethoscope,
 } from "lucide-react";
 
 const ICON_MAP = {
@@ -17,6 +24,25 @@ const ICON_MAP = {
   "Social Impact Leader": HeartHandshake,
   "Research Contributor": FlaskConical,
   "Business Leader": Briefcase,
+  // DBA
+  "Founder": Rocket,
+  "Vice President": Crown,
+  "Management Consultant": ClipboardList,
+  "Corporate Director": Building2,
+  "Entrepreneur": Lightbulb,
+  "Senior Executive": Briefcase,
+  // PhD
+  "Research Associate": FlaskConical,
+  "Corporate Professional": Building2,
+  "Educator": GraduationCap,
+  "Industry Leader": Cpu,
+  "Government Officer": Landmark,
+  // Honorary Professorship
+  "Research Scientist": FlaskConical,
+  "Public Policy Leader": Landmark,
+  "Healthcare Administrator": Stethoscope,
+  "Legal Professional": Scale,
+  "Entrepreneur & Founder": Rocket,
 };
 
 // "Honorary Doctor in Entrepreneurship" -> "Entrepreneurship"

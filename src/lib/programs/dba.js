@@ -17,10 +17,10 @@ const dba = {
     "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&q=80",
 
   heroStats: [
-    { value: "9+", label: "Partner Universities" },
-    { value: "18–36", label: "Months to Completion" },
-    { value: "30+", label: "Countries Recognised" },
-    { value: "10+", label: "Years Avg. Experience" },
+    { value: "9+", label: "Global Institutions" },
+    { value: "12+", label: "Recognition Categories" },
+    { value: "30+", label: "Countries Represented" },
+    { value: "5,000+", label: "Executive Applicants" },
   ],
 
   institutionsIntro:
@@ -104,9 +104,9 @@ const dba = {
   ],
   standingStats: [
     { value: "30+", label: "Countries Recognised" },
+    { value: "100%", label: "Accredited Institutions" },
     { value: "9+", label: "Partner Universities" },
-    { value: "18–36", label: "Typical Duration (Months)" },
-    { value: "10+", label: "Years Avg. Candidate Experience" },
+    { value: "5,000+", label: "Professionals Guided" },
   ],
 
   journeyIntro:

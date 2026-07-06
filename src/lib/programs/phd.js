@@ -17,10 +17,10 @@ const phd = {
     "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=80",
 
   heroStats: [
-    { value: "5+", label: "Partner Universities" },
-    { value: "24–48", label: "Months to Completion" },
-    { value: "30+", label: "Countries Recognised" },
-    { value: "100%", label: "Supervised Research" },
+    { value: "5+", label: "Global Institutions" },
+    { value: "15+", label: "Recognition Categories" },
+    { value: "30+", label: "Countries Represented" },
+    { value: "3,000+", label: "Executive Applicants" },
   ],
 
   institutionsIntro:
@@ -105,9 +105,9 @@ const phd = {
   ],
   standingStats: [
     { value: "30+", label: "Countries Recognised" },
+    { value: "100%", label: "Accredited Institutions" },
     { value: "5+", label: "Partner Universities" },
-    { value: "24–48", label: "Typical Duration (Months)" },
-    { value: "100%", label: "Supervised Research Process" },
+    { value: "3,000+", label: "Professionals Guided" },
   ],
 
   journeyIntro:

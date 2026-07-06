@@ -18,9 +18,9 @@ const honoraryProfessorship = {
 
   heroStats: [
     { value: "1+", label: "Global Institutions" },
-    { value: "20+", label: "Recognition Fields" },
+    { value: "20+", label: "Recognition Categories" },
     { value: "15+", label: "Countries Represented" },
-    { value: "3,000+", label: "Professionals Reviewed" },
+    { value: "3,000+", label: "Executive Applicants" },
   ],
 
   institutionsIntro:
@@ -108,9 +108,9 @@ const honoraryProfessorship = {
   ],
   standingStats: [
     { value: "15+", label: "Countries Recognised" },
-    { value: "100%", label: "Merit-Based Evaluation" },
+    { value: "100%", label: "Accredited Institutions" },
     { value: "1+", label: "Partner Universities" },
-    { value: "3,000+", label: "Professionals Reviewed" },
+    { value: "3,000+", label: "Professionals Guided" },
   ],
 
   journeyIntro:
