@@ -13,7 +13,6 @@ export default function AlumniCard() {
     const timer = setInterval(() => {
       const next = (curRef.current + 1) % alumni.length;
       curRef.current = next;
-
       const newId = uid.current++;
 
       setCards((prev) => [
@@ -31,7 +30,7 @@ export default function AlumniCard() {
 
   return (
     <div
-      className="relative h-[520px]"
+      className="relative h-[485px]"
       style={{ perspective: "1200px" }}
     >
       {cards.map((c) => {
@@ -46,17 +45,23 @@ export default function AlumniCard() {
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-wine to-gold z-20"></div>
 
             {/* Photo */}
-            <div className="relative h-[300px] bg-gray-100 overflow-hidden">
+            <div className="relative h-[220px] bg-wine overflow-hidden">
               <Image
                 src={a.photo}
                 alt={a.name}
                 fill
                 sizes="400px"
+                className="object-cover"
+                style={{
+                  objectPosition:
+                    a.name === "Thomas Daniel Fuller Jr."
+                      ? "center top"
+                      : "center",
+                }}
                 priority
-                className="object-contain object-center p-3"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-wine/40 via-transparent to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-wine/50 via-transparent to-transparent z-10"></div>
 
               <span className="absolute bottom-4 left-4 bg-white/95 text-wine text-[11px] font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow z-20">
                 <span className="text-gold">✦</span>
@@ -66,7 +71,7 @@ export default function AlumniCard() {
 
             {/* Body */}
             <div className="p-5 lg:p-6">
-              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] line-clamp-4">
+              <p className="font-display italic text-base lg:text-lg text-ink leading-relaxed mb-5 min-h-[80px] break-words line-clamp-4">
                 "{a.quote}"
               </p>
 
