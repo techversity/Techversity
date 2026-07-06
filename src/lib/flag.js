@@ -5,6 +5,7 @@ export const COUNTRY_CODE = {
   Spain: "es",
   "United Arab Emirates": "ae",
   Canada: "ca",
+  Estonia: "ee",
 };
 
 export function flagUrl(country, width = 80) {

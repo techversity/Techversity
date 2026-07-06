@@ -8,6 +8,13 @@ import {
   BadgeCheck,
   Landmark,
   Globe,
+  Award,
+  FileCheck,
+  IdCard,
+  BookMarked,
+  Crown,
+  Users,
+  Presentation,
 } from "lucide-react";
 
 const ICON_MAP = {
@@ -17,6 +24,22 @@ const ICON_MAP = {
   "Institutional Verification": BadgeCheck,
   "Ceremonial Recognition": Landmark,
   "Global Alumni Association": Globe,
+  // DBA
+  "Doctoral Degree Certificate": Award,
+  "Official Transcript": FileText,
+  "Enrolment & Completion Letters": FileCheck,
+  "Academic ID & Network Access": IdCard,
+  "Convocation & Ceremony": GraduationCap,
+  // PhD
+  "Published Dissertation Record": BookMarked,
+  "Academic Network Access": Globe,
+  "Convocation & Graduation": GraduationCap,
+  // Honorary Professorship
+  "Honorary Professorship Certificate & Citation": Award,
+  "Use of the Title 'Prof.'": Crown,
+  "Distinguished Network Membership": Users,
+  "Engagement Opportunities": Presentation,
+  "Conferment Ceremony": Landmark,
 };
 
 export default function ProgramReceive({ p }) {
