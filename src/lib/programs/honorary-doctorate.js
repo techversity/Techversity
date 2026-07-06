@@ -3,6 +3,7 @@
 
 const honoraryDoctorate = {
   slug: "honorary-doctorate",
+  programTag: "honorary-doctorate",
   category: "doctorate",
   eyebrow: "Global Academic Recognition",
   name: "Honorary Doctorate Recognition",
@@ -26,38 +27,6 @@ const honoraryDoctorate = {
   // ── CHOOSE YOUR INSTITUTION ──
   institutionsIntro:
     "Techversity works with a curated network of accredited institutions for the Honorary Doctorate pathway — each with a different academic character and recognition philosophy.",
-  institutions: [
-    {
-      slug: "kennedy-university",
-      name: "Kennedy University",
-      region: "USA / France / Multiple Regions",
-      image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?q=80&w=1000&auto=format&fit=crop",
-      description:
-        "A private higher education institution with over 25 years of global reach across the USA, France, and African regions. Kennedy's honorary doctorate pathway is designed for accomplished professionals whose contributions span international contexts.",
-      categories: "Business Administration · Social Impact · Academic Leadership · Innovation",
-      standing: "QAHE Accredited · French Ministry Registered · UN DESA Listed · Florida State Registered",
-    },
-    {
-      slug: "esdst",
-      name: "ESDST",
-      region: "Switzerland (Zug)",
-      image: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=1000&auto=format&fit=crop",
-      description:
-        "A Swiss institution with QS-standard rating and international accreditation, headquartered in Europe's premier business canton. ESDST's honorary recognition centres on executive and applied business excellence.",
-      categories: "Business Excellence · Executive Leadership · Innovation · International Relations",
-      standing: "QS-Standard · EAHEA Accredited · QAHE Accredited · Swiss Registered",
-    },
-    {
-      slug: "eu-global",
-      name: "EU Global",
-      region: "Malta (European Union)",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1000&auto=format&fit=crop",
-      description:
-        "A EU-based higher education institution recognising extraordinary professional and humanitarian achievement, with individually supervised academic pathways and EU-recognised institutional standing.",
-      categories: "Finance · Public Policy · Creative Industries · Global Philanthropy",
-      standing: "EU Recognised · Internationally Registered · Established Network",
-    },
-  ],
   institutionsFooter:
     "Not sure which institution is right for you? Book a confidential consultation — we will match you based on your profile and goals.",
 

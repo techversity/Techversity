@@ -36,45 +36,45 @@ export const programs = [
     category: "doctorate",
     image: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&q=80",
   },
+  {
+    id: 4, slug: "honorary-professorship", initials: "HP",
+    badgeBg: "#D9A441", badgeText: "#0B2545",
+    title: "Honorary Professorship",
+    university: "Multiple Partner Universities", country: "Global", flag: "🌍", code: "un",
+    desc: "Formal academic recognition of professional expertise — issued by accredited partner universities.",
+    forWho: "Distinguished professionals with significant industry or academic contribution",
+    outcome: "Honorary Professor title · Institutional recognition · Prestige",
+    level: "Honorary", duration: "6–12 Months", mode: "Online", fee: "From $5,000",
+    category: "doctorate",
+    image: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&q=80",
+  },
 
   // ── MASTER'S ──
   {
-    id: 4, slug: "mba-global", initials: "MB",
+    id: 5, slug: "masters", initials: "MA",
     badgeBg: "#21385C", badgeText: "#ffffff",
-    title: "MBA — Global Executive Track",
-    university: "EU Global Institute", country: "Malta", flag: "🇲🇹", code: "mt",
-    desc: "Internationally recognized MBA for mid-career professionals targeting leadership roles.",
-    forWho: "Mid-career professionals targeting leadership",
-    outcome: "MBA credential · Global network · Leadership toolkit",
-    level: "Master's", duration: "12 Months", mode: "Online", fee: "From $6,500",
+    title: "Master's Degree",
+    university: "Multiple Partner Universities", country: "Global", flag: "🌍", code: "un",
+    desc: "Internationally recognized graduate degrees for mid-career professionals targeting leadership roles.",
+    forWho: "Mid-career professionals deepening expertise",
+    outcome: "Master's credential · Global network · Leadership toolkit",
+    level: "Master's", duration: "12–18 Months", mode: "Online", fee: "From $6,500",
     category: "masters",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
   },
-  {
-    id: 5, slug: "msc-data-science", initials: "DS",
-    badgeBg: "#16263D", badgeText: "#D9A441",
-    title: "MSc in Data Science",
-    university: "SBS Swiss Business School", country: "Switzerland", flag: "🇨🇭", code: "ch",
-    desc: "Graduate-level data science degree covering ML, AI, and analytics with industry projects.",
-    forWho: "Tech professionals upskilling to data leadership",
-    outcome: "MSc degree · Data science expertise · Career pivot",
-    level: "Master's", duration: "18 Months", mode: "Online", fee: "From $7,000",
-    category: "masters",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-  },
 
-  // ── EXECUTIVE ──
+  // ── BACHELOR'S ──
   {
-    id: 6, slug: "executive-mba", initials: "EM",
-    badgeBg: "#D9A441", badgeText: "#0B2545",
-    title: "Executive MBA (Fast-Track)",
-    university: "Euro-Asian University", country: "Kazakhstan", flag: "🇰🇿", code: "kz",
-    desc: "Designed for C-suite and VP-level professionals seeking global MBA credentials fast.",
-    forWho: "C-suite & VP-level professionals",
-    outcome: "EMBA credential · Executive network · Fast-track",
-    level: "Executive", duration: "8 Months", mode: "Online", fee: "From $9,000",
-    category: "executive",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+    id: 6, slug: "bachelors", initials: "BA",
+    badgeBg: "#16263D", badgeText: "#D9A441",
+    title: "Bachelor's Degree",
+    university: "Multiple Partner Universities", country: "Global", flag: "🌍", code: "un",
+    desc: "Internationally accredited undergraduate degrees for working professionals and early-career learners.",
+    forWho: "Working professionals & early-career learners",
+    outcome: "Bachelor's credential · Global recognition · Career foundation",
+    level: "Bachelor's", duration: "24–36 Months", mode: "Online", fee: "From $4,500",
+    category: "bachelors",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
   },
 
   // ── CERTIFICATIONS (kept for homepage tabs / other use) ──
@@ -120,11 +120,10 @@ export const tabs = [
   { label: "All Programs",   value: "all",            bg: "#FAF8F4" },
   { label: "Doctorate",      value: "doctorate",      bg: "#E8E3DA" },
   { label: "Master's",       value: "masters",        bg: "#EDE8DF" },
-  { label: "Executive Ed",   value: "executive",      bg: "#F0EBE1" },
+  { label: "Bachelor's",     value: "bachelors",      bg: "#F0EBE1" },
   { label: "Certifications", value: "certifications", bg: "#FAF8F4" },
 ];
 
-// Degree categories for the /programs listing (Bachelor's excluded for now)
 export const degreeCategories = [
   {
     value: "doctorate",
@@ -139,9 +138,9 @@ export const degreeCategories = [
     accent: "#21385C",
   },
   {
-    value: "executive",
-    label: "Executive Education",
-    tagline: "Fast, focused credentials built for senior and C-suite professionals.",
+    value: "bachelors",
+    label: "Bachelor's",
+    tagline: "Accredited undergraduate degrees built for working professionals.",
     accent: "#9A7320",
   },
 ];
