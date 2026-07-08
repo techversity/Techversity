@@ -12,9 +12,9 @@ const honoraryProfessorship = {
     "A distinguished academic title recognising accomplished professionals, researchers, entrepreneurs, and changemakers whose leadership has created lasting impact — awarded, not studied for.",
 
   heroImage:
-    "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1600&q=80",
+    "/images/SharedPrograms/HF.avif",
   whatIsImage:
-    "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=900&q=80",
+    "/images/Programes/HP/about.avif",
 
   heroStats: [
     { value: "1+", label: "Global Institutions" },
@@ -44,11 +44,11 @@ const honoraryProfessorship = {
   whoForIntro:
     "The Honorary Professorship is awarded across a wide spectrum of professional achievement — wherever expertise, leadership, and impact can be verified and documented.",
   whoForCollage: [
-    { src: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=700&q=80", alt: "Business leader" },
-    { src: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=700&q=80", alt: "Academic researcher" },
-    { src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80", alt: "Policy maker" },
-    { src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80", alt: "Entrepreneur and innovator" },
-    { src: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=700&q=80", alt: "Healthcare leader" },
+    { src: "/images/Programes/HP/logo1.avif", alt: "Business leader" },
+    { src: "/images/Programes/HP/logo2.avif", alt: "Academic researcher" },
+    { src: "/images/Programes/HP/logo3.avif", alt: "Policy maker" },
+    { src: "/images/Programes/HP/logo4.avif", alt: "Entrepreneur and innovator" },
+    { src: "/images/Programes/HP/logo5.avif", alt: "Healthcare leader" },
   ],
   whoFor: [
     { title: "Business Leaders", desc: "Senior executives with a proven record of leadership and industry impact." },
@@ -66,14 +66,14 @@ const honoraryProfessorship = {
   whyMattersIntro:
     "The value of an Honorary Professorship lies not just in the title — but in the credibility, network, and platform it permanently opens.",
   whyMatters: [
-    { title: "Academic Recognition", desc: "Use the distinguished title 'Prof.' before your name, formally reflecting your academic standing.", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80", imagePosition: "center" },
-    { title: "International Appreciation", desc: "A prestigious honour from an accredited institution that strengthens your credibility on the global stage.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", imagePosition: "center" },
-    { title: "Professional Excellence", desc: "Stand out with a professorial title that reflects excellence and deep expertise in your field.", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80", imagePosition: "center" },
-    { title: "Strategic Leadership Standing", desc: "Formal recognition of your knowledge, influence, and contribution to innovation and learning.", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80", imagePosition: "center" },
-    { title: "Academic & Social Impact", desc: "Acknowledgement for your contribution to education, research, and future talent development.", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80", imagePosition: "center" },
-    { title: "Institutional Endorsement", desc: "Formal recognition and support from an accredited university and its global partner network.", image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80", imagePosition: "center" },
-    { title: "Distinguished Global Network", desc: "Membership in a network of academic and industry leaders, with opportunities for conferences, guest lectures, and collaboration.", image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", imagePosition: "center" },
-    { title: "Lasting Legacy", desc: "A permanent academic record that positions your expertise for mentorship, thought leadership, and continued influence.", image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80", imagePosition: "center" },
+    { title: "Academic Recognition", desc: "Use the distinguished title 'Prof.' before your name, formally reflecting your academic standing.", image: "/images/Programes/HP/1.avif", imagePosition: "center" },
+    { title: "International Appreciation", desc: "A prestigious honour from an accredited institution that strengthens your credibility on the global stage.", image: "/images/Programes/HP/2.avif", imagePosition: "center" },
+    { title: "Professional Excellence", desc: "Stand out with a professorial title that reflects excellence and deep expertise in your field.", image: "/images/Programes/HP/3.avif", imagePosition: "center" },
+    { title: "Strategic Leadership Standing", desc: "Formal recognition of your knowledge, influence, and contribution to innovation and learning.", image: "/images/Programes/HP/4.avif", imagePosition: "center" },
+    { title: "Academic & Social Impact", desc: "Acknowledgement for your contribution to education, research, and future talent development.", image: "/images/Programes/HP/5.avif", imagePosition: "center" },
+    { title: "Institutional Endorsement", desc: "Formal recognition and support from an accredited university and its global partner network.", image: "/images/Programes/HP/6.avif", imagePosition: "center" },
+    { title: "Distinguished Global Network", desc: "Membership in a network of academic and industry leaders, with opportunities for conferences, guest lectures, and collaboration.", image: "/images/Programes/HP/7.avif", imagePosition: "center" },
+    { title: "Lasting Legacy", desc: "A permanent academic record that positions your expertise for mentorship, thought leadership, and continued influence.", image: "/images/Programes/HP/8.avif", imagePosition: "center" },
   ],
 
   fieldsIntro:
@@ -125,10 +125,10 @@ const honoraryProfessorship = {
   ],
 
   ceremonyImages: [
-    { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80", alt: "Formal conferment ceremony" },
-    { src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80", alt: "Recipient receiving honorary title" },
-    { src: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&q=80", alt: "Academic convocation stage" },
-    { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=80", alt: "Ceremonial recognition moment" },
+    { src: "/images/Programes/HP/cer1.avif", alt: "Formal conferment ceremony" },
+    { src: "/images/Programes/HP/cer2.avif", alt: "Recipient receiving honorary title" },
+    { src: "/images/Programes/HP/cer3.avif", alt: "Academic convocation stage" },
+    { src: "/images/Programes/HP/cer4.avif", alt: "Ceremonial recognition moment" },
   ],
 
   profilesIntro:
@@ -164,7 +164,7 @@ const honoraryProfessorship = {
   finalCtaBody:
     "Submit your professional profile for a confidential, obligation-free assessment by our academic review team to determine your eligibility.",
   finalCtaImage:
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+    "/images/Programes/HonoraryDoctorate/cta.avif",
 };
 
 export default honoraryProfessorship;

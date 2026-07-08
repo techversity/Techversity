@@ -12,9 +12,9 @@ const phd = {
     "The highest academic qualification in the world — original research, scholarly contribution, and a doctorate built for those who want to advance knowledge, not just apply it.",
 
   heroImage:
-    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80",
+    "/images/SharedPrograms/PHD.avif",
   whatIsImage:
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=80",
+    "https://successphd.com/wp-content/uploads/2025/07/About-PhD-in-Philosophy-1024x683.pnghttps://i.pinimg.com/736x/ac/cc/45/accc4599152fdda510c8227517019a64.jpg",
 
   heroStats: [
     { value: "5+", label: "Global Institutions" },
@@ -44,11 +44,11 @@ const phd = {
   whoForIntro:
     "PhD candidates are united by one thing — a genuine question they want to research properly, whatever their professional background.",
   whoForCollage: [
-    { src: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=700&q=80", alt: "University faculty member" },
-    { src: "https://images.unsplash.com/photo-1554774853-719586f82d77?w=700&q=80", alt: "Independent researcher" },
-    { src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80", alt: "Corporate professional" },
-    { src: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=700&q=80", alt: "Policy expert" },
-    { src: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=700&q=80", alt: "Healthcare professional" },
+    { src: "/images/Programes/PHD/Logo1.avif", alt: "University faculty member" },
+    { src: "/images/Programes/PHD/Logo2.avif", alt: "Independent researcher" },
+    { src: "/images/Programes/PHD/Logo3.avif", alt: "Corporate professional" },
+    { src: "/images/Programes/PHD/Logo4.avif", alt: "Policy expert" },
+    { src: "/images/Programes/PHD/Logo5.avif", alt: "Healthcare professional" },
   ],
   whoFor: [
     { title: "University Faculty", desc: "Strengthening academic credentials and advancing a teaching career." },
@@ -64,14 +64,14 @@ const phd = {
   whyMattersIntro:
     "A PhD is the credential that opens academic leadership, research influence, and intellectual authority — not just a title.",
   whyMatters: [
-    { title: "Academic Credibility & Authority", desc: "A PhD establishes you as a recognised authority in your research area, inside and outside academia.", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80", imagePosition: "center" },
-    { title: "Research Leadership Opportunities", desc: "Lead research teams, direct institutes, or guide research divisions in universities and organisations.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", imagePosition: "center" },
-    { title: "Teaching Eligibility at Universities", desc: "A PhD is the standard entry credential for university faculty positions worldwide.", image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80", imagePosition: "center" },
-    { title: "Publishing in Peer-Reviewed Journals", desc: "Contribute original research that is citable, reviewable, and part of the permanent scholarly record.", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80", imagePosition: "center" },
-    { title: "Intellectual & Scholarly Authority", desc: "Your dissertation becomes the foundation for books, keynotes, and continued research contribution.", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80", imagePosition: "center" },
-    { title: "International Academic Recognition", desc: "A PhD from an accredited partner university is recognised across research and academic communities globally.", image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80", imagePosition: "center" },
-    { title: "Institutional & Grant Access", desc: "Open doors to postdoctoral fellowships, research grants, and international academic networks.", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80", imagePosition: "center" },
-    { title: "Consulting & Advisory Standing", desc: "Leverage doctoral-level research expertise for high-value advisory work with governments and institutions.", image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", imagePosition: "center" },
+    { title: "Academic Credibility & Authority", desc: "A PhD establishes you as a recognised authority in your research area, inside and outside academia.", image: "/images/Programes/PHD/1.avif", imagePosition: "center" },
+    { title: "Research Leadership Opportunities", desc: "Lead research teams, direct institutes, or guide research divisions in universities and organisations.", image: "/images/Programes/PHD/2.avif", imagePosition: "center" },
+    { title: "Teaching Eligibility at Universities", desc: "A PhD is the standard entry credential for university faculty positions worldwide.", image: "/images/Programes/PHD/3.avif", imagePosition: "center" },
+    { title: "Publishing in Peer-Reviewed Journals", desc: "Contribute original research that is citable, reviewable, and part of the permanent scholarly record.", image: "/images/Programes/PHD/4.avif", imagePosition: "center" },
+    { title: "Intellectual & Scholarly Authority", desc: "Your dissertation becomes the foundation for books, keynotes, and continued research contribution.", image: "/images/Programes/PHD/5.avif", imagePosition: "center" },
+    { title: "International Academic Recognition", desc: "A PhD from an accredited partner university is recognised across research and academic communities globally.", image: "/images/Programes/PHD/6.avif", imagePosition: "center" },
+    { title: "Institutional & Grant Access", desc: "Open doors to postdoctoral fellowships, research grants, and international academic networks.", image: "/images/Programes/PHD/7.avif", imagePosition: "center" },
+    { title: "Consulting & Advisory Standing", desc: "Leverage doctoral-level research expertise for high-value advisory work with governments and institutions.", image: "/images/Programes/PHD/8.avif", imagePosition: "center" },
   ],
 
   fieldsIntro:
@@ -122,10 +122,10 @@ const phd = {
   ],
 
   ceremonyImages: [
-    { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80", alt: "PhD graduation ceremony" },
-    { src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80", alt: "Graduate receiving doctoral degree" },
-    { src: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&q=80", alt: "Academic convocation stage" },
-    { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=80", alt: "Doctoral conferral moment" },
+    { src: "/images/Programes/PHD/cer1.avif", alt: "PhD graduation ceremony" },
+    { src: "/images/Programes/PHD/cer2.avif", alt: "Graduate receiving doctoral degree" },
+    { src: "/images/Programes/PHD/cer3.avif", alt: "Academic convocation stage" },
+    { src: "/images/Programes/PHD/cer4.avif", alt: "Doctoral conferral moment" },
   ],
 
   profilesIntro:
@@ -161,7 +161,7 @@ const phd = {
   finalCtaBody:
     "Submit your research interest for a confidential, obligation-free eligibility review by our senior academic advisory team.",
   finalCtaImage:
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+    "/images/Programes/HonoraryDoctorate/cta.avif",
 };
 
 export default phd;

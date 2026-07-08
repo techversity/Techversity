@@ -1,6 +1,3 @@
-// Doctor of Business Administration — rich program detail content
-// Structure mirrors Honorary Doctorate; content written for Techversity.ai's DBA pathway.
-
 const dba = {
   slug: "dba",
   programTag: "dba",
@@ -12,9 +9,9 @@ const dba = {
     "The highest professional doctorate in business — original research, global recognition, and executive advancement for leaders who already run the room.",
 
   heroImage:
-    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&q=80",
+    "/images/Programes/DBA/hero.avif",
   whatIsImage:
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&q=80",
+    "/images/SharedPrograms/DBA.avif",
 
   heroStats: [
     { value: "9+", label: "Global Institutions" },
@@ -44,11 +41,11 @@ const dba = {
   whoForIntro:
     "DBA candidates come from senior leadership across sectors — united by 7–10+ years of experience and a real question they want to research properly.",
   whoForCollage: [
-    { src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80", alt: "CEO and board member" },
-    { src: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=700&q=80", alt: "Entrepreneur and founder" },
-    { src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80", alt: "Management consultant" },
-    { src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=700&q=80", alt: "Senior director" },
-    { src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&q=80", alt: "Government and policy leader" },
+    { src: "/images/Programes/DBA/Logo1.avif", alt: "CEO and board member" },
+    { src: "/images/Programes/DBA/Logo2.avif", alt: "Entrepreneur and founder" },
+    { src: "/images/Programes/DBA/Logo3.avif", alt: "Management consultant" },
+    { src: "/images/Programes/DBA/Logo4.avif", alt: "Senior director" },
+    { src: "/images/Programes/DBA/Logo5.avif", alt: "Government and policy leader" },
   ],
   whoFor: [
     { title: "CEOs & Board Members", desc: "Strengthening strategic credibility with a doctoral-level qualification behind the title." },
@@ -64,14 +61,14 @@ const dba = {
   whyMattersIntro:
     "A DBA is not a certificate you frame — it's a credential that keeps opening doors long after the research is done.",
   whyMatters: [
-    { title: "Board Membership Opportunities", desc: "Doctoral standing opens governance, advisory, and strategic steering roles at organisations that expect it.", image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80", imagePosition: "center" },
-    { title: "Professor of Practice Pathways", desc: "Teach at partner business schools, contribute to academic discourse, and formalise your thought leadership.", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80", imagePosition: "center" },
-    { title: "Consulting Authority", desc: "A defended doctoral thesis becomes the credibility anchor for premium advisory and consulting work.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80", imagePosition: "center" },
-    { title: "Industry Thought Leadership", desc: "Publish your research, speak at conferences, and shape conversation in your field at doctoral level.", image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80", imagePosition: "center" },
-    { title: "Executive Promotion", desc: "A doctoral credential signals the depth of commitment that C-suite and senior leadership tracks look for.", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80", imagePosition: "center" },
-    { title: "International Recognition", desc: "Formal affiliation with an accredited university travels with you — across borders, sectors, and roles.", image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80", imagePosition: "center" },
-    { title: "Academic Publishing", desc: "Contribute original, peer-reviewable research to your field — not just a professional opinion piece.", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80", imagePosition: "center" },
-    { title: "Advisory Board Invitations", desc: "Corporations, nonprofits, and academic institutions increasingly look for doctoral-level perspective on their boards.", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80", imagePosition: "center" },
+    { title: "Board Membership Opportunities", desc: "Doctoral standing opens governance, advisory, and strategic steering roles at organisations that expect it.", image: "/images/Programes/DBA/1.avif", imagePosition: "center" },
+    { title: "Professor of Practice Pathways", desc: "Teach at partner business schools, contribute to academic discourse, and formalise your thought leadership.", image: "/images/Programes/DBA/2.avif", imagePosition: "center" },
+    { title: "Consulting Authority", desc: "A defended doctoral thesis becomes the credibility anchor for premium advisory and consulting work.", image: "/images/Programes/DBA/3.avif", imagePosition: "center" },
+    { title: "Industry Thought Leadership", desc: "Publish your research, speak at conferences, and shape conversation in your field at doctoral level.", image: "/images/Programes/DBA/4.avif", imagePosition: "center" },
+    { title: "Executive Promotion", desc: "A doctoral credential signals the depth of commitment that C-suite and senior leadership tracks look for.", image: "/images/Programes/DBA/5.avif", imagePosition: "center" },
+    { title: "International Recognition", desc: "Formal affiliation with an accredited university travels with you — across borders, sectors, and roles.", image: "/images/Programes/DBA/6.avif", imagePosition: "center" },
+    { title: "Academic Publishing", desc: "Contribute original, peer-reviewable research to your field — not just a professional opinion piece.", image: "/images/Programes/DBA/7.avif", imagePosition: "center" },
+    { title: "Advisory Board Invitations", desc: "Corporations, nonprofits, and academic institutions increasingly look for doctoral-level perspective on their boards.", image: "/images/Programes/DBA/8.avif", imagePosition: "center" },
   ],
 
   fieldsIntro:
@@ -121,10 +118,10 @@ const dba = {
   ],
 
   ceremonyImages: [
-    { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80", alt: "Doctoral graduation ceremony" },
-    { src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80", alt: "Graduate receiving doctoral degree" },
-    { src: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=900&q=80", alt: "Academic convocation stage" },
-    { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=80", alt: "Doctoral conferral moment" },
+    { src: "/images/Programes/DBA/cer1.avif", alt: "Doctoral graduation ceremony" },
+    { src: "/images/Programes/DBA/cer2.avif", alt: "Graduate receiving doctoral degree" },
+    { src: "/images/Programes/DBA/cer3.avif", alt: "Academic convocation stage" },
+    { src: "/images/Programes/DBA/cer4.avif", alt: "Doctoral conferral moment" },
   ],
 
   profilesIntro:
@@ -160,7 +157,7 @@ const dba = {
   finalCtaBody:
     "Submit your professional profile for a confidential, obligation-free eligibility review by our senior advisory team.",
   finalCtaImage:
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+    "/images/Programes/HonoraryDoctorate/cta.avif",
 };
 
 export default dba;

@@ -17,17 +17,19 @@ const ROWS = [
   },
   {
     label: "Typical Duration",
-    phd: "24–48 months",
-    dba: "18–36 months",
-    hd: "6–12 months",
-    hp: "6–12 months",
+    type: "duration",
+    phd: { text: "24–48 months", fill: 75 },
+    dba: { text: "18–36 months", fill: 56 },
+    hd: { text: "6–12 months", fill: 19 },
+    hp: { text: "6–12 months", fill: 19 },
   },
   {
     label: "Research / Dissertation Required?",
-    phd: "Yes — full dissertation & viva defence",
-    dba: "Yes — applied research project & defence",
-    hd: "No — conferred, not earned",
-    hp: "No — conferred, not earned",
+    type: "boolean",
+    phd: { yes: true, text: "Full dissertation & viva defence" },
+    dba: { yes: true, text: "Applied research project & defence" },
+    hd: { yes: false, text: "Conferred, not earned" },
+    hp: { yes: false, text: "Conferred, not earned" },
   },
   {
     label: "Typical Outcome",
@@ -39,11 +41,25 @@ const ROWS = [
 ];
 
 const COLUMNS = [
-  { key: "phd", label: "PhD", href: "/programs/phd", accent: "#16263D" },
-  { key: "dba", label: "DBA", href: "/programs/dba", accent: "#9A7320" },
-  { key: "hd", label: "Honorary Doctorate", href: "/programs/honorary-doctorate", accent: "#7C5C16" },
-  { key: "hp", label: "Honorary Professorship", href: "/programs/honorary-professorship", accent: "#21385C" },
+  { key: "phd", label: "PhD", href: "/programs/phd", accent: "#16263D", track: "Academic Track" },
+  { key: "dba", label: "DBA", href: "/programs/dba", accent: "#9A7320", track: "Executive Track" },
+  { key: "hd", label: "Honorary Doctorate", href: "/programs/honorary-doctorate", accent: "#7C5C16", track: "Recognition" },
+  { key: "hp", label: "Honorary Professorship", href: "/programs/honorary-professorship", accent: "#21385C", track: "Recognition" },
 ];
+
+function CheckMark({ on, color }) {
+  return on ? (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" className="shrink-0">
+      <circle cx="7.5" cy="7.5" r="7.5" fill={color} fillOpacity="0.12" />
+      <path d="M4.5 7.7L6.4 9.6L10.5 5.2" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ) : (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" className="shrink-0">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="#94A3B8" fillOpacity="0.12" />
+      <path d="M5.3 5.3L9.7 9.7M9.7 5.3L5.3 9.7" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
 
 export default function DoctorateComparison() {
   return (
@@ -66,40 +82,98 @@ export default function DoctorateComparison() {
         </Reveal>
 
         <Reveal direction="up" delay={100}>
-          <div className="overflow-x-auto rounded-2xl border border-line bg-white">
-            <table className="w-full border-collapse min-w-[860px]">
-              <thead>
-                <tr className="bg-wine">
-                  <th className="text-left font-mono text-[10px] uppercase tracking-wider text-white/50 px-5 py-5 rounded-tl-2xl w-[180px]">
-                    &nbsp;
-                  </th>
-                  {COLUMNS.map((c, i) => (
-                    <th
-                      key={c.key}
-                      className={`text-left px-5 py-5 ${i === COLUMNS.length - 1 ? "rounded-tr-2xl" : ""}`}
-                    >
-                      <a href={c.href} className="font-display font-semibold text-[16px] text-white hover:text-gold-light transition-colors">
-                        {c.label}
-                      </a>
+          <div className="rounded-2xl border border-line bg-white shadow-[0_30px_60px_-30px_rgba(74,16,35,0.18)] overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse min-w-[900px]">
+                <thead>
+                  <tr className="bg-wine">
+                    <th className="text-left px-5 py-6 w-[200px] align-bottom">
+                      <span className="font-mono text-[9.5px] uppercase tracking-[2px] text-white/40">
+                        Compare across
+                      </span>
                     </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {ROWS.map((row, ri) => (
-                  <tr key={row.label} className={ri % 2 === 0 ? "bg-white" : "bg-ivory/60"}>
-                    <td className="px-5 py-5 font-mono text-[10.5px] uppercase tracking-wide text-mist align-top">
-                      {row.label}
-                    </td>
                     {COLUMNS.map((c) => (
-                      <td key={c.key} className="px-5 py-5 text-[13.5px] leading-relaxed text-slate align-top">
-                        {row[c.key]}
-                      </td>
+                      <th key={c.key} className="text-left px-5 py-6 align-bottom">
+                        <a href={c.href} className="group inline-block">
+                          <span
+                            className="block h-[3px] w-8 rounded-full mb-3 transition-all duration-300 group-hover:w-12"
+                            style={{ background: c.accent === "#16263D" || c.accent === "#21385C" ? "#D9A441" : "#E8D5A3" }}
+                          />
+                          <span className="block font-display font-semibold text-[17px] text-white group-hover:text-gold-light transition-colors">
+                            {c.label}
+                          </span>
+                          <span className="block font-mono text-[9.5px] uppercase tracking-[1.5px] text-white/45 mt-1.5">
+                            {c.track}
+                          </span>
+                        </a>
+                      </th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {ROWS.map((row, ri) => (
+                    <tr
+                      key={row.label}
+                      className={`group/row transition-colors ${ri % 2 === 0 ? "bg-white" : "bg-ivory/50"} hover:bg-gold/[0.05]`}
+                    >
+                      <td className="px-5 py-6 align-top border-r border-line/70">
+                        <span className="font-mono text-[10px] uppercase tracking-wide text-mist leading-relaxed">
+                          {row.label}
+                        </span>
+                      </td>
+
+                      {COLUMNS.map((c) => {
+                        const cell = row[c.key];
+
+                        if (row.type === "duration") {
+                          return (
+                            <td key={c.key} className="px-5 py-6 align-top">
+                              <p className="text-[13.5px] font-semibold text-wine mb-2.5 tabular-nums">{cell.text}</p>
+                              <div className="h-1 w-full max-w-[110px] rounded-full bg-line/60 overflow-hidden">
+                                <div
+                                  className="h-full rounded-full"
+                                  style={{ width: `${cell.fill}%`, background: c.accent }}
+                                />
+                              </div>
+                            </td>
+                          );
+                        }
+
+                        if (row.type === "boolean") {
+                          return (
+                            <td key={c.key} className="px-5 py-6 align-top">
+                              <div className="flex items-start gap-2">
+                                <CheckMark on={cell.yes} color={c.accent} />
+                                <div>
+                                  <p className="text-[12px] font-semibold uppercase tracking-wide mb-1" style={{ color: cell.yes ? c.accent : "#94A3B8" }}>
+                                    {cell.yes ? "Required" : "Not required"}
+                                  </p>
+                                  <p className="text-[13px] leading-relaxed text-slate">{cell.text}</p>
+                                </div>
+                              </div>
+                            </td>
+                          );
+                        }
+
+                        return (
+                          <td key={c.key} className="px-5 py-6 text-[13.5px] leading-relaxed text-slate align-top">
+                            {cell}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* footnote strip — closes the "no fine print" promise with an actual, visible note */}
+            <div className="flex items-center gap-2.5 px-5 py-4 border-t border-line bg-ivory/70">
+              <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
+              <p className="font-mono text-[10px] uppercase tracking-wide text-mist">
+                Honorary pathways are conferred recognitions, not earned degrees — every partner page states this explicitly
+              </p>
+            </div>
           </div>
         </Reveal>
       </div>

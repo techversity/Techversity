@@ -180,6 +180,29 @@ const data = {
     ],
   },
 
+  university: {
+    intro: "Techversity doesn't run these programs alone — every certification is awarded and backed by our accredited international university partners.",
+    partners: [
+      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "/images/Universities/EU Global/hero.avif" },
+      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "/images/Universities/ESDST/hero.avif" },
+    ],
+    note: "Your certificate is issued by the awarding university partner. Techversity facilitates admission, guidance and support end-to-end.",
+  },
+
+  pricing: {
+    currency: "USD",
+    total: "549",
+    emi: "46",
+    note: "Inclusive of all taxes. Flexible EMI options available at 0% interest with no hidden cost.",
+    includes: [
+      "Full curriculum — live sessions + self-paced labs",
+      "15+ industry projects and a mentor-guided capstone",
+      "University-awarded certificate on completion",
+      "1-on-1 career advisor and interview prep",
+      "Lifetime access to learning content",
+    ],
+  },
+
   faqs: [
     { q: "Do I need coding experience to start?", a: "No. This program is designed for professionals from any background — you start with Excel and SQL and build up to Python and R gradually. A bachelor's degree and some work experience help, but prior coding isn't required." },
     { q: "How is Generative AI part of the course?", a: "GenAI is woven through the analytics workflow — you use AI tools like ChatGPT for forecasting, summarisation and speeding up analysis, and there's a dedicated module on applying generative AI to real analytics tasks." },

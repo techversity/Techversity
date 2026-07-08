@@ -16,13 +16,13 @@ const sbsDetail = {
 
   heroImage: "/images/Universities/SBS/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1758518730384-be3d205838e8?w=1200&q=80",
+    "https://i.pinimg.com/1200x/80/4a/f3/804af393f7b71e240ea8e73a4b0cac0a.jpg",
   GlanceImg:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+    "https://i.pinimg.com/1200x/0d/a8/37/0da83797a6397be4f7157e4719594f02.jpg",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "https://i.pinimg.com/1200x/f7/c6/9f/f7c69f7fcc0d9d089fb1bdd05c34a9fb.jpg",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "https://i.pinimg.com/1200x/fe/30/01/fe3001977566ae1d4969be1103825759.jpg",
   finalCtaImage:
     "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
 
@@ -74,6 +74,7 @@ const sbsDetail = {
     "SBS's accreditation is among the more thoroughly documented we've reviewed — institutional accreditation in Switzerland, plus specialty accreditation for the DBA itself from ACBSP. Your advisor still walks through what each recognition means for your specific country and goals before you apply.",
 
   programSlugs: ["dba", "bachelors"],
+  programPricing: { "dba": "From $15,000", "bachelors": "From $8,000" },
 
   offersCertifications: false,
 

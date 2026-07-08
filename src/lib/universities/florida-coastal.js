@@ -16,13 +16,13 @@ const floridaCoastalDetail = {
 
   heroImage: "/images/Universities/Florida/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1758270705290-62b6294dd044?w=1200&q=80",
+    "https://i.pinimg.com/1200x/cc/ae/18/ccae18c881d9ab2c7e5f54d0ccfb3ee2.jpg",
   GlanceImg:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+    "https://i.pinimg.com/1200x/33/bf/df/33bfdf3866d3a37ef6a7e62d76a2d36e.jpg",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "https://i.pinimg.com/1200x/1b/e1/05/1be105a8e7255ccf82d4b549c61d722f.jpg",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "https://i.pinimg.com/1200x/df/ab/86/dfab8646a52a87f695e01a177235156d.jpg",
   finalCtaImage:
     "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
 

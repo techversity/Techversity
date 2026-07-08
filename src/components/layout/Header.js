@@ -131,7 +131,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-5">
             <span className="flex items-center gap-1.5">
-              <GlobeIcon /> India
+              <GlobeIcon /> USA
             </span>
             <span className="w-px h-3 bg-white/20" />
             <a href="https://wa.me/13239168629" className="flex items-center gap-1.5 hover:text-gold transition-colors">

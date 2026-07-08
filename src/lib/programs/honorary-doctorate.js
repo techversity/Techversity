@@ -12,7 +12,7 @@ const honoraryDoctorate = {
     "Global academic recognition pathways designed for accomplished leaders, entrepreneurs, innovators, public figures and professionals who have created meaningful impact in their fields.",
 
   heroImage:
-    "/images/Programes/HonoraryDoctorate/hero.avif",
+    "/images/SharedPrograms/HD.avif",
   whatIsImage:
     "/images/Programes/HonoraryDoctorate/about.avif",
 
@@ -49,11 +49,11 @@ const honoraryDoctorate = {
     "Honorary distinction is awarded across a wide spectrum of professional achievement — wherever extraordinary contribution can be verified and documented.",
   // portraits for the collage — replace with real, curated editorial-style photos
   whoForCollage: [
-    { src: "https://i.pinimg.com/1200x/bf/ae/8a/bfae8a0866b208ca2d1da624b5edc9fd.jpg", alt: "Founder & entrepreneur" },
-    { src: "https://i.pinimg.com/1200x/01/9a/1c/019a1c60d1ba1e09d4c91656cf9cc3a9.jpg", alt: "Author & researcher" },
-    { src: "https://i.pinimg.com/736x/a7/4d/d4/a74dd43c2a8ec990466f78aa5b5e9b00.jpg", alt: "Public sector leader" },
-    { src: "https://i.pinimg.com/736x/a8/11/90/a8119087ce6a6a61fe2de8c4ee09ff7d.jpg", alt: "Artist & creative" },
-    { src: "https://i.pinimg.com/1200x/da/47/1f/da471f7106a246a9d017b6aa6bd47ad2.jpg", alt: "Senior executive" },
+    { src: "/images/Programes/HonoraryDoctorate/icon1.avif", alt: "Founder & entrepreneur" },
+    { src: "/images/Programes/HonoraryDoctorate/icon2.avif", alt: "Author & researcher" },
+    { src: "/images/Programes/HonoraryDoctorate/icon3.avif", alt: "Public sector leader" },
+    { src: "/images/Programes/HonoraryDoctorate/icon4.avif", alt: "Artist & creative" },
+    { src: "/images/Programes/HonoraryDoctorate/icon5.avif", alt: "Senior executive" },
   ],
   whoFor: [
     { title: "Entrepreneurs", desc: "Founders who built enterprises, created employment, and disrupted markets." },

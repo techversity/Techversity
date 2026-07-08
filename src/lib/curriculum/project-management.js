@@ -200,16 +200,16 @@ const data = {
   university: {
     intro: "Techversity doesn't run these programs alone — every certification is awarded and backed by our accredited international university partners.",
     partners: [
-      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80" },
-      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" },
+      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "/images/Universities/EU Global/hero.avif" },
+      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "/images/Universities/ESDST/hero.avif" },
     ],
     note: "Your certificate is issued by the awarding university partner. Techversity facilitates admission, guidance and support end-to-end.",
   },
 
   pricing: {
-    currency: "INR",
-    total: "1,50,000",
-    emi: "6,716",
+    currency: "USD",
+    total: "1,579",
+    emi: "71",
     note: "Inclusive of all taxes. Flexible EMI options available at 0% interest with no hidden cost.",
     includes: [
       "Full curriculum — live sessions + case studies",

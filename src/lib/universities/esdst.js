@@ -16,13 +16,13 @@ const esdstDetail = {
 
   heroImage: "/images/Universities/ESDST/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1758270705290-62b6294dd044?w=1200&q=80",
+    "https://i.pinimg.com/1200x/58/15/1d/58151d3caeca33a0b9ce5952f9d2f965.jpg",
   GlanceImg:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+    "https://i.pinimg.com/736x/11/d3/e6/11d3e646686d55ba13b55a6539dccfc0.jpg",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "https://i.pinimg.com/1200x/07/d2/5f/07d25ff274a073dd5ca4189f7bb26d40.jpg",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "https://i.pinimg.com/1200x/f6/47/18/f64718fc8ec154a508df84d7628b9220.jpg",
   finalCtaImage:
     "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
 
@@ -71,7 +71,7 @@ const esdstDetail = {
     "ESDST's recognition is genuine but specific — eduQua covers continuing education standards in Switzerland, and the RNCP diplomas come via a partner institution in France. Your advisor confirms exactly what this means for your country and goals before any application begins.",
 
   // TODO
-  programSlugs: ["dba", "masters", "bachelors", "data-science-cert"],
+  programSlugs: ["dba", "masters", "bachelors", "data-science"],
 
   offersCertifications: true,
 

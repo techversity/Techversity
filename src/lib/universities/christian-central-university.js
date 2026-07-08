@@ -16,13 +16,13 @@ const ccuDetail = {
 
   heroImage: "/images/Universities/CCU/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1760166699654-5d0e10f51994?w=1200&q=80",
+    "https://i.pinimg.com/1200x/a2/4f/51/a24f516be2479cb092e9c6a34336b11a.jpg",
   GlanceImg:
-    "https://images.unsplash.com/photo-1758270705290-62b6294dd044?w=1200&q=80",
+    "https://i.pinimg.com/736x/2a/aa/fd/2aaafd694b7dc997929deabecba2fd1d.jpg",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "https://i.pinimg.com/736x/5a/df/31/5adf31f62ddd2ffccee91e5982b9e4b1.jpg",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "https://i.pinimg.com/736x/e5/92/35/e592357b5884f051493112410a23d93b.jpg",
   finalCtaImage:
     "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
 

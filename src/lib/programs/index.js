@@ -2,6 +2,8 @@ import honoraryDoctorate from "./honorary-doctorate";
 import dba from "./dba";
 import phd from "./phd";
 import honoraryProfessorship from "./honorary-professorship";
+import masters from "./masters";
+import bachelors from "./bachelors";
 
 // registry of rich program detail pages (added incrementally)
 const programDetails = {
@@ -9,6 +11,8 @@ const programDetails = {
   "dba": dba,
   "phd": phd,
   "honorary-professorship": honoraryProfessorship,
+  "masters": masters,
+  "bachelors": bachelors,
 };
 
 export function getProgramDetail(slug) {

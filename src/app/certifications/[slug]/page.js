@@ -390,22 +390,22 @@ export default async function CurriculumPage({ params }) {
                 <div className="absolute -top-20 -right-16 w-[280px] h-[280px] rounded-full blur-[90px] opacity-30 pointer-events-none" style={{ background: accent }} />
                 <div className="relative">
                   <p className="font-mono text-[10px] uppercase tracking-[2px] text-white/50 mb-3">Total Program Fee</p>
-                  <p className="font-display font-bold text-white leading-none mb-2"><span className="text-[28px] align-top">₹</span><span className="text-[54px]">{data.pricing.total}</span></p>
+                  <p className="font-display font-bold text-white leading-none mb-2"><span className="text-[28px] align-top">{data.pricing.currency === "USD" ? "$" : "₹"}</span><span className="text-[54px]">{data.pricing.total}</span></p>
                   {(data.pricing.discount || data.pricing.strike) && (
                     <p className="flex items-center gap-2 mb-2">
                       {data.pricing.discount && <span className="font-mono text-[11px] px-2 py-0.5 rounded-md font-semibold" style={{ background: accent, color: "#16263D" }}>{data.pricing.discount}</span>}
-                      {data.pricing.strike && <span className="text-white/40 text-[15px] line-through">₹{data.pricing.strike}</span>}
+                      {data.pricing.strike && <span className="text-white/40 text-[15px] line-through">{data.pricing.currency === "USD" ? "$" : "₹"}{data.pricing.strike}</span>}
                     </p>
                   )}
                   <p className="font-mono text-[10px] uppercase tracking-wide text-white/40 mb-8">Inclusive of taxes</p>
                   <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5 mb-4">
                     <p className="text-white/50 text-[11px] font-mono uppercase tracking-wide mb-1">Pay in installments, as low as</p>
-                    <p className="font-display font-bold text-[26px] text-white">₹{data.pricing.emi}<span className="text-[13px] text-white/50 font-sans font-normal">/month</span></p>
+                    <p className="font-display font-bold text-[26px] text-white">{data.pricing.currency === "USD" ? "$" : "₹"}{data.pricing.emi}<span className="text-[13px] text-white/50 font-sans font-normal">/month</span></p>
                   </div>
                   {data.pricing.seat && (
                     <div className="flex items-center gap-2 mb-6 text-white/70 text-[12.5px]">
                       <Icon name="check" size={13} color={accent} />
-                      Reserve your seat — pay ₹{data.pricing.seat} to block it
+                      Reserve your seat — pay {data.pricing.currency === "USD" ? "$" : "₹"}{data.pricing.seat} to block it
                     </div>
                   )}
                   <Link href={enrollHref} className="w-full inline-flex items-center justify-center gap-2 rounded-full py-4 font-semibold text-[14px] text-wine transition-transform hover:-translate-y-0.5" style={{ background: accent, boxShadow: `0 14px 36px ${accent}55` }}>

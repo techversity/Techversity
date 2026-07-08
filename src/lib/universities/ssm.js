@@ -16,13 +16,13 @@ const ssmDetail = {
 
   heroImage: "/images/Universities/SSM/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1758518730384-be3d205838e8?w=1200&q=80",
+    "https://i.pinimg.com/1200x/29/ea/a0/29eaa0982465e00665dcbe0e8cb0273d.jpg",
   GlanceImg:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+    "https://i.pinimg.com/1200x/e8/d3/d5/e8d3d522e2d0aa48085b9fb1c98a506d.jpg",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "https://i.pinimg.com/1200x/4e/5a/32/4e5a32c5bb1800e731a7c989eca961d8.jpg",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "https://i.pinimg.com/1200x/2a/7e/2e/2a7e2e968480420320f77f41f2741c07.jpg",
   finalCtaImage:
     "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
 
@@ -74,6 +74,7 @@ const ssmDetail = {
 
   // TODO — SSM doesn't yet have its own dedicated DBA program page
   programSlugs: ["dba", "honorary-doctorate", "honorary-professorship", "bachelors"],
+  programPricing: { "dba": "From $15,000", "bachelors": "From $8,000" },
 
   offersCertifications: false,
 

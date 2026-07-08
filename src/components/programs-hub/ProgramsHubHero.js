@@ -1,36 +1,40 @@
 import Reveal from "@/components/ui/Reveal";
 
+const SLIDES = [
+  "/images/SharedPrograms/HD.avif",
+  "/images/SharedPrograms/PHD.avif",
+  "/images/SharedPrograms/DBA.avif",
+  "/images/SharedPrograms/Master.avif",
+  "/images/SharedPrograms/HF.avif",
+  "/images/SharedPrograms/Bach.avif",
+];
+
 export default function ProgramsHubHero() {
   return (
-    <section className="relative bg-wine overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1600&q=80"
-          alt="Campus"
-          className="w-full h-full object-cover object-center"
+    <section className="relative bg-wine overflow-hidden min-h-[620px] lg:min-h-[720px] flex items-center">
+      {/* background slideshow — 6 photos, each crossfades in with a slow pan */}
+      {SLIDES.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0 pointer-events-none programs-hero-slide"
+          style={{
+            backgroundImage: `url('${src}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            animationDelay: `${-i * 5}s`,
+            opacity: i === 0 ? 1 : 0,
+          }}
         />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(110deg, rgba(12,22,38,0.94) 0%, rgba(12,22,38,0.80) 45%, rgba(12,22,38,0.58) 100%)" }} />
-      </div>
+      ))}
+
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
         style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)", backgroundSize: "34px 34px" }} />
+      <div className="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full blur-[150px] opacity-[0.12] pointer-events-none" style={{ background: "#D9A441" }} />
 
-      <div className="max-w-[1180px] mx-auto px-5 lg:px-8 py-20 lg:py-28 relative">
+      {/* links row — top right */}
+      <div className="absolute top-6 right-5 lg:top-8 lg:right-8 z-10">
         <Reveal direction="up">
-          <p className="font-mono text-[10px] uppercase tracking-[3px] text-gold mb-5">Degree Programs</p>
-        </Reveal>
-        <Reveal direction="up" delay={100}>
-          <h1 className="font-display font-semibold text-[42px] lg:text-[62px] text-white leading-[1.04] max-w-3xl mb-6">
-            Credentials that carry <span className="italic text-gold">across borders.</span>
-          </h1>
-        </Reveal>
-        <Reveal direction="up" delay={200}>
-          <p className="text-white/70 text-[16px] lg:text-[18px] leading-relaxed max-w-2xl mb-9">
-            Internationally accredited degrees — Doctorate, Master's, and Bachelor's — delivered
-            online through our global university partners, built for working professionals.
-          </p>
-        </Reveal>
-        <Reveal direction="up" delay={300}>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+          <div className="flex flex-wrap items-center justify-end gap-x-8 gap-y-3">
             {[
               { label: "Doctorate", href: "#doctorate" },
               { label: "Master's", href: "#masters" },
@@ -45,6 +49,23 @@ export default function ProgramsHubHero() {
           </div>
         </Reveal>
       </div>
+
+      <div className="max-w-[1180px] mx-auto px-5 lg:px-8 py-20 lg:py-28 relative w-full" />
+
+      <style>{`
+        @media (prefers-reduced-motion: no-preference) {
+          .programs-hero-slide {
+            animation: programs-hero-slide 30s ease-in-out infinite;
+          }
+        }
+        @keyframes programs-hero-slide {
+          0% { opacity: 0; transform: scale(1.02) translateX(-1%); }
+          2% { opacity: 1; }
+          14% { opacity: 1; transform: scale(1.06) translateX(1%); }
+          16.6% { opacity: 0; }
+          100% { opacity: 0; }
+        }
+      `}</style>
     </section>
   );
 }

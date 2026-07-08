@@ -190,18 +190,18 @@ const data = {
   university: {
     intro: "Techversity doesn't run these programs alone — every certification is awarded and backed by our accredited international university partners.",
     partners: [
-      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "https://d1aeya7jd2fyco.cloudfront.net/banners/EU_Global_banner.webp" },
-      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "https://i.pinimg.com/736x/cf/fe/1f/cffe1fe8cc6044afb78bf8280589855c.jpg" },
+      { name: "EU Global", country: "European Union", blurb: "An international institution partnering with Techversity to award globally recognised professional credentials.", img: "/images/Universities/EU Global/hero.avif" },
+      { name: "ESDST", country: "Europe", blurb: "A partner institution offering accredited executive and professional certifications through Techversity.", img: "/images/Universities/ESDST/hero.avif" },
     ],
     note: "Your certificate is issued by the awarding university partner. Techversity facilitates admission, guidance and support end-to-end.",
   },
 
   pricing: {
-    currency: "INR",
-    total: "1,99,000",
-    emi: "6,825",
-    seat: "10,000",
-    note: "Inclusive of all taxes. Reserve your seat with ₹10,000. Flexible EMI options available at 0% interest with no hidden cost.",
+    currency: "USD",
+    total: "2,099",
+    emi: "72",
+    seat: "105",
+    note: "Inclusive of all taxes. Reserve your seat with $105. Flexible EMI options available at 0% interest with no hidden cost.",
     includes: [
       "Full 26-week guided curriculum — live + self-paced",
       "Leadership capstone with mentor guidance",
@@ -231,7 +231,7 @@ const data = {
   applicationProcess: [
     { step: "01", title: "Submit Application", desc: "Complete the online application with your background and leadership goals." },
     { step: "02", title: "Application Review", desc: "A dedicated admissions panel reviews your fit against the program outcomes." },
-    { step: "03", title: "Reserve Your Seat", desc: "Shortlisted candidates block their seat with ₹10,000 and join the cohort." },
+    { step: "03", title: "Reserve Your Seat", desc: "Shortlisted candidates block their seat with $105 and join the cohort." },
   ],
 
   batchProfile: {
