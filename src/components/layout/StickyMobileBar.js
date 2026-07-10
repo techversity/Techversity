@@ -69,7 +69,7 @@ export default function StickyMobileBar() {
 
         {/* Apply Now — primary */}
         <Link
-          href="/apply/eligibility-check"
+          href="/contact-us"
           className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl font-semibold text-[14px] text-white transition-transform active:scale-[0.98]"
           style={{ background: "linear-gradient(135deg,#C9A04A,#9A7320)", boxShadow: "0 6px 16px rgba(154,115,32,0.32)" }}
         >

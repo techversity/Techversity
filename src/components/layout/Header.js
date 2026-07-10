@@ -427,7 +427,7 @@ export default function Header() {
           </div>
 
           <Link
-            href="/apply/eligibility-check"
+            href="/contact-us"
             onClick={close}
             className="block text-center bg-wine text-white font-semibold text-sm py-3 rounded-md mb-5"
           >
