@@ -30,8 +30,28 @@ export default async function BlogPostPage({ params }) {
   const content = getBlogContent(slug);
   const heroPost = { ...post, dek: content?.dek || post.excerpt };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: content?.dek || post.excerpt,
+    image: `https://techversity.ai${post.img}`,
+    author: { "@type": "Organization", name: post.author || "Techversity Editorial" },
+    publisher: {
+      "@type": "Organization",
+      name: "Techversity.ai",
+      logo: { "@type": "ImageObject", url: "https://techversity.ai/images/Logo/logo.avif" },
+    },
+    datePublished: post.date,
+    mainEntityOfPage: `https://techversity.ai${post.href}`,
+  };
+
   return (
     <main className="bg-ivory">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <ArticleHero post={heroPost} />
 
       <article className="max-w-[820px] mx-auto px-5 lg:px-8 py-12 lg:py-16">

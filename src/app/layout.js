@@ -10,10 +10,34 @@ export const metadata = {
     "Earn an internationally accredited Doctorate, DBA, MBA or Executive Certification — guided end-to-end by Techversity's global education advisors.",
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Techversity.ai",
+  legalName: "Techverso Pvt Ltd",
+  url: "https://techversity.ai",
+  logo: "https://techversity.ai/images/Logo/logo.avif",
+  description:
+    "Techversity.ai connects accomplished professionals with internationally accredited universities for doctoral, executive, and certification credentials.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Lucknow",
+    addressRegion: "Uttar Pradesh",
+    addressCountry: "IN",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/techversity-ai",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <SmoothScroll>
           <Header />
           {children}

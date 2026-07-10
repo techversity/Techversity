@@ -49,8 +49,44 @@ export default async function ProgramPage({ params }) {
   const rich = getProgramDetail(slug);
   if (!rich) notFound();
 
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: rich.name,
+    description: rich.subtitle,
+    url: `https://techversity.ai/programs/${slug}`,
+    provider: {
+      "@type": "Organization",
+      name: "Techversity.ai",
+      sameAs: "https://techversity.ai",
+    },
+  };
+
+  const faqSchema =
+    rich.faqs?.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: rich.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <main className="bg-ivory">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <ProgramHero p={rich} />
       <ProgramStatsStrip stats={rich.heroStats} />
       <ProgramWhatIs p={rich} />

@@ -52,8 +52,44 @@ export default async function CurriculumPage({ params }) {
   const accent = cert.accent;
   const enrollHref = `/certifications/enroll/${slug}`;
 
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: `${cert.title} Certification`,
+    description: cert.desc,
+    url: `https://techversity.ai${cert.href}`,
+    provider: {
+      "@type": "Organization",
+      name: "Techversity.ai",
+      sameAs: "https://techversity.ai",
+    },
+  };
+
+  const faqSchema =
+    data.faqs?.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: data.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <main className="bg-ivory">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* HERO (client, sliding images) */}
       <CurriculumHero cert={cert} data={data} accent={accent} enrollHref={enrollHref} />

@@ -34,8 +34,41 @@ export default async function UniversityDetailPage({ params }) {
   // universities without rich detail content fall back to 404 for now
   if (!u || !d) return notFound();
 
+  const educationalOrgSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    name: d.name,
+    description: d.tagline,
+    url: `https://techversity.ai/universities/${slug}`,
+    ...(u.country ? { address: { "@type": "PostalAddress", addressCountry: u.country } } : {}),
+    ...(d.founded ? { foundingDate: String(d.founded) } : {}),
+  };
+
+  const faqSchema =
+    d.faqs?.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: d.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <main className="bg-ivory">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalOrgSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <UniHero u={u} d={d} />
       <UniFactsStrip d={d} />
       <UniAboutSticky d={d} />
