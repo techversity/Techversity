@@ -14,7 +14,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <LogoStrip />
       <TrustBar />
@@ -27,8 +27,6 @@ export default function Home() {
       <Testimonials />
       <BlogPreview />
       <FinalCTA />
-      
-     
-    </>
+    </main>
   );
 }

@@ -65,12 +65,14 @@ export default function Testimonials() {
           {/* arrows — desktop */}
           <button
             onClick={() => resetTimer((active - 1 + testimonials.length) % testimonials.length)}
+            aria-label="Previous testimonial"
             className="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line items-center justify-center text-mist hover:text-wine hover:border-wine transition-all duration-200 z-10"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <button
             onClick={() => resetTimer((active + 1) % testimonials.length)}
+            aria-label="Next testimonial"
             className="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line items-center justify-center text-mist hover:text-wine hover:border-wine transition-all duration-200 z-10"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -169,6 +171,7 @@ export default function Testimonials() {
             {/* mobile prev */}
             <button
               onClick={() => resetTimer((active - 1 + testimonials.length) % testimonials.length)}
+              aria-label="Previous testimonial"
               className="lg:hidden w-10 h-10 rounded-full border border-line flex items-center justify-center text-mist"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -177,7 +180,7 @@ export default function Testimonials() {
             {/* dots */}
             <div className="flex items-center gap-2">
               {testimonials.map((_, i) => (
-                <button key={i} onClick={() => resetTimer(i)}>
+                <button key={i} onClick={() => resetTimer(i)} aria-label={`Show testimonial ${i + 1}`}>
                   <span
                     className="block rounded-full transition-all duration-400"
                     style={{
@@ -193,6 +196,7 @@ export default function Testimonials() {
             {/* mobile next */}
             <button
               onClick={() => resetTimer((active + 1) % testimonials.length)}
+              aria-label="Next testimonial"
               className="lg:hidden w-10 h-10 rounded-full border border-line flex items-center justify-center text-mist"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>

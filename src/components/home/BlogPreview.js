@@ -72,6 +72,7 @@ function FeaturedPost({ post, visible, imgKey, active, onDotClick, dotCount }) {
             <button
               key={i}
               onClick={(e) => { e.preventDefault(); onDotClick(i); }}
+              aria-label={`Show article ${i + 1}`}
             >
               <span
                 className="block rounded-full transition-all duration-300"

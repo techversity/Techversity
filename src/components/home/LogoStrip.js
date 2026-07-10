@@ -92,6 +92,8 @@ export default function LogoStrip() {
                   alt={u.name}
                   fill
                   sizes="300px"
+                  priority={i === 0}
+                  loading={i === 0 ? undefined : "lazy"}
                   className="object-cover object-center"
                   style={{
                     transform: isActive ? "scale(1.03)" : "scale(1.12)",
@@ -217,6 +219,8 @@ export default function LogoStrip() {
                 alt={u.name}
                 fill
                 sizes="50vw"
+                priority={i < 2}
+                loading={i < 2 ? undefined : "lazy"}
                 className="object-cover object-center"
                 style={{ filter: "brightness(0.65)" }}
               />

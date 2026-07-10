@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useId } from "react";
 
 const API_URL = "https://system-email-generator.onrender.com";
 
@@ -84,13 +84,14 @@ function LineField({ label, value, onChange, placeholder, type = "text", shake, 
 
 function LineSelect({ label, value, onChange, options, placeholder, shake, error, showError, onClearError }) {
   const [focused, setFocused] = useState(false);
+  const selectId = useId();
   const hasErr = !!error;
   return (
     <div className={shake ? "animate-shake" : ""}>
-      <label className="font-mono text-[9px] uppercase tracking-[2.5px] block mb-2.5 transition-colors duration-200"
+      <label htmlFor={selectId} className="font-mono text-[9px] uppercase tracking-[2.5px] block mb-2.5 transition-colors duration-200"
         style={{ color: hasErr ? "#ef4444" : focused ? "#9A7320" : "#8A92A0" }}>{label}</label>
       <div className="relative pb-3">
-        <select value={value} onChange={e => { onChange(e.target.value); onClearError?.(); }}
+        <select id={selectId} value={value} onChange={e => { onChange(e.target.value); onClearError?.(); }}
           onFocus={() => setFocused(true)} onBlur={() => setFocused(false)}
           className="w-full bg-transparent text-[15px] focus:outline-none cursor-pointer appearance-none pr-6"
           style={{ color: value ? "#16263D" : "#8A92A0" }}>

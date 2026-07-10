@@ -209,7 +209,7 @@ export default function CertificationsCarousel() {
                     {/* dot nav */}
                     <div className="flex items-center gap-1.5 ml-auto">
                       {certs.map((_, i) => (
-                        <button key={i} onClick={() => switchTo(i)}>
+                        <button key={i} onClick={() => switchTo(i)} aria-label={`Show certification ${i + 1}`}>
                           <span className="block rounded-full transition-all duration-300"
                             style={{
                               width:  active === i ? "20px" : "6px",
