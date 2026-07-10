@@ -78,7 +78,7 @@ export default function DegreeGrid() {
   const active = cards[activeIdx];
 
   return (
-    <section ref={sectionRef} className="bg-ivory-2 py-20 border-b border-line">
+    <section ref={sectionRef} className="bg-ivory-2 py-20 border-b border-line overflow-hidden">
       <div className="max-w-[1260px] mx-auto px-5 lg:px-8">
 
         {/* ── header ── */}

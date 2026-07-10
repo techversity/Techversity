@@ -179,7 +179,7 @@ export default function ProgramsGrid() {
         backgroundColor: bg,
         transition: "background-color 0.8s cubic-bezier(0.4,0,0.2,1)",
       }}
-      className="py-20"
+      className="py-20 overflow-hidden"
     >
       <div className="max-w-[1260px] mx-auto px-5 lg:px-8">
 
@@ -205,7 +205,7 @@ export default function ProgramsGrid() {
 
         {/* tabs */}
         <Reveal direction="up" delay={80}>
-          <div className="flex gap-0 mb-10 border-b border-line w-fit">
+          <div className="flex gap-0 mb-10 border-b border-line overflow-x-auto no-scrollbar max-w-full">
             {tabs.map((tab) => (
               <button
                 key={tab.value}

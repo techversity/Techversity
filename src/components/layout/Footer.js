@@ -39,16 +39,18 @@ export default function Footer() {
       links: [
         { label: "Universities",    href: "/universities" },
         { label: "Certifications",  href: "/certifications" },
-        { label: "Career Services", href: "/career-services" },
+        { label: "Blog",            href: "/resources/blog" },
         { label: "Verify a Credential", href: "/verification" },
       ],
     },
     {
       heading: "Programs",
       links: [
-        { label: "Doctorate (PhD/DBA)", href: "/doctorate" },
-        { label: "Master's / MBA",      href: "/programs/masters" },
-        { label: "Bachelor's",          href: "/programs/bachelors" },
+        { label: "Doctorate (PhD/DBA)",      href: "/doctorate" },
+        { label: "Master's / MBA",           href: "/programs/masters" },
+        { label: "Bachelor's",               href: "/programs/bachelors" },
+        { label: "Honorary Doctorate",       href: "/programs/honorary-doctorate" },
+        { label: "Honorary Professorship",   href: "/programs/honorary-professorship" },
       ],
     },
     {
@@ -56,7 +58,7 @@ export default function Footer() {
       links: [
         { label: "About Us",            href: "/about-us" },
         { label: "Our Global Partners", href: "/about-us/global-partners" },
-        { label: "Partner With Us",     href: "/partner-with-us" },
+        { label: "University Partners", href: "/universities" },
         { label: "Contact Us",          href: "/contact-us" },
       ],
     },
