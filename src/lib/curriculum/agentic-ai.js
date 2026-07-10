@@ -1,5 +1,5 @@
 const data = {
-  heroImage: "https://i.pinimg.com/originals/f1/48/03/f148033d8d51eb49b8c223d552d6c4c2.jpg",
+  heroImage: "/images/Certification/AgentiAi/hero.avif",
   tagline:
     "Most AI programs teach concepts. This one prepares leaders to act. Master GenAI and Agentic AI, then design strategy, governance and a real AI roadmap you can take back to your organisation.",
   overview:
@@ -13,12 +13,12 @@ const data = {
   ],
 
   highlights: [
-    { icon: "cpu",    img: "https://i.pinimg.com/736x/cb/7b/70/cb7b702912f9592e1538e89b0d158f38.jpg", title: "GenAI & Agentic AI Integrated", desc: "Go beyond theory into how generative and agentic systems actually change work." },
-    { icon: "rocket", img: "https://i.pinimg.com/736x/be/11/14/be1114ae44117ce5dbb3b654b905235b.jpg", title: "Leadership Capstone", desc: "Walk out with a real AI roadmap for your organisation, not just a completion badge." },
-    { icon: "award",  img: "https://i.pinimg.com/1200x/62/03/c2/6203c2dd99b2a7df26b07363e4ac96f5.jpg", title: "Strategy & Governance Focus", desc: "Design AI strategy, set the rules, own the risk — built for decision-makers." },
-    { icon: "users",  img: "https://i.pinimg.com/736x/9f/1b/3c/9f1b3cc7a89f92825b2850ba1f57b33f.jpg", title: "Senior Peer Cohort", desc: "Learn alongside managers and leaders navigating the same AI shift." },
-    { icon: "shield", img: "https://i.pinimg.com/1200x/4f/ee/b9/4feeb93f025c0ed9b200e5cc02f16b8d.jpg", title: "Responsible AI & Risk", desc: "Governance, ethics and risk woven through every strategic decision." },
-    { icon: "clock",  img: "https://i.pinimg.com/736x/4c/f8/e0/4cf8e0beb9c6b3b68767b40a260d3878.jpg", title: "Blended & Flexible", desc: "Live, weekend-friendly sessions with recordings and lifetime access." },
+    { icon: "cpu",    img: "/images/Certification/AgentiAi/1.avif", title: "GenAI & Agentic AI Integrated", desc: "Go beyond theory into how generative and agentic systems actually change work." },
+    { icon: "rocket", img: "/images/Certification/AgentiAi/2.avif", title: "Leadership Capstone", desc: "Walk out with a real AI roadmap for your organisation, not just a completion badge." },
+    { icon: "award",  img: "/images/Certification/AgentiAi/3.avif", title: "Strategy & Governance Focus", desc: "Design AI strategy, set the rules, own the risk — built for decision-makers." },
+    { icon: "users",  img: "/images/Certification/AgentiAi/4.avif", title: "Senior Peer Cohort", desc: "Learn alongside managers and leaders navigating the same AI shift." },
+    { icon: "shield", img: "/images/Certification/AgentiAi/5.avif", title: "Responsible AI & Risk", desc: "Governance, ethics and risk woven through every strategic decision." },
+    { icon: "clock",  img: "/images/Certification/AgentiAi/6.avif", title: "Blended & Flexible", desc: "Live, weekend-friendly sessions with recordings and lifetime access." },
   ],
 
   journey: [
@@ -146,10 +146,10 @@ const data = {
   ],
 
   forWhom: [
-    { title: "Managers & Team Leads", img: "https://i.pinimg.com/736x/a3/98/68/a39868151c434476c6b342d666ca724d.jpg", desc: "Leaders who need to direct AI adoption in their teams and functions." },
-    { title: "Senior Professionals", img: "https://i.pinimg.com/736x/5d/cc/b7/5dccb711d4b73c6b11c943856693fe52.jpg", desc: "Experienced professionals moving into AI-driven strategy and decisions." },
-    { title: "Founders & Consultants", img: "https://i.pinimg.com/736x/95/ec/71/95ec71d06004ee8f3e1a65dd2bed83ee.jpg", desc: "Those who need to build AI strategy and advise on adoption." },
-    { title: "Function Heads", img: "https://i.pinimg.com/1200x/83/b5/d5/83b5d5f624aca672a5c94e8769d5fb77.jpg", desc: "Ops, marketing, finance and HR leaders finding AI opportunities in their domain." },
+    { title: "Managers & Team Leads", img: "/images/Certification/AgentiAi/7.avif", desc: "Leaders who need to direct AI adoption in their teams and functions." },
+    { title: "Senior Professionals", img: "/images/Certification/AgentiAi/8.avif", desc: "Experienced professionals moving into AI-driven strategy and decisions." },
+    { title: "Founders & Consultants", img: "/images/Certification/AgentiAi/9.avif", desc: "Those who need to build AI strategy and advise on adoption." },
+    { title: "Function Heads", img: "/images/Certification/AgentiAi/10.avif", desc: "Ops, marketing, finance and HR leaders finding AI opportunities in their domain." },
   ],
 
   compare: {
@@ -178,13 +178,6 @@ const data = {
       { val: "3x", unit: "", label: "faster growth for AI-skilled leaders' demand" },
       { val: "#1", unit: "", label: "priority skill cited by senior executives" },
     ],
-  },
-
-  successStory: {
-    quote: "I didn't want to become a data scientist — I wanted to lead AI in my company. This program gave me exactly that: the judgment to prioritise, the governance to do it responsibly, and a real plan I presented to my leadership team.",
-    name: "Neha S.",
-    role: "Product Manager → Head of AI Initiatives",
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80",
   },
 
   university: {

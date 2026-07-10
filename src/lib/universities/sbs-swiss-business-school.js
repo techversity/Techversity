@@ -16,15 +16,15 @@ const sbsDetail = {
 
   heroImage: "/images/Universities/SBS/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/80/4a/f3/804af393f7b71e240ea8e73a4b0cac0a.jpg",
+    "/images/Universities/SBS/about.avif",
   GlanceImg:
-    "https://i.pinimg.com/1200x/0d/a8/37/0da83797a6397be4f7157e4719594f02.jpg",
+    "/images/Universities/SBS/Glance.avif",
   certificateImage:
-    "https://i.pinimg.com/1200x/f7/c6/9f/f7c69f7fcc0d9d089fb1bdd05c34a9fb.jpg",
+    "/images/Universities/SBS/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/1200x/fe/30/01/fe3001977566ae1d4969be1103825759.jpg",
+    "/images/Universities/SBS/Convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "A Swiss state-accredited business school in Zurich — the DBA is itself specialty-accredited by ACBSP, not just the institution.",

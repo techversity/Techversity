@@ -1,5 +1,5 @@
 const data = {
-  "heroImage": "https://images.unsplash.com/photo-1644325349124-d1756b79dd42?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "heroImage": "/images/Certification/DataScience/hero.avif",
   "tagline": "From spreadsheets to production ML — master Python, SQL, statistics, machine learning and GenAI, and walk out able to build, deploy and explain models that drive real decisions.",
   "overview": "Data Science is where analytical rigour meets business impact — and demand for people who can do it well keeps outpacing supply. This program takes you end-to-end: a Python and SQL foundation, the statistics that underpin every model, supervised and unsupervised machine learning, deep learning, and the GenAI, LLM and RAG skills employers now expect. Every module ends in a concrete deliverable, and you finish with a capstone and a 15+ project portfolio you can put in front of any hiring panel.",
   "heroStats": [
@@ -27,37 +27,37 @@ const data = {
   "highlights": [
     {
       "icon": "clock",
-      "img": "https://i.pinimg.com/736x/22/5e/d6/225ed64777b68c6108f4894f3da7c662.jpg",
+      "img": "/images/Certification/DataScience/1.avif",
       "title": "AI-Driven, Flexible Curriculum",
       "desc": "Python, SQL, statistics, ML and DNNs — live sessions plus self-paced labs around your job."
     },
     {
       "icon": "cpu",
-      "img": "https://i.pinimg.com/736x/fa/ab/75/faab75e5ac52f25986178e1b38ed579d.jpg",
+      "img": "/images/Certification/DataScience/2.avif",
       "title": "GenAI, LLMs & MLOps Integrated",
       "desc": "RAG, Azure ML, Power BI with AI and production MLOps built into the core."
     },
     {
       "icon": "users",
-      "img": "https://i.pinimg.com/1200x/ec/ba/d2/ecbad20a73d532d16104156b7da15e62.jpg",
+      "img": "/images/Certification/DataScience/3.avif",
       "title": "Learn from Practising Data Scientists",
       "desc": "Live, interactive guidance from industry experts across every module."
     },
     {
       "icon": "rocket",
-      "img": "https://i.pinimg.com/1200x/44/9a/f2/449af2550aa244088b13603651cfdf61.jpg",
+      "img": "/images/Certification/DataScience/4.avif",
       "title": "15+ Projects & 3-Domain Capstone",
       "desc": "Hands-on projects built on real, publicly available datasets across domains."
     },
     {
       "icon": "shield",
-      "img": "https://i.pinimg.com/1200x/fd/c2/e4/fdc2e41fc928fdd509da6ad337a49d4b.jpg",
+      "img": "/images/Certification/DataScience/5.avif",
       "title": "Production-Ready Skills",
       "desc": "Model deployment, MLOps and explainable AI — not just notebooks."
     },
     {
       "icon": "award",
-      "img": "https://i.pinimg.com/1200x/25/eb/49/25eb494435e9a8791fb7a865e63fe92d.jpg",
+      "img": "/images/Certification/DataScience/6.avif",
       "title": "Industry-Recognised Certificate",
       "desc": "A globally recognised Data Science credential plus lifetime access to learning content."
     }
@@ -311,22 +311,22 @@ const data = {
   "forWhom": [
     {
       "title": "Analysts & BI Professionals",
-      "img": "https://i.pinimg.com/736x/89/79/8d/89798da4ee495d6bbe15c9b5676f842a.jpg",
+      "img": "/images/Certification/DataScience/7.avif",
       "desc": "Move from reporting into predictive modelling and machine learning."
     },
     {
       "title": "Software Engineers",
-      "img": "https://i.pinimg.com/1200x/fc/81/92/fc8192fbc3821304ec6a776d69dbb378.jpg",
+      "img": "/images/Certification/DataScience/8.avif",
       "desc": "Add data science and ML to your stack and open new roles."
     },
     {
       "title": "Career Switchers",
-      "img": "https://i.pinimg.com/1200x/c1/2c/bb/c12cbb25d66389178eedb5518a495022.jpg",
+      "img": "/images/Certification/DataScience/9.avif",
       "desc": "Enter data science from any background — no prior coding required."
     },
     {
       "title": "Domain Experts",
-      "img": "https://i.pinimg.com/236x/b8/4b/04/b84b042585a1d95cb592c7aeaba686c1.jpg",
+      "img": "/images/Certification/DataScience/10.avif",
       "desc": "Turn deep domain knowledge into data-driven decisions and models."
     }
   ],

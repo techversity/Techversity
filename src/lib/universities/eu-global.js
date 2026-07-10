@@ -17,11 +17,11 @@ const euGlobalDetail = {
   studentsServed: "Learners from 40+ countries",
 
   heroImage: "/images/Universities/EU Global/hero.avif",
-  aboutImage: "https://i.pinimg.com/736x/fc/0b/29/fc0b2945867d59829956315894819fa8.jpg", // TODO: add real image asset
-  GlanceImg: "https://i.pinimg.com/1200x/e6/ad/c6/e6adc682d2bb1254e52883bef5d081b9.jpg", // TODO: add real image asset
-  certificateImage: "https://i.pinimg.com/736x/df/2c/22/df2c22387c024b92166bfe93156f12a2.jpg", // TODO: add real image asset
-  convocationImage: "https://www.fau.edu/nursing/images/convocation-2024-group.jpg", // TODO: add real image asset
-  finalCtaImage: "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg", // TODO: add real image asset
+  aboutImage: "/images/Universities/EU Global/About.avif", 
+  GlanceImg: "/images/Universities/EU Global/Glance.avif", 
+  certificateImage: "/images/Universities/EU Global/certificate.avif", // TODO: add real image asset
+  convocationImage: "/images/Universities/EU Global/Convocation.avif", // TODO: add real image asset
+  finalCtaImage: "/images/SharedPrograms/CTA.avif", // TODO: add real image asset
 
   tagline:
     "A Malta-accredited institute built for global employability — DBA, MBA, and technology programmes delivered online, blended, or on-campus.",

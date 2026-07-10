@@ -12,9 +12,9 @@ const phd = {
     "The highest academic qualification in the world — original research, scholarly contribution, and a doctorate built for those who want to advance knowledge, not just apply it.",
 
   heroImage:
-    "/images/SharedPrograms/PHD.avif",
+    "/images/Programes/PHD/hero.avif",
   whatIsImage:
-    "https://successphd.com/wp-content/uploads/2025/07/About-PhD-in-Philosophy-1024x683.pnghttps://i.pinimg.com/736x/ac/cc/45/accc4599152fdda510c8227517019a64.jpg",
+    "/images/SharedPrograms/PHD.avif",
 
   heroStats: [
     { value: "5+", label: "Global Institutions" },

@@ -4,12 +4,11 @@ import { useState, useMemo, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { universities } from "@/lib/universities";
-import { doctorateTypes } from "@/lib/doctorate";
+import { programs } from "@/lib/programs";
 import { flagUrl } from "@/lib/flag";
 
-const EXTRA_LABELS = { masters: "MA", professorship: "PROF", "executive-education": "EXEC" };
 const programLabel = (slug) =>
-  doctorateTypes.find((d) => d.slug === slug)?.abbr || EXTRA_LABELS[slug] || slug;
+  programs.find((p) => p.slug === slug)?.initials || slug;
 
 function useReveal(threshold = 0.1) {
   const ref = useRef(null);

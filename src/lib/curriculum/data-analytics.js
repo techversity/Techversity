@@ -1,5 +1,5 @@
 const data = {
-  heroImage: "https://i.pinimg.com/736x/03/f7/b8/03f7b851bc11962b540668405f750f9a.jpg",
+  heroImage: "/images/Certification/DataAnalytics/hero.avif",
   tagline:
     "Turn raw data into decisions — master Excel, SQL, Python, R, Tableau and Power BI, then supercharge it all with Generative AI. No coding background required.",
   overview:
@@ -13,12 +13,12 @@ const data = {
   ],
 
   highlights: [
-    { icon: "clock",  img: "https://i.pinimg.com/1200x/28/6b/18/286b18e2d80b42abe26f019348db004a.jpg", title: "Beginner-Friendly, No Coding Needed", desc: "Start from Excel and build up — designed for professionals from any background." },
-    { icon: "cpu",    img: "https://i.pinimg.com/736x/94/e5/5c/94e55c80249cfaa2f2875c23e20d77c3.jpg", title: "GenAI Integrated Throughout", desc: "Use ChatGPT and modern AI tools for forecasting, summarisation and analytics tasks." },
-    { icon: "rocket", img: "https://i.pinimg.com/1200x/93/0d/c1/930dc1ac4570507ca25303a967e0cc2d.jpg", title: "15+ Industry Projects", desc: "Real dashboards and analyses across sales, retail, healthcare and finance." },
-    { icon: "users",  img: "https://i.pinimg.com/736x/71/df/c9/71dfc94631441ac68e6238448a663e69.jpg", title: "Learn from Practising Analysts", desc: "Live, mentor-led sessions from people who do analytics for a living." },
-    { icon: "award",  img: "https://i.pinimg.com/1200x/d3/16/d6/d316d666aa1ac33426828d7a6c40b481.jpg", title: "End-to-End Analytics Skills", desc: "Data prep, modelling, visualisation, GenAI and adaptive systems in one path." },
-    { icon: "shield", img: "https://i.pinimg.com/1200x/8d/74/2c/8d742c6215bb74a40e7bc62e35f47d37.jpg", title: "Data Ethics Built In", desc: "Learn to handle data responsibly — a skill employers increasingly expect." },
+    { icon: "clock",  img: "/images/Certification/DataAnalytics/1.avif", title: "Beginner-Friendly, No Coding Needed", desc: "Start from Excel and build up — designed for professionals from any background." },
+    { icon: "cpu",    img: "/images/Certification/DataAnalytics/2.avif", title: "GenAI Integrated Throughout", desc: "Use ChatGPT and modern AI tools for forecasting, summarisation and analytics tasks." },
+    { icon: "rocket", img: "/images/Certification/DataAnalytics/3.avif", title: "15+ Industry Projects", desc: "Real dashboards and analyses across sales, retail, healthcare and finance." },
+    { icon: "users",  img: "/images/Certification/DataAnalytics/4.avif", title: "Learn from Practising Analysts", desc: "Live, mentor-led sessions from people who do analytics for a living." },
+    { icon: "award",  img: "/images/Certification/DataAnalytics/5.avif", title: "End-to-End Analytics Skills", desc: "Data prep, modelling, visualisation, GenAI and adaptive systems in one path." },
+    { icon: "shield", img: "/images/Certification/DataAnalytics/6.avif", title: "Data Ethics Built In", desc: "Learn to handle data responsibly — a skill employers increasingly expect." },
   ],
 
   journey: [
@@ -146,10 +146,10 @@ const data = {
   ],
 
   forWhom: [
-    { title: "Aspiring Analysts", img: "https://i.pinimg.com/736x/29/81/e3/2981e3bccd8697f5a22d255174d74704.jpg", desc: "Break into analytics from any background — no coding experience required." },
-    { title: "Business & Ops Professionals", img: "https://i.pinimg.com/736x/96/fb/3d/96fb3dfb0ceca13836fba6d02bcdbef5.jpg", desc: "Add data and BI skills to make sharper, evidence-based decisions." },
-    { title: "Excel & Reporting Users", img: "https://i.pinimg.com/736x/22/d2/c7/22d2c7d0b4929ca3575630adae7d005f.jpg", desc: "Move beyond spreadsheets into SQL, Python, BI tools and GenAI." },
-    { title: "Career Switchers", img: "https://i.pinimg.com/1200x/99/3d/e2/993de22ebdb42ea5cb49e87d8b578949.jpg", desc: "Enter the data field with a job-ready, project-backed skill set." },
+    { title: "Aspiring Analysts", img: "/images/Certification/DataAnalytics/7.avif", desc: "Break into analytics from any background — no coding experience required." },
+    { title: "Business & Ops Professionals", img: "/images/Certification/DataAnalytics/8.avif", desc: "Add data and BI skills to make sharper, evidence-based decisions." },
+    { title: "Excel & Reporting Users", img: "/images/Certification/DataAnalytics/9.avif", desc: "Move beyond spreadsheets into SQL, Python, BI tools and GenAI." },
+    { title: "Career Switchers", img: "/images/Certification/DataAnalytics/10.avif", desc: "Enter the data field with a job-ready, project-backed skill set." },
   ],
 
   compare: {

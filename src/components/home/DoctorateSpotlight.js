@@ -83,7 +83,7 @@ export default function DoctorateSpotlight() {
         <Reveal direction="left">
           <div className="relative h-[280px] sm:h-[360px] lg:h-full group overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1720805752653-10ddccea4c94?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/HomePage/spotLight.avif"
               alt="Senior executive"
               fill
               className="object-cover object-[center_15%] transition-transform duration-[1200ms] group-hover:scale-105"

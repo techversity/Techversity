@@ -16,15 +16,15 @@ const ssmDetail = {
 
   heroImage: "/images/Universities/SSM/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/29/ea/a0/29eaa0982465e00665dcbe0e8cb0273d.jpg",
+    "/images/Universities/SSM/about.avif",
   GlanceImg:
-    "https://i.pinimg.com/1200x/e8/d3/d5/e8d3d522e2d0aa48085b9fb1c98a506d.jpg",
+    "/images/Universities/SSM/glance.avif",
   certificateImage:
-    "https://i.pinimg.com/1200x/4e/5a/32/4e5a32c5bb1800e731a7c989eca961d8.jpg",
+    "/images/Universities/SSM/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/1200x/2a/7e/2e/2a7e2e968480420320f77f41f2741c07.jpg",
+    "/images/Universities/SSM/convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "DEAC-accredited, eduQua-certified for two decades — a genuinely well-documented business school with campuses from Geneva to Dubai.",

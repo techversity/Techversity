@@ -41,13 +41,13 @@ function PostCard({ post, index }) {
       href={post.href}
       className="group relative bg-white rounded-[20px] border border-line overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_45px_-10px_rgba(22,38,61,0.14)] transition-all duration-350"
     >
-      <div className="relative h-[168px] overflow-hidden">
+      <div className="relative h-[200px] overflow-hidden">
         <Image
           src={post.img}
           alt={post.title}
           fill
           sizes="380px"
-          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, transparent 45%, rgba(11,18,30,0.7) 100%)" }} />
         <span
@@ -116,13 +116,13 @@ export default function BlogGrid() {
           href={featured.href}
           className="group relative grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white rounded-[24px] border border-line overflow-hidden mb-12 hover:shadow-[0_24px_60px_-12px_rgba(22,38,61,0.16)] transition-shadow duration-350"
         >
-          <div className="relative h-[240px] lg:h-auto overflow-hidden">
+          <div className="relative h-[280px] lg:h-[420px] overflow-hidden">
             <Image
               src={featured.img}
               alt={featured.title}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+              className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.05]"
             />
             <span className="absolute top-5 left-5 font-mono text-[9px] uppercase tracking-[1.5px] px-3 py-1.5 rounded-full font-semibold bg-white/95" style={{ color: featured.categoryColor }}>
               Featured

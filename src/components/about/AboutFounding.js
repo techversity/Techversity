@@ -145,7 +145,7 @@ export default function AboutFounding() {
 
               <div className="relative rounded-xl overflow-hidden aspect-[4/5]">
                 <Image
-                  src="https://i.pinimg.com/736x/13/71/0d/13710de3bafd22eeec3eb2627f9036a2.jpg"
+                  src="/images/About/Founding.avif"
                   alt="Reading room, wooden shelving"
                   fill
                   className="object-cover"

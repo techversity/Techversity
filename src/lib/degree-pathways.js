@@ -1,7 +1,7 @@
 export const pathways = [
   {
     num: "01", level: "Distinction",
-    img: "https://images.unsplash.com/photo-1747836130078-d62d15c79c30?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/images/HomePage/Doctorate.avif",
     title: "Doctoral Programs",
     desc: "A PhD, DBA, or Honorary Doctorate for professionals whose work has already earned the credential. The highest academic title — internationally accredited.",
     detail: "For senior leaders, researchers, and accomplished executives with 10+ years of professional achievement.",
@@ -12,7 +12,7 @@ export const pathways = [
   },
   {
     num: "02", level: "Skill Up",
-    img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=75",
+    img: "/images/SharedPrograms/cert.avif",
     title: "Certifications",
     desc: "Industry-aligned certification programs in Data Science, Agentic AI, Cybersecurity and more. Career-ready skills in weeks, globally recognised.",
     detail: "For professionals seeking rapid upskilling with industry-recognised credentials — no career break needed.",
@@ -23,7 +23,7 @@ export const pathways = [
   },
   {
     num: "03", level: "Advancement",
-    img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=75",
+    img: "/images/HomePage/Master.avif",
     title: "Master's & MBA",
     desc: "Accelerate your next chapter with an internationally accredited Master's degree — zero career interruption, 100% online.",
     detail: "Designed for mid-career professionals targeting leadership roles, salary growth, or a pivot into a new sector.",
@@ -34,7 +34,7 @@ export const pathways = [
   },
   {
     num: "04", level: "Foundation",
-    img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=75",
+    img: "/images/HomePage/Bach.avif",
     title: "Bachelor's Programs",
     desc: "Begin your academic record with globally recognised undergraduate degrees — fully online, internationally accredited, and accessible from anywhere in the world.",
     detail: "Ideal for early-career professionals or those formalising existing expertise into an accredited credential.",

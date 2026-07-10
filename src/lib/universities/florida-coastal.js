@@ -16,15 +16,15 @@ const floridaCoastalDetail = {
 
   heroImage: "/images/Universities/Florida/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/cc/ae/18/ccae18c881d9ab2c7e5f54d0ccfb3ee2.jpg",
+    "/images/Universities/Florida/about.avif",
   GlanceImg:
-    "https://i.pinimg.com/1200x/33/bf/df/33bfdf3866d3a37ef6a7e62d76a2d36e.jpg",
+    "/images/Universities/Florida/glance.avif",
   certificateImage:
-    "https://i.pinimg.com/1200x/1b/e1/05/1be105a8e7255ccf82d4b549c61d722f.jpg",
+    "/images/Universities/Florida/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/1200x/df/ab/86/dfab8646a52a87f695e01a177235156d.jpg",
+    "/images/Universities/Florida/convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "A Jacksonville-based online university — DBA and Doctorate of Computer Science, alongside a full Master's catalogue, with academic partnerships from Cisco, IBM, CompTIA, and Microsoft.",

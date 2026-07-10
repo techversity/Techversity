@@ -16,15 +16,15 @@ const ccuDetail = {
 
   heroImage: "/images/Universities/CCU/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/a2/4f/51/a24f516be2479cb092e9c6a34336b11a.jpg",
+    "/images/Universities/CCU/about.avif",
   GlanceImg:
-    "https://i.pinimg.com/736x/2a/aa/fd/2aaafd694b7dc997929deabecba2fd1d.jpg",
+    "/images/Universities/CCU/glance.avif",
   certificateImage:
-    "https://i.pinimg.com/736x/5a/df/31/5adf31f62ddd2ffccee91e5982b9e4b1.jpg",
+    "/images/Universities/CCU/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/736x/e5/92/35/e592357b5884f051493112410a23d93b.jpg",
+    "/images/Universities/CCU/convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "A faith-based Orlando institution — undergraduate and graduate study publicly, with doctoral and honorary pathways available through Techversity's advisory partnership.",

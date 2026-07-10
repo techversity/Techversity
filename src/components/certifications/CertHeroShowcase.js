@@ -6,12 +6,12 @@ import { useEffect, useRef, useState } from "react";
 
 // hero-only images (do not affect cards / curriculum pages)
 const HERO_IMAGES = {
-  "data-science": "https://wallpapers.com/images/hd/data-science-concepts-illustration-xe1pmo7wm4jcokpd.jpg",
-  "agentic-ai": "https://channelvisionmag.com/wp-content/uploads/2025/08/Agentic-AI-Hands-scaled.jpeg",
-  "cybersecurity": "https://static.vecteezy.com/system/resources/previews/025/466/198/original/cyber-security-technology-concept-in-the-shape-of-sphere-with-hexagon-pattern-in-wireframe-hand-information-protect-and-safe-cyber-data-security-or-network-security-idea-illustration-vector.jpg",
-  "data-analytics": "https://i.pinimg.com/736x/a3/34/06/a33406edef902aba21b4a5e0ecdf2cc6.jpg",
-  "cloud-computing": "https://img.freepik.com/premium-photo/cloud-computing-technology-vector-circle-business-concepts-with-icons-can-use-infographic_1197797-236800.jpg?w=2000",
-  "project-management": "https://i.pinimg.com/736x/5b/c3/ce/5bc3ceda613b418cf8a829899b1fc54f.jpg",
+  "data-science": "/images/Certification/CertificationHub/DataScience.avif",
+  "agentic-ai": "/images/Certification/CertificationHub/AgenticAi.avif",
+  "cybersecurity": "/images/Certification/CertificationHub/CyberSecurity.avif",
+  "data-analytics": "/images/Certification/CertificationHub/DataAnalysis.avif",
+  "cloud-computing": "/images/Certification/CertificationHub/CloudComputing.avif",
+  "project-management": "/images/Certification/CertificationHub/ProjectManagement.avif",
 };
 
 const slugOf = (c) => c.href.split("/").filter(Boolean).pop();

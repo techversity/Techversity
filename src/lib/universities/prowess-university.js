@@ -16,15 +16,15 @@ const prowessDetail = {
 
   heroImage: "/images/Universities/Prowess/hero.avif",
   aboutImage:
-    "https://images.unsplash.com/photo-1758270705290-62b6294dd044?w=1200&q=80",
+    "/images/Universities/Prowess/about.avif",
   GlanceImg:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+    "/images/Universities/Prowess/glance.avif",
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "/images/Universities/Prowess/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "/images/Universities/Prowess/convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "A Delaware-registered distance-learning institution offering Honorary Doctoral and Professorial recognition — with recognition details laid out plainly, not assumed.",

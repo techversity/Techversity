@@ -414,7 +414,7 @@ export default function Header() {
           {/* drawer header with logo */}
           <div className="flex items-center justify-between mb-5">
             <Link href="/" onClick={close} className="flex items-center gap-2">
-              <Image src="/images/logo.avif" alt="Techversity" width={32} height={32} className="w-8 h-8 object-contain" />
+              <Image src="/images/Logo/logo.avif" alt="Techversity" width={32} height={32} className="w-8 h-8 object-contain" />
               <span className="font-display font-bold text-[18px] text-wine">
                 Techversity<span className="text-gold">.ai</span>
               </span>

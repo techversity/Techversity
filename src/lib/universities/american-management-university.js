@@ -15,11 +15,11 @@ const americanManagementDetail = {
   studentsServed: "Working professionals, global",
 
   heroImage: "/images/Universities/American/hero.avif",
-  aboutImage: "https://i.pinimg.com/1200x/09/3f/67/093f6715d49d8f14a65c5c8a56050b34.jpg", // TODO
-  GlanceImg: "https://i.pinimg.com/1200x/d9/d1/74/d9d174f0917138840d38550740a0813c.jpg", // TODO
-  certificateImage: "https://i.pinimg.com/736x/73/a8/ad/73a8ad2ce4df1e2af1b845f3da939aa3.jpg", // TODO
-  convocationImage: "https://i.pinimg.com/1200x/ba/ed/6b/baed6bc774f9fc14717ad4d6a982df5d.jpg", // TODO
-  finalCtaImage: "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg", // TODO
+  aboutImage: "/images/Universities/American/about.avif", 
+  GlanceImg: "/images/Universities/American/Glance.avif", 
+  certificateImage: "/images/Universities/American/Certificate.avif", 
+  convocationImage: "/images/Universities/American/convocation.avif", 
+  finalCtaImage: "/images/SharedPrograms/CTA.avif", 
 
   tagline:
     "A business-focused institution built for working professionals — PhD, DBA, and Master's pathways delivered fully online.",

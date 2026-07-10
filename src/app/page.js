@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import LogoStrip from "@/components/home/LogoStrip";
 import TrustBar from "@/components/home/TrustBar";
+import WhyTechversity from "@/components/home/WhyTechversity";
 import ProgramsGrid from "@/components/home/ProgramsGrid";
 import DoctorateSpotlight from "@/components/home/DoctorateSpotlight";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -9,7 +10,7 @@ import CertificationsCarousel from "@/components/home/CertificationsCarousel";
 import Testimonials from "@/components/home/Testimonials";
 import BlogPreview from "@/components/home/BlogPreview";
 import FinalCTA from "@/components/home/FinalCTA";
-import StatsBar from "@/components/home/StatsBar";
+
 
 export default function Home() {
   return (
@@ -22,11 +23,12 @@ export default function Home() {
       <DegreeGrid /> 
       <CertificationsCarousel />
       <HowItWorks />
+      <WhyTechversity />
       <Testimonials />
       <BlogPreview />
       <FinalCTA />
       
-      {/* <StatsBar /> */}
+     
     </>
   );
 }

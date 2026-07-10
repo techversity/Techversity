@@ -21,13 +21,13 @@ export default function FinalCTA() {
             }}
           >
             <Image
-              src="/images/homePage/ContactImg.avif"
+              src="/images/HomePage/ContactImg.avif"
               alt="Graduation ceremony"
               fill
               className="object-cover"
               sizes="50vw"
               style={{
-                objectPosition: "left center", // 👈 crop se left content bachega
+                objectPosition: "left center", 
                 transform: visible ? "scale(1)" : "scale(1.03)", // 👈 zyada zoom hata diya
                 transition: "transform 1.6s cubic-bezier(0.22,1,0.36,1) 0.15s",
               }}

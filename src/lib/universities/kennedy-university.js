@@ -20,17 +20,17 @@ const kennedyUniversity = {
   heroImage:
     "/images/Universities/Kennedy/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/bd/d3/87/bdd38712631c2407a9e1d24a2e83c098.jpg",
+    "/images/Universities/Kennedy/about.avif",
    
   GlanceImg :
-  "https://i.pinimg.com/1200x/c5/6d/e9/c56de94f5eecec9bee16a8d5b7d3e84b.jpg", 
+  "/images/Universities/Kennedy/glance.avif", 
   certificateImage:
-    "https://i.pinimg.com/1200x/cd/86/02/cd8602dcab57da974a709c2588661f7c.jpg",
+    "/images/Universities/Kennedy/certification.avif",
   // convocation moment image
   convocationImage:
-    "https://i.pinimg.com/1200x/86/a8/3d/86a83dff4cc9f9ba68832e1e7a823081.jpg",
+    "/images/Universities/Kennedy/Convocation.avif",
   finalCtaImage:
-  "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+  "/images/SharedPrograms/CTA.avif",
 
   // one-line hero descriptor
   tagline:

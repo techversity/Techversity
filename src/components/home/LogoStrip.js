@@ -6,11 +6,11 @@ import useInView from "@/hooks/useInView";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 import { universities as allUniversities } from "@/lib/universities";
-import { doctorateTypes } from "@/lib/doctorate";
+import { programs } from "@/lib/programs";
 import { flagUrl } from "@/lib/flag";
 
 const programLabel = (slug) =>
-  doctorateTypes.find((d) => d.slug === slug)?.abbr || slug;
+  programs.find((p) => p.slug === slug)?.initials || slug;
 
 // only the fields this component actually needs, mapped from the shared data
 const universities = allUniversities.map((u) => ({

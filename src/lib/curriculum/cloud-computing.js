@@ -1,5 +1,5 @@
 const data = {
-  heroImage: "https://i.pinimg.com/1200x/47/ed/f2/47edf2d31c14d2bc756bb39b6cde2857.jpg",
+  heroImage: "/images/Certification/CloudComp/hero.avif",
   tagline:
     "Master cloud and DevOps end-to-end — AWS, Azure and Google Cloud, plus Docker, Kubernetes, Terraform and CI/CD — and layer AI on top to build, deploy and run intelligent cloud-native systems.",
   overview:
@@ -13,12 +13,12 @@ const data = {
   ],
 
   highlights: [
-    { icon: "cpu",    img: "https://i.pinimg.com/1200x/9d/b4/b6/9db4b68b34bc797b131df61a53011ff0.jpg", title: "Multi-Cloud: AWS & Azure", desc: "Architect and deploy across the major clouds, not just one provider." },
-    { icon: "rocket", img: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80", title: "30+ Hands-On Projects", desc: "CI/CD pipelines, containers, multi-cloud deployments and real infrastructure." },
-    { icon: "award",  img: "https://i.pinimg.com/736x/82/a5/68/82a568b14c83a9a2b040b067fb0d9600.jpg", title: "Exam-Aligned with Major Certs", desc: "Curriculum mapped to leading AWS and Azure (AZ-104) certification tracks." },
-    { icon: "shield", img: "https://i.pinimg.com/736x/13/cf/67/13cf677678423ef84997d2291ca68935.jpg", title: "DevSecOps & Security Built In", desc: "Secure pipelines, IAM and best practices woven throughout." },
-    { icon: "users",  img: "https://i.pinimg.com/1200x/81/56/3e/81563eee08c9be9922545c53b06028e4.jpg", title: "Learn from Cloud Engineers", desc: "Live sessions with practitioners who run cloud and DevOps in production." },
-    { icon: "clock",  img: "https://i.pinimg.com/736x/50/ce/a6/50cea61a8653f83262b80f081051681b.jpg", title: "AI-Powered Cloud & DevOps", desc: "Generative AI on the cloud, containerising AI services and AI orchestration." },
+    { icon: "cpu",    img: "/images/Certification/CloudComp/1.avif", title: "Multi-Cloud: AWS & Azure", desc: "Architect and deploy across the major clouds, not just one provider." },
+    { icon: "rocket", img: "/images/Certification/CloudComp/3.avif", title: "30+ Hands-On Projects", desc: "CI/CD pipelines, containers, multi-cloud deployments and real infrastructure." },
+    { icon: "award",  img: "/images/Certification/CloudComp/4.avif", title: "Exam-Aligned with Major Certs", desc: "Curriculum mapped to leading AWS and Azure (AZ-104) certification tracks." },
+    { icon: "shield", img: "/images/Certification/CloudComp/5.avif", title: "DevSecOps & Security Built In", desc: "Secure pipelines, IAM and best practices woven throughout." },
+    { icon: "users",  img: "/images/Certification/CloudComp/6.avif", title: "Learn from Cloud Engineers", desc: "Live sessions with practitioners who run cloud and DevOps in production." },
+    { icon: "clock",  img: "/images/Certification/CloudComp/7.avif", title: "AI-Powered Cloud & DevOps", desc: "Generative AI on the cloud, containerising AI services and AI orchestration." },
   ],
 
   journey: [
@@ -244,10 +244,10 @@ const data = {
   ],
 
   forWhom: [
-    { title: "Software Engineers", img: "https://i.pinimg.com/1200x/b4/5c/3b/b45c3bd7fc330aeda5dabfe92a934bca.jpg", desc: "Add cloud and DevOps to your stack and move into high-demand roles." },
-    { title: "System & IT Admins", img: "https://i.pinimg.com/1200x/00/02/75/0002758bda124316c60470d837b8d9c5.jpg", desc: "Modernise from on-prem into cloud architecture and automation." },
-    { title: "DevOps Aspirants", img: "https://i.pinimg.com/736x/63/3e/64/633e646d4b03b384ddf2c316e920fbde.jpg", desc: "Master the full toolchain — CI/CD, containers, IaC and monitoring." },
-    { title: "Career Switchers", img: "https://images.unsplash.com/photo-1740817748368-b8e6a228937e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", desc: "Enter cloud from a non-programming background with hands-on skills." },
+    { title: "Software Engineers", img: "/images/Certification/CloudComp/8.avif", desc: "Add cloud and DevOps to your stack and move into high-demand roles." },
+    { title: "System & IT Admins", img: "/images/Certification/CloudComp/9.avif", desc: "Modernise from on-prem into cloud architecture and automation." },
+    { title: "DevOps Aspirants", img: "/images/Certification/CloudComp/10.avif", desc: "Master the full toolchain — CI/CD, containers, IaC and monitoring." },
+    { title: "Career Switchers", img: "/images/Certification/CloudComp/11.avif", desc: "Enter cloud from a non-programming background with hands-on skills." },
   ],
 
   compare: {

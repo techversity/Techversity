@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 import { universities } from "@/lib/universities";
-import { doctorateTypes } from "@/lib/doctorate";
+import { programs } from "@/lib/programs";
 
-const programLabel = (slug) => doctorateTypes.find((d) => d.slug === slug)?.abbr || slug;
+const programLabel = (slug) => programs.find((p) => p.slug === slug)?.initials || slug;
 
 export default function UniversitiesGrid() {
   const [country, setCountry] = useState("All");

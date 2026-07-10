@@ -1,5 +1,5 @@
 const data = {
-  heroImage: "https://tse4.mm.bing.net/th/id/OIP.lYRz_WY8q3ICCIwHwO3yowHaD5?rs=1&pid=ImgDetMain&o=7&rm=3",
+  heroImage: "/images/Certification/CyberSecurity/hero.avif",
   tagline:
     "Master both sides of security — offensive and defensive — supercharged with AI. From OS and networks to ethical hacking, malware analysis, SOC automation and adversarial-AI defence, across 45+ hands-on projects and 3 capstones.",
   overview:
@@ -13,12 +13,12 @@ const data = {
   ],
 
   highlights: [
-    { icon: "shield", img: "https://i.pinimg.com/1200x/20/61/ce/2061ceae4c2ab6059d0ea4eb15a0d0ae.jpg", title: "Offensive + Defensive Mastery", desc: "Balanced red-team and blue-team training — attack and defend with equal depth." },
-    { icon: "cpu",    img: "https://i.pinimg.com/736x/b0/38/46/b038467001ad03d0e5a68b85e6a6362b.jpg", title: "AI-Powered Security", desc: "AI-augmented recon, AI-driven SOC automation and adversarial-AI defence built in." },
-    { icon: "rocket", img: "https://i.pinimg.com/1200x/36/d1/6a/36d16a8bc9597f727d31bf16b3d6872c.jpg", title: "45+ Projects, 3 Capstones", desc: "Honeypots, VAPT, forensics, malware analysis and day-in-the-life capstones." },
-    { icon: "users",  img: "https://i.pinimg.com/736x/81/75/d5/8175d5e9e74be1ee7d628d8b0d9c5d38.jpg", title: "Integrated Virtual Labs", desc: "A secure browser-based sandbox with four virtual machines — no local setup." },
-    { icon: "award",  img: "https://i.pinimg.com/1200x/7a/54/fa/7a54faf114764105991e6fcbadedc382.jpg", title: "Ethical-Hacking Aligned", desc: "Curriculum mapped to recognised ethical-hacking and security certification standards." },
-    { icon: "clock",  img: "https://i.pinimg.com/736x/3e/7f/5c/3e7f5c55cbcd82127c507c0a39a2e818.jpg", title: "Flexible for Professionals", desc: "Live weekend-friendly classes, all recorded, with lifetime access." },
+    { icon: "shield", img: "/images/Certification/CyberSecurity/1.avif", title: "Offensive + Defensive Mastery", desc: "Balanced red-team and blue-team training — attack and defend with equal depth." },
+    { icon: "cpu",    img: "/images/Certification/CyberSecurity/2.avif", title: "AI-Powered Security", desc: "AI-augmented recon, AI-driven SOC automation and adversarial-AI defence built in." },
+    { icon: "rocket", img: "/images/Certification/CyberSecurity/3.avif", title: "45+ Projects, 3 Capstones", desc: "Honeypots, VAPT, forensics, malware analysis and day-in-the-life capstones." },
+    { icon: "users",  img: "/images/Certification/CyberSecurity/4.avif", title: "Integrated Virtual Labs", desc: "A secure browser-based sandbox with four virtual machines — no local setup." },
+    { icon: "award",  img: "/images/Certification/CyberSecurity/5.avif", title: "Ethical-Hacking Aligned", desc: "Curriculum mapped to recognised ethical-hacking and security certification standards." },
+    { icon: "clock",  img: "/images/Certification/CyberSecurity/6.avif", title: "Flexible for Professionals", desc: "Live weekend-friendly classes, all recorded, with lifetime access." },
   ],
 
   journey: [
@@ -212,10 +212,10 @@ const data = {
   ],
 
   forWhom: [
-    { title: "IT & Network Professionals", img: "https://i.pinimg.com/736x/fb/bd/05/fbbd052076dc213ac9ed51077f68e83a.jpg", desc: "Analysts, network admins and consultants moving into senior security roles." },
-    { title: "Managers & Leaders", img: "https://i.pinimg.com/736x/c3/d7/c6/c3d7c6f0431d0fc77836be6a5d926c19.jpg", desc: "Leaders in BFSI, telecom and healthcare needing strategic security depth." },
-    { title: "Career Changers", img: "https://i.pinimg.com/236x/89/2f/8d/892f8d99d81c803306ce90d782e79c5a.jpg", desc: "Graduates transitioning into cybersecurity — no programming prerequisite." },
-    { title: "Aspiring Red/Blue Teamers", img: "https://i.pinimg.com/736x/2f/94/12/2f941208fa76d96131ce81616f5a735f.jpg", desc: "Those wanting deep, hands-on offensive and defensive expertise." },
+    { title: "IT & Network Professionals", img: "/images/Certification/CyberSecurity/7.avif", desc: "Analysts, network admins and consultants moving into senior security roles." },
+    { title: "Managers & Leaders", img: "/images/Certification/CyberSecurity/5.avif", desc: "Leaders in BFSI, telecom and healthcare needing strategic security depth." },
+    { title: "Career Changers", img: "/images/Certification/CyberSecurity/8.avif", desc: "Graduates transitioning into cybersecurity — no programming prerequisite." },
+    { title: "Aspiring Red/Blue Teamers", img: "/images/Certification/CyberSecurity/9.avif", desc: "Those wanting deep, hands-on offensive and defensive expertise." },
   ],
 
   compare: {

@@ -1,5 +1,5 @@
 const data = {
-  heroImage: "https://i.pinimg.com/736x/dc/d7/1d/dcd71d3085257c682ab44e0c1d11d9a9.jpg",
+  heroImage: "/images/Certification/ProjectManagement/hero.avif",
   tagline:
     "Move from executing projects to leading them strategically — master governance, financial models, quantitative risk and AI-driven decision-making that goes well beyond a standard PMP.",
   overview:
@@ -13,12 +13,12 @@ const data = {
   ],
 
   highlights: [
-    { icon: "award",  img: "https://i.pinimg.com/1200x/8e/3e/30/8e3e304ec1957cd5dc1836f2b8f1ca24.jpg", title: "Strategic, Beyond PMP", desc: "Go past execution into governance, strategy alignment and enterprise oversight." },
-    { icon: "cpu",    img: "https://i.pinimg.com/736x/f7/8c/ef/f78cef0dd20b57db43cc6c93cc4e7303.jpg", title: "AI/ML-Powered Decision-Making", desc: "Fuzzy inference, Monte Carlo and ML models for cost, duration and risk." },
-    { icon: "rocket", img: "https://i.pinimg.com/736x/d2/a4/42/d2a4424e8e717b9bc4fb6c63d059f309.jpg", title: "7 Applied Projects + Capstone", desc: "Real scenarios in cost estimation, earned value and portfolio prioritisation." },
-    { icon: "users",  img: "https://i.pinimg.com/1200x/f5/bf/70/f5bf709621ed9e926d04d555181345ec.jpg", title: "Learn from Practitioners", desc: "Faculty and leaders who run complex programs and portfolios." },
-    { icon: "shield", img: "https://i.pinimg.com/1200x/33/bf/df/33bfdf3866d3a37ef6a7e62d76a2d36e.jpg", title: "Financial & ESG Acumen", desc: "NPV, CBA, CEA, CapEx vs OpEx and sustainability-driven project decisions." },
-    { icon: "clock",  img: "https://i.pinimg.com/736x/27/07/23/270723b6ddc755efbe1fd911ed940ab3.jpg", title: "Flexible, Live & Online", desc: "Interactive live sessions with recordings you fit around a senior role." },
+    { icon: "award",  img: "/images/Certification/ProjectManagement/1.avif", title: "Strategic, Beyond PMP", desc: "Go past execution into governance, strategy alignment and enterprise oversight." },
+    { icon: "cpu",    img: "/images/Certification/ProjectManagement/2.avif", title: "AI/ML-Powered Decision-Making", desc: "Fuzzy inference, Monte Carlo and ML models for cost, duration and risk." },
+    { icon: "rocket", img: "/images/Certification/ProjectManagement/3.avif", title: "7 Applied Projects + Capstone", desc: "Real scenarios in cost estimation, earned value and portfolio prioritisation." },
+    { icon: "users",  img: "/images/Certification/ProjectManagement/4.avif", title: "Learn from Practitioners", desc: "Faculty and leaders who run complex programs and portfolios." },
+    { icon: "shield", img: "/images/Certification/ProjectManagement/5.avif", title: "Financial & ESG Acumen", desc: "NPV, CBA, CEA, CapEx vs OpEx and sustainability-driven project decisions." },
+    { icon: "clock",  img: "/images/Certification/ProjectManagement/6.avif", title: "Flexible, Live & Online", desc: "Interactive live sessions with recordings you fit around a senior role." },
   ],
 
   journey: [
@@ -153,10 +153,10 @@ const data = {
   ],
 
   forWhom: [
-    { title: "Project & Program Managers", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80", desc: "Step up from execution into strategic, enterprise-level leadership." },
-    { title: "PMO & Delivery Leads", img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80", desc: "Master governance, portfolio prioritisation and financial evaluation." },
-    { title: "Senior Individual Contributors", img: "https://i.pinimg.com/736x/11/d3/e6/11d3e646686d55ba13b55a6539dccfc0.jpg", desc: "Build the strategic and financial acumen to move into leadership." },
-    { title: "Consultants & Team Leads", img: "https://i.pinimg.com/236x/88/ef/73/88ef73d5d2b668231c980e95476ba477.jpg", desc: "Add AI-driven decision-making and risk expertise to your toolkit." },
+    { title: "Project & Program Managers", img: "/images/Certification/ProjectManagement/7.avif", desc: "Step up from execution into strategic, enterprise-level leadership." },
+    { title: "PMO & Delivery Leads", img: "/images/Certification/ProjectManagement/8.avif", desc: "Master governance, portfolio prioritisation and financial evaluation." },
+    { title: "Senior Individual Contributors", img: "/images/Certification/ProjectManagement/9.avif", desc: "Build the strategic and financial acumen to move into leadership." },
+    { title: "Consultants & Team Leads", img: "/images/Certification/ProjectManagement/10.avif", desc: "Add AI-driven decision-making and risk expertise to your toolkit." },
   ],
 
   compare: {

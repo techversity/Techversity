@@ -16,15 +16,15 @@ const esdstDetail = {
 
   heroImage: "/images/Universities/ESDST/hero.avif",
   aboutImage:
-    "https://i.pinimg.com/1200x/58/15/1d/58151d3caeca33a0b9ce5952f9d2f965.jpg",
+    "/images/Universities/ESDST/about.avif",
   GlanceImg:
-    "https://i.pinimg.com/736x/11/d3/e6/11d3e646686d55ba13b55a6539dccfc0.jpg",
+    "/images/Universities/ESDST/glance.avif",
   certificateImage:
-    "https://i.pinimg.com/1200x/07/d2/5f/07d25ff274a073dd5ca4189f7bb26d40.jpg",
+    "/images/Universities/ESDST/certification.avif",
   convocationImage:
-    "https://i.pinimg.com/1200x/f6/47/18/f64718fc8ec154a508df84d7628b9220.jpg",
+    "/images/Universities/ESDST/convocation.avif",
   finalCtaImage:
-    "https://i.pinimg.com/1200x/ad/60/f0/ad60f0029361cf32060b5b2df5dbfa9e.jpg",
+    "/images/SharedPrograms/CTA.avif",
 
   tagline:
     "A Swiss, eduQua-certified school for Data Science, AI, and Machine Learning — built around a Capstone Consulting Project, not exams.",

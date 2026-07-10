@@ -46,9 +46,6 @@ export default function DegreeGrid() {
   const rafRef    = useRef(null);
 
 
-  /* ── scroll → find card whose center is closest to viewport center ──
-     This fires on every scroll tick so NO card is ever skipped,
-     no matter how fast the user scrolls.                              */
   const updateActive = useCallback(() => {
     const mid = window.innerHeight / 2;
     let bestIdx  = 0;

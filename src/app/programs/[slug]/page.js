@@ -1,8 +1,6 @@
-import { notFound } from "next/navigation";
+import { redirect, notFound } from "next/navigation";
 import { programs } from "@/lib/programs";
-import legacyProgramDetails from "@/lib/program-details";
 import { getProgramDetail } from "@/lib/programs/index";
-import LegacyProgramPage from "./LegacyProgramPage";
 
 import ProgramHero from "@/components/program-detail/ProgramHero";
 import ProgramStatsStrip from "@/components/program-detail/ProgramStatsStrip";
@@ -19,8 +17,11 @@ import ProgramFaq from "@/components/program-detail/ProgramFaq";
 import ProgramCeremony from "@/components/program-detail/ProgramCeremony";
 import { ProgramResources, ProgramFinalCTA } from "@/components/program-detail/ProgramShowcase";
 
+
 export async function generateStaticParams() {
-  return programs.map((p) => ({ slug: p.slug }));
+  return programs
+    .filter((p) => p.category !== "certifications")
+    .map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -32,47 +33,39 @@ export async function generateMetadata({ params }) {
       description: rich.subtitle,
     };
   }
-  const prog = programs.find((p) => p.slug === slug);
-  if (!prog) return {};
-  const d = legacyProgramDetails[slug];
-  return {
-    title: `${prog.title} | Techversity.ai`,
-    description: d?.tagline || prog.desc,
-  };
+  return {};
 }
 
 export default async function ProgramPage({ params }) {
   const { slug } = await params;
 
-  // NEW premium editorial layout — for programs with rich detail data
-  const rich = getProgramDetail(slug);
-  if (rich) {
-    return (
-      <main className="bg-ivory">
-        <ProgramHero p={rich} />
-        <ProgramStatsStrip stats={rich.heroStats} />
-        <ProgramWhatIs p={rich} />
-        <ProgramWhoFor p={rich} />
-        <ProgramWhyMatters p={rich} />
-        <ProgramFields p={rich} />
-        <ProgramReceive p={rich} />
-        <ProgramJourney p={rich} />
-        <ProgramProfiles p={rich} />
-        <ProgramStanding p={rich} />
-        <ProgramInstitutions p={rich} />
-        <ProgramCeremony p={rich} />
-        <ProgramFaq p={rich} />
-        <ProgramResources p={rich} />
-        <ProgramFinalCTA p={rich} />
-      </main>
-    );
+  const prog = programs.find((p) => p.slug === slug);
+
+  // certifications don't have a page here — send visitors to the real one
+  if (prog?.category === "certifications") {
+    redirect(`/certifications/${slug}`);
   }
 
-  // LEGACY layout — all other programs, unchanged
-  const prog = programs.find((p) => p.slug === slug);
-  if (!prog) notFound();
-  const d = legacyProgramDetails[slug];
-  if (!d) notFound();
+  const rich = getProgramDetail(slug);
+  if (!rich) notFound();
 
-  return <LegacyProgramPage prog={prog} d={d} />;
+  return (
+    <main className="bg-ivory">
+      <ProgramHero p={rich} />
+      <ProgramStatsStrip stats={rich.heroStats} />
+      <ProgramWhatIs p={rich} />
+      <ProgramWhoFor p={rich} />
+      <ProgramWhyMatters p={rich} />
+      <ProgramFields p={rich} />
+      <ProgramReceive p={rich} />
+      <ProgramJourney p={rich} />
+      <ProgramProfiles p={rich} />
+      <ProgramStanding p={rich} />
+      <ProgramInstitutions p={rich} />
+      <ProgramCeremony p={rich} />
+      <ProgramFaq p={rich} />
+      <ProgramResources p={rich} />
+      <ProgramFinalCTA p={rich} />
+    </main>
+  );
 }

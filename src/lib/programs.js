@@ -147,7 +147,7 @@ export const programs = [
     outcome: "Certified data scientist · Job-ready skills",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $699",
     category: "certifications",
-    image: "https://i.pinimg.com/736x/51/f2/33/51f233f4e9ceab328fda4882eb6457ad.jpg",
+    image: "/images/Certification/CertificationCard/DataScience.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
@@ -163,7 +163,7 @@ export const programs = [
     outcome: "AI practitioner · Automation builder · Future-ready",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $999",
     category: "certifications",
-    image: "https://i.pinimg.com/736x/11/0f/e1/110fe1fd6694262d005e4bc7dd9b3537.jpg",
+    image: "/images/Certification/CertificationCard/AgenticAi.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
@@ -179,7 +179,7 @@ export const programs = [
     outcome: "Security certified · SOC-ready · Career switch",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $799",
     category: "certifications",
-    image: "https://i.pinimg.com/1200x/0a/74/ba/0a74bae45bd5a441d8259bd75b8b4abe.jpg",
+    image: "/images/Certification/CertificationCard/CyberSecurity.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
@@ -195,7 +195,7 @@ export const programs = [
     outcome: "Certified analyst · Dashboard & insight skills",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $599",
     category: "certifications",
-    image: "https://i.pinimg.com/1200x/2b/3b/da/2b3bdac495cd305baf133f2965f1025a.jpg",
+    image: "/images/Certification/CertificationCard/DataAnalytics.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
@@ -211,7 +211,7 @@ export const programs = [
     outcome: "Cloud certified · DevOps-ready · Career growth",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $899",
     category: "certifications",
-    image: "https://i.pinimg.com/1200x/37/3b/31/373b31e16a068ad28f10514ae10c33ce.jpg",
+    image: "/images/Certification/CertificationCard/CloudComputing.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
@@ -227,7 +227,7 @@ export const programs = [
     outcome: "PMP-ready · Agile certified · Leadership skills",
     level: "Certification", duration: "6 Months", mode: "Online", fee: "From $549",
     category: "certifications",
-    image: "https://i.pinimg.com/736x/84/48/49/8448495442c3645538dd52a55853930a.jpg",
+    image: "/images/Certification/CertificationCard/ProjectManagement.avif",
     partnerLogos: [
       { name: "ESDST University", country: "🇨🇭 Switzerland", logo: "/images/HomePage/ProgramsLogo/Esdst.avif" },
       { name: "EU Global", country: "🇲🇹 Malta", logo: "/images/HomePage/ProgramsLogo/EU.avif" },
