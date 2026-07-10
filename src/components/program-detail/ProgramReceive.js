@@ -40,6 +40,9 @@ const ICON_MAP = {
   "Distinguished Network Membership": Users,
   "Engagement Opportunities": Presentation,
   "Conferment Ceremony": Landmark,
+  // Master's & Bachelor's
+  "Master's Degree Certificate": Award,
+  "Bachelor's Degree Certificate": Award,
 };
 
 export default function ProgramReceive({ p }) {

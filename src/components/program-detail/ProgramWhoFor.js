@@ -66,6 +66,21 @@ const ICON_MAP = {
   "Legal & Justice Professionals": Scale,
   "Diplomats & International Leaders": Globe,
   "Community & Social Leaders": Users,
+  // Master's
+  "Mid-Career Managers": UserCog,
+  "Finance & Operations Professionals": Building2,
+  "Technology Professionals": Cpu,
+  "Entrepreneurs & Founders": Rocket,
+  "Career Changers": Compass,
+  "Healthcare & Public Sector Professionals": Stethoscope,
+  "International Professionals": Globe,
+  "Future Doctoral Candidates": GraduationCap,
+  // Bachelor's
+  "Working Professionals": Briefcase,
+  "Early-Career Learners": BookOpen,
+  "Parents Returning to Study": Users,
+  "Healthcare & Support Workers": HeartHandshake,
+  "Future Master's Candidates": School,
 };
 
 export default function ProgramWhoFor({ p }) {

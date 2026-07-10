@@ -15,6 +15,7 @@ import {
   Landmark,
   Scale,
   Stethoscope,
+  Compass,
 } from "lucide-react";
 
 const ICON_MAP = {
@@ -43,6 +44,10 @@ const ICON_MAP = {
   "Healthcare Administrator": Stethoscope,
   "Legal Professional": Scale,
   "Entrepreneur & Founder": Rocket,
+  // Bachelor's
+  "Technology Professional": Cpu,
+  "Healthcare Worker": Stethoscope,
+  "Career Changer": Compass,
 };
 
 // "Honorary Doctor in Entrepreneurship" -> "Entrepreneurship"
