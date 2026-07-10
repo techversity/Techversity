@@ -57,6 +57,7 @@ const sections = [
     title: "What's Never Refundable",
     blocks: [
       { type: "list", items: [
+        "Admission fees, once paid, are strictly non-refundable",
         "Third-party payment processing fees (Razorpay, Stripe, PayPal)",
         "Registration or account setup fees",
         "Services fully delivered",
