@@ -11,7 +11,7 @@ const SLIDES = [
 
 export default function ProgramsHubHero() {
   return (
-    <section className="relative bg-wine overflow-hidden min-h-[620px] lg:min-h-[720px] flex items-center">
+    <section className="relative bg-wine overflow-hidden min-h-[720px] lg:min-h-[900px] flex items-center">
       {/* background slideshow — 6 photos, each crossfades in with a slow pan */}
       {SLIDES.map((src, i) => (
         <div
@@ -59,9 +59,9 @@ export default function ProgramsHubHero() {
           }
         }
         @keyframes programs-hero-slide {
-          0% { opacity: 0; transform: scale(1.02) translateX(-1%); }
+          0% { opacity: 0; transform: scale(1.0) translateX(0); }
           2% { opacity: 1; }
-          14% { opacity: 1; transform: scale(1.06) translateX(1%); }
+          14% { opacity: 1; transform: scale(1.02) translateX(0); }
           16.6% { opacity: 0; }
           100% { opacity: 0; }
         }

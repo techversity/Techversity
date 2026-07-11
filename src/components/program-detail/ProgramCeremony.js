@@ -61,12 +61,22 @@ export default function ProgramCeremony({ p }) {
             </div>
           </Reveal>
 
-          {/* right — layered photo composition */}
+          {/* right — layered photo composition (desktop) / simple grid (mobile) */}
           <Reveal direction="left" delay={120}>
-            <div className="relative h-[400px] lg:h-[480px]">
+            {/* mobile — simple 2-col grid, no overlap risk */}
+            <div className="grid grid-cols-2 gap-3 lg:hidden">
+              {images.slice(0, 4).map((img, i) => (
+                <div key={i} className="relative h-[150px] rounded-xl overflow-hidden shadow-[0_12px_28px_-8px_rgba(0,0,0,0.4)]">
+                  <Image src={img.src} alt={img.alt} fill sizes="50vw" className="object-cover" />
+                </div>
+              ))}
+            </div>
+
+            {/* desktop — artistic layered collage */}
+            <div className="relative h-[400px] lg:h-[480px] hidden lg:block">
               {images[0] && (
                 <div className="absolute top-0 left-0 w-[62%] h-[64%] rounded-2xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]">
-                  <Image src={images[0].src} alt={images[0].alt} fill sizes="(max-width: 1024px) 100vw, 380px" className="object-cover" />
+                  <Image src={images[0].src} alt={images[0].alt} fill sizes="380px" className="object-cover" />
                   <span className="absolute top-3 left-3 w-6 h-6 border-t border-l pointer-events-none" style={{ borderColor: "#C9A04A", opacity: 0.85 }} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>

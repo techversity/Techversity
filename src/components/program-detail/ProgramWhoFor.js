@@ -129,7 +129,20 @@ export default function ProgramWhoFor({ p }) {
 
           {collage.length > 0 && (
             <Reveal direction="left" delay={120}>
-              <div className="relative h-[300px] lg:h-[340px]">
+              {/* mobile — simple grid, no fixed-pixel overlap risk */}
+              <div className="grid grid-cols-3 gap-3 lg:hidden">
+                {collage.slice(0, 5).map((img, i) => (
+                  <div
+                    key={i}
+                    className={`relative rounded-2xl overflow-hidden ring-4 ring-ivory shadow-[0_12px_28px_-8px_rgba(22,38,61,0.3)] ${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-square"}`}
+                  >
+                    <Image src={img.src} alt={img.alt} fill sizes="150px" className="object-cover" />
+                  </div>
+                ))}
+              </div>
+
+              {/* desktop — artistic scattered collage */}
+              <div className="relative h-[300px] lg:h-[340px] hidden lg:block">
                 <svg
                   className="absolute inset-0 w-full h-full pointer-events-none"
                   viewBox="0 0 440 340"
