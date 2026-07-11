@@ -11,7 +11,7 @@ const SLIDES = [
 
 export default function ProgramsHubHero() {
   return (
-    <section className="relative bg-wine overflow-hidden min-h-[720px] lg:min-h-[900px] flex items-center">
+    <section className="relative bg-wine overflow-hidden min-h-[480px] sm:min-h-[560px] lg:min-h-[820px] flex items-center">
       {/* background slideshow — 6 photos, each crossfades in with a slow pan */}
       {SLIDES.map((src, i) => (
         <div
