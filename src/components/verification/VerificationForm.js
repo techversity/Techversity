@@ -98,19 +98,19 @@ export default function VerificationForm({ type: initialType = "degree" }) {
     if (!validate()) return;
     setLoading(true);
     try {
-      const fd = new FormData();
-      fd.append("name", d.name.trim());
-      fd.append("email", d.email.trim());
-      fd.append("phone", "");
-      fd.append("country", "");
-      fd.append("programme", "");
-      fd.append(
-        "notes",
-        `Verification request (${isDegree ? "degree" : "certificate"}). DOB: ${d.dob.trim()}. ${idLabel}: ${d.credId.trim()}.`
-      );
-      fd.append("source", source);
-      fd.append("website", ""); // honeypot
-      const res = await fetch(`${API_URL}/api/lead`, { method: "POST", body: fd });
+      const res = await fetch(`${API_URL}/api/verify`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: d.name.trim(),
+          dob: d.dob.trim(),
+          credId: d.credId.trim(),
+          email: d.email.trim(),
+          type,
+          source,
+          website: "", // honeypot
+        }),
+      });
       const data = await res.json();
       if (data.ok) setDone(true);
     } catch (err) {
