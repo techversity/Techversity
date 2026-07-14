@@ -7,8 +7,43 @@ import { universities } from "@/lib/universities";
 import { programs } from "@/lib/programs";
 import { flagUrl } from "@/lib/flag";
 
+// Full, human-readable labels for the program badges (was showing raw initials like DB/MA/BA)
+const PROGRAM_LABELS = {
+  dba: "DBA",
+  phd: "PhD",
+  "honorary-doctorate": "Hon. Doctorate",
+  "honorary-professorship": "Hon. Professor",
+  masters: "Masters",
+  bachelors: "Bachelors",
+};
+
 const programLabel = (slug) =>
-  programs.find((p) => p.slug === slug)?.initials || slug;
+  PROGRAM_LABELS[slug] || programs.find((p) => p.slug === slug)?.initials || slug;
+
+// Consistent priority order for badges (so rows don't wrap in a random/jumbled order)
+const BADGE_ORDER = ["dba", "phd", "honorary-doctorate", "honorary-professorship", "masters", "bachelors", "certifications"];
+const sortedPrograms = (list) =>
+  [...list].sort((a, b) => BADGE_ORDER.indexOf(a) - BADGE_ORDER.indexOf(b));
+
+// Shared "+N" pill — intentionally neutral/grey so it reads as "meta info", not another
+// program badge competing with the gold DBA/PHD/etc pills for attention.
+function MoreBadge({ count, size = "normal" }) {
+  const isSmall = size === "small";
+  return (
+    <span
+      className="font-mono font-semibold tracking-wide rounded-full whitespace-nowrap shrink-0"
+      style={{
+        fontSize: isSmall ? "8px" : "10.5px",
+        padding: isSmall ? "2px 6px" : "4px 9px",
+        color: "#8A92A0",
+        background: "#F2EFE6",
+        border: "1px solid #E0DCCF",
+      }}
+    >
+      +{count}
+    </span>
+  );
+}
 
 function useReveal(threshold = 0.1) {
   const ref = useRef(null);
@@ -49,7 +84,7 @@ function ExpandableList({ list }) {
               href={`/universities/${item.slug}`}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative flex items-stretch gap-8 border-b overflow-hidden"
+              className="group relative flex items-center gap-8 border-b overflow-hidden"
               style={{
                 borderColor: "#E0DCCF",
                 paddingTop: isHovered ? "28px" : "32px",
@@ -117,7 +152,7 @@ function ExpandableList({ list }) {
                 <h3
                   className="font-display font-semibold leading-none truncate transition-all duration-300"
                   style={{
-                    fontSize: "clamp(22px, 2.8vw, 38px)",
+                    fontSize: "clamp(18px, 1.8vw, 26px)",
                     color: isHovered ? "#9A7320" : "#16263D",
                     transform: isHovered ? "translateX(6px)" : "translateX(0)",
                   }}
@@ -155,20 +190,60 @@ function ExpandableList({ list }) {
 
               {/* right meta */}
               <div className="flex items-center gap-7 shrink-0">
-                <div className="hidden sm:flex flex-wrap gap-1.5 justify-end max-w-[180px]">
-                  {item.programsOffered.map((p) => (
-                    <span
-                      key={p}
-                      className="font-mono text-[8.5px] uppercase tracking-wide text-mist border border-line rounded-full px-2 py-0.5 transition-colors duration-300 group-hover:border-gold/40"
-                    >
-                      {programLabel(p)}
-                    </span>
-                  ))}
+                <div
+                  className="hidden sm:flex items-center gap-2 justify-end transition-all duration-300"
+                  style={{
+                    flexWrap: isHovered ? "wrap" : "nowrap",
+                    maxWidth: isHovered ? "300px" : "none",
+                  }}
+                >
+                  {(isHovered
+                    ? sortedPrograms(item.programsOffered)
+                    : sortedPrograms(item.programsOffered).slice(0, 3)
+                  ).map((p) => {
+                    const isCert = p === "certifications";
+                    return (
+                      <span
+                        key={p}
+                        className="font-mono font-semibold text-[11px] uppercase tracking-wide rounded-full px-3 py-1 whitespace-nowrap transition-all duration-300"
+                        style={
+                          isCert
+                            ? {
+                                color: "#2F5233",
+                                background: "#E8EFE3",
+                                border: "1px solid #A9C7A0",
+                              }
+                            : {
+                                color: "#9A7320",
+                                background: "#F6EFDC",
+                                border: "1px solid #E3C77E",
+                                boxShadow: isHovered ? "0 3px 8px rgba(154,115,32,0.18)" : "none",
+                              }
+                        }
+                      >
+                        {programLabel(p)}
+                      </span>
+                    );
+                  })}
+                  {!isHovered && item.programsOffered.length > 3 && (
+                    <MoreBadge count={item.programsOffered.length - 3} />
+                  )}
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-wide text-mist text-right whitespace-nowrap leading-relaxed">
-                  {item.country}
-                  <br />
-                  Est. {item.founded}
+                <p className="font-mono text-right whitespace-nowrap leading-relaxed">
+                  <span className="flex items-center justify-end gap-1.5">
+                    <span className="relative w-[14px] h-[10px] rounded-[2px] overflow-hidden ring-1 ring-line shrink-0">
+                      <Image src={flagUrl(item.country)} alt={item.country} fill className="object-cover" />
+                    </span>
+                    <span
+                      className="text-[11px] font-bold uppercase tracking-wide"
+                      style={{ color: "#16263D" }}
+                    >
+                      {item.country}
+                    </span>
+                  </span>
+                  <span className="text-[9.5px] uppercase tracking-wide text-mist">
+                    Est. {item.founded}
+                  </span>
                 </p>
                 <svg
                   className="shrink-0 transition-all duration-300"
@@ -230,9 +305,30 @@ function MobileRow({ u, index }) {
         <h3 className="font-display font-semibold text-[17px] text-wine leading-snug truncate mb-1">
           {u.name}
         </h3>
-        <p className="font-display italic text-[12.5px] text-slate leading-snug truncate">
+        <p className="font-display italic text-[12.5px] text-slate leading-snug truncate mb-1.5">
           {u.tagline}
         </p>
+        <div className="flex flex-wrap gap-1">
+          {sortedPrograms(u.programsOffered).slice(0, 3).map((p) => {
+            const isCert = p === "certifications";
+            return (
+              <span
+                key={p}
+                className="font-mono font-semibold text-[8px] uppercase tracking-wide rounded-full px-1.5 py-0.5"
+                style={
+                  isCert
+                    ? { color: "#2F5233", background: "#E8EFE3" }
+                    : { color: "#9A7320", background: "#F6EFDC" }
+                }
+              >
+                {programLabel(p)}
+              </span>
+            );
+          })}
+          {u.programsOffered.length > 3 && (
+            <MoreBadge count={u.programsOffered.length - 3} size="small" />
+          )}
+        </div>
       </div>
       <svg className="text-mist shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M5 12h14M12 5l7 7-7 7" />

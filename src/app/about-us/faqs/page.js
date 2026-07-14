@@ -16,7 +16,7 @@ export default function FaqsPage() {
       {/* ── hero strip ── */}
       <section className="relative overflow-hidden">
         <Image
-          src="/images/about/faq/faq.avif"
+          src="/images/About/Faq/faq.avif"
           alt="Techversity — Support"
           width={2400}
           height={800}

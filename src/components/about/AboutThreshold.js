@@ -17,7 +17,7 @@ export default function AboutThreshold() {
         }}
       >
         <Image
-          src="/images/about/Threshold.avif"
+          src="/images/About/Threshold.avif"
           alt="Fountain pen on paper"
           fill
           className="object-cover object-center"
