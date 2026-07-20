@@ -136,7 +136,7 @@ export const universities = [
     fullName: "Florida Coastal University",
     country: "United States",
     flag: "🇺🇸",
-    founded: 1996, // TODO
+    founded: 1996, 
     mode: "100% Online",
     tagline: "A Jacksonville-based online university for working adults — DBA and Master's across business, computer science, and education.",
     buildingImage:
@@ -156,7 +156,7 @@ export const universities = [
     fullName: "Swiss School of Management",
     country: "Switzerland",
     flag: "🇨🇭",
-    founded: 2006, // TODO
+    founded: 2006,
     mode: "Online + Geneva/Barcelona/Rome + Global Campuses",
     tagline: "DEAC-accredited business school — DBA publicly, with Honorary Doctorate and Professorship via advisory partnership.",
     buildingImage:
@@ -197,7 +197,7 @@ export const universities = [
     fullName: "Euro-Asian University",
     country: "Estonia",
     flag: "🇪🇪",
-    founded: 2010, // TODO
+    founded: 2010, 
     mode: "Online",
     tagline: "An Estonia-registered online institution offering PhD, Honorary Doctorate, and Professorship pathways.",
     buildingImage:
@@ -217,7 +217,7 @@ export const universities = [
     fullName: "Prowess University",
     country: "United States",
     flag: "🇺🇸",
-    founded: 1993, // TODO
+    founded: 1993, 
     mode: "Online (School of Open and Distance Learning)",
     tagline: "A Delaware-registered distance-learning institution offering Honorary Doctoral and Professorial recognition.",
     buildingImage:

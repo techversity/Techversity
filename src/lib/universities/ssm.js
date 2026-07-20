@@ -9,7 +9,7 @@ const ssmDetail = {
   city: "Geneva (Swiss campus)",
   flag: "🇨🇭",
   flagCode: "ch",
-  founded: 2006, // TODO
+  founded: 2006,
   mode: "Online, or In-Residence (Geneva, Barcelona, Madrid, Rome, Brescia, Cairo, Malta, UAE)",
   language: "English",
   studentsServed: "Learners across Europe, MENA, and beyond",
@@ -72,7 +72,7 @@ const ssmDetail = {
   accreditationNote:
     "SSM's DBA, MBA, EMBA, and BBA sit behind genuinely strong, verifiable accreditation — DEAC's recognition is U.S. Department of Education-recognised, not merely self-described. Honorary Doctorate and Professorial Appointment recognition are separate from this catalogue and run through Techversity's specific advisory partnership with SSM — your advisor confirms exactly what applies to your pathway before you apply.",
 
-  // TODO — SSM doesn't yet have its own dedicated DBA program page
+ 
   programSlugs: ["dba", "honorary-doctorate", "honorary-professorship", "bachelors"],
   programPricing: { "dba": "From $15,000", "bachelors": "From $8,000" },
 

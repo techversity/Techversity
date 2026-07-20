@@ -105,7 +105,7 @@ export default function CertEnrollForm({ cert, slug }) {
         <h3 className="font-display font-semibold text-[26px] text-wine mb-2">You're enrolled-ready!</h3>
         <p className="text-slate text-[15px] leading-relaxed">
           Thanks for your interest in <strong>{cert.title}</strong>. A Techversity advisor will call you within 24 hours
-          to schedule your free demo class and confirm enrolment.
+          to guide you through the next steps and confirm enrolment.
         </p>
       </div>
     );
@@ -115,7 +115,7 @@ export default function CertEnrollForm({ cert, slug }) {
     <div className="bg-white rounded-[24px] border border-line shadow-sm p-8 lg:p-9">
       {/* header */}
       <div className="mb-7">
-        <p className="font-mono text-[9px] uppercase tracking-[3px] mb-2" style={{ color: accent }}>Free Demo & Enrolment</p>
+        <p className="font-mono text-[9px] uppercase tracking-[3px] mb-2" style={{ color: accent }}>Enrolment & Advisory</p>
         <h2 className="font-display font-semibold text-[27px] text-wine leading-tight">
           Reserve your seat.
         </h2>
@@ -158,7 +158,7 @@ export default function CertEnrollForm({ cert, slug }) {
             </>
           ) : (
             <>
-              Book Free Demo Class
+              Reserve My Seat
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
                 className="group-hover:translate-x-1 transition-transform duration-200"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </>

@@ -1,7 +1,7 @@
 // images
 
 const floridaCoastalDetail = {
-  slug: "florida-coastal-school-of-law", // TODO — slug still says "school-of-law", consider renaming
+  slug: "florida-coastal-school-of-law", 
   name: "Florida Coastal",
   shortName: "FCU",
   motto: "University for Working Adults",
@@ -9,7 +9,7 @@ const floridaCoastalDetail = {
   city: "Jacksonville, Florida",
   flag: "🇺🇸",
   flagCode: "us",
-  founded: 1996, // TODO
+  founded: 1996,
   mode: "100% Online",
   language: "English",
   studentsServed: "Working adults, career changers, global",
@@ -68,7 +68,7 @@ const floridaCoastalDetail = {
   accreditationNote:
     "Florida Coastal is direct about its own status: provisionally licensed by Florida's CIE. We say this plainly because it affects how the credential may be recognised for licensure, credit transfer, or employer purposes. Your advisor confirms what this means for your specific goals before you apply.",
 
-  // TODO — Florida Coastal doesn't yet have its own dedicated DBA/Master's program pages
+
   programSlugs: ["dba", "masters", "bachelors"],
 
   offersCertifications: false,

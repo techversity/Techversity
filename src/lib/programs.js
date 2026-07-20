@@ -1,7 +1,7 @@
 export const programs = [
   // ── DOCTORATE ──
   {
-    id: 1, slug: "dba", initials: "DB",
+    id: 1, slug: "dba", initials: "DBA",
     badgeBg: "#D9A441", badgeText: "#0B2545",
     title: "Doctor of Business Administration",
     university: "Multiple Partner Universities", country: "Global", flag: "🌍", code: "un",
@@ -25,7 +25,7 @@ export const programs = [
     ],
   },
   {
-    id: 2, slug: "phd", initials: "PH",
+    id: 2, slug: "phd", initials: "PHD",
     badgeBg: "#0B2545", badgeText: "#ffffff",
     title: "PhD in Business Management",
     university: "Multiple Partner Universities", country: "Global", flag: "🌍", code: "un",

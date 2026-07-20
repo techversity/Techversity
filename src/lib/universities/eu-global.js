@@ -11,7 +11,7 @@ const euGlobalDetail = {
   city: "St Julians",
   flag: "🇲🇹",
   flagCode: "mt",
-  founded: 2005, // TODO: confirm — not stated on their own site, verify with manager
+  founded: 2005,
   mode: "Online, Blended & On-Campus (Malta)",
   language: "English",
   studentsServed: "Learners from 40+ countries",
@@ -19,9 +19,9 @@ const euGlobalDetail = {
   heroImage: "/images/Universities/EU Global/hero.avif",
   aboutImage: "/images/Universities/EU Global/About.avif", 
   GlanceImg: "/images/Universities/EU Global/Glance.avif", 
-  certificateImage: "/images/Universities/EU Global/certificate.avif", // TODO: add real image asset
-  convocationImage: "/images/Universities/EU Global/Convocation.avif", // TODO: add real image asset
-  finalCtaImage: "/images/SharedPrograms/CTA.avif", // TODO: add real image asset
+  certificateImage: "/images/Universities/EU Global/certificate.avif", 
+  convocationImage: "/images/Universities/EU Global/Convocation.avif",
+  finalCtaImage: "/images/SharedPrograms/CTA.avif", 
 
   tagline:
     "A Malta-accredited institute built for global employability — DBA, MBA, and technology programmes delivered online, blended, or on-campus.",

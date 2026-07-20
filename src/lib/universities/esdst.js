@@ -9,7 +9,7 @@ const esdstDetail = {
   city: "Switzerland",
   flag: "🇨🇭",
   flagCode: "ch",
-  founded: 1998, // TODO
+  founded: 1998, 
   mode: "Online + Campus (Face-to-Face)",
   language: "English",
   studentsServed: "Learners worldwide",
@@ -70,7 +70,7 @@ const esdstDetail = {
   accreditationNote:
     "ESDST's recognition is genuine but specific — eduQua covers continuing education standards in Switzerland, and the RNCP diplomas come via a partner institution in France. Your advisor confirms exactly what this means for your country and goals before any application begins.",
 
-  // TODO
+ 
   programSlugs: ["dba", "masters", "bachelors", "data-science"],
 
   offersCertifications: true,

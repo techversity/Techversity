@@ -144,7 +144,7 @@ export default async function CertEnrollPage({ params }) {
               </div>
               <div>
                 <p className="text-[14px] text-wine leading-relaxed mb-2">
-                  "Not sure if this is the right fit? Book a free demo class and speak with a Techversity advisor — no pressure, just clarity."
+                  "Not sure if this is the right fit? Speak with a Techversity advisor and get clarity — <strong>no pressure, no obligation</strong>."
                 </p>
                 <p className="font-mono text-[9px] uppercase tracking-wider text-mist">Techversity Advisory Team</p>
               </div>

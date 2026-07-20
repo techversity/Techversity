@@ -68,7 +68,7 @@ const ccuDetail = {
   accreditationNote:
     "CCU's Bachelor's and Master's programmes are state-licensed in Florida. Its doctoral, honorary, and executive pathways run through a specific advisory arrangement with Techversity rather than CCU's general catalogue — we say this plainly because it directly affects how the credential may be recognised. Your advisor confirms exactly what this means for your goals before you apply.",
 
-  // TODO
+ 
   programSlugs: ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,

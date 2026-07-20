@@ -1,4 +1,3 @@
-// TODO images
 
 const americanManagementDetail = {
   slug: "american-management-university",
@@ -9,7 +8,7 @@ const americanManagementDetail = {
   city: "Orem, Utah",
   flag: "🇺🇸",
   flagCode: "us",
-  founded: 1991, // TODO
+  founded: 1991, 
   mode: "Online",
   language: "English",
   studentsServed: "Working professionals, global",
@@ -63,7 +62,7 @@ const americanManagementDetail = {
   accreditationNote:
     "AMU states this directly, and so do we: AMU is not currently accredited by a U.S. Department of Education-recognised accrediting agency. Degree recognition, credit transfer, and licensure eligibility may vary by institution, employer, or state. Your advisor walks through exactly what this means for your specific goals before any application begins.",
 
-  // TODO
+ 
   programSlugs: ["dba", "phd", "honorary-doctorate", "masters", "honorary-professorship", "bachelors"],
 
   offersCertifications: false,

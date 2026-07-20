@@ -9,7 +9,7 @@ const euroAsianDetail = {
   city: "Tallinn",
   flag: "🇪🇪",
   flagCode: "ee",
-  founded: 2010, // TODO
+  founded: 2010, 
   mode: "Online",
   language: "English",
   studentsServed: "Learners across Europe, UK, Middle East, Asia, USA",

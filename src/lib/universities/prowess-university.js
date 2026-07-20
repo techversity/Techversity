@@ -9,7 +9,7 @@ const prowessDetail = {
   city: "Wilmington, Delaware",
   flag: "🇺🇸",
   flagCode: "us",
-  founded: 1993, // TODO
+  founded: 1993,
   mode: "Online — School of Open and Distance Learning",
   language: "English",
   studentsServed: "Distance learners, global",
